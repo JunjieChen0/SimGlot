@@ -1,0 +1,9 @@
+# SimGlot vFinal 冻结清单（包外）
+#
+# 每个角色**只有一个**对外修订版；retired 里的哈希一律不得引用、不得分发。
+# 复核：python3 simglot_vfinal/checks/verify_freeze.py
+
+2380993ab6f7fafd740427f07153d667fe32fc50f2de0c04d356fc7850eeba0f    81481922  simglot-v1.0-final.tar.gz
+f0afa24478df6db74f8d688cba919d04bdba8f75c601636c7c6d4c5fa2736d2b    80734508  simglot-v1.0-anon-final.tar.gz
+8e41d28ebfa19506a3da9232a98e830d8b9cfe69c794e46cbf2779ef557fd64e    70518492  simglot-S2-final.tar.gz
+dffa09ef0b912e3ed20f9c068698bf6be94e94e00dc0b3f57627a2bf4b0f59e9      400028  simglot-enhancement-final.tar.gz

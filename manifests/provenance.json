@@ -1,0 +1,1476 @@
+{
+  "_comment": "仓库内每个代码文件的来源：工作树路径 + 所属归档角色。由 dist/build_github_repo.py 生成。",
+  "generated": "2026-10-11",
+  "files": [
+    {
+      "repo_path": "artifact/oracle_audit/__init__.py",
+      "source": "sqj/oracle_audit_kit/__init__.py",
+      "archive_role": "S2",
+      "bytes": 435,
+      "sha256": "7b9fe632b79e2b1838ccf8cbf4d883d9156ebdcc59bf9ae07fc1646fd12e2ac9"
+    },
+    {
+      "repo_path": "artifact/oracle_audit/_paths.py",
+      "source": "sqj/oracle_audit_kit/_paths.py",
+      "archive_role": "S2",
+      "bytes": 1059,
+      "sha256": "7fcf4bf6ed552b2e9e191edefa39d0976992f6cb32f0424ed340fd92790d8217"
+    },
+    {
+      "repo_path": "artifact/oracle_audit/adapters.py",
+      "source": "sqj/oracle_audit_kit/adapters.py",
+      "archive_role": "S2",
+      "bytes": 14497,
+      "sha256": "754c26af1e9e45818b67fac823bfb6d271f7ac1820fa1cb6743d46e3d3a9470d"
+    },
+    {
+      "repo_path": "artifact/oracle_audit/detectors.py",
+      "source": "sqj/oracle_audit_kit/detectors.py",
+      "archive_role": "S2",
+      "bytes": 13168,
+      "sha256": "3e5451484ca67736d7f6f769cc5c74e5959891eb0795712b20a87fcba10d5e1a"
+    },
+    {
+      "repo_path": "artifact/oracle_audit/oracle_variants.py",
+      "source": "sqj/oracle_audit_kit/oracle_variants.py",
+      "archive_role": "S2",
+      "bytes": 7026,
+      "sha256": "915847580ddb2a6c25fac6c0a2f9f7899d25f3bcbc3209ce06dba4eab0fbf003"
+    },
+    {
+      "repo_path": "artifact/oracle_audit/run_audit.py",
+      "source": "sqj/oracle_audit_kit/run_audit.py",
+      "archive_role": "S2",
+      "bytes": 7769,
+      "sha256": "570137c9a67c371a542a8b7f8f26bdbc6a44e523a821cffd28a32b494572f76c"
+    },
+    {
+      "repo_path": "artifact/oracle_audit/verify_baseline_identity.py",
+      "source": "sqj/oracle_audit_kit/verify_baseline_identity.py",
+      "archive_role": "S2",
+      "bytes": 4310,
+      "sha256": "fee461a46ba357518b0f97ad7477da26ef5644d0755b2926ccb2c8a1ea944f1b"
+    },
+    {
+      "repo_path": "artifact/oracle_audit/README.md",
+      "source": "sqj/oracle_audit_kit/README.md",
+      "archive_role": "S2",
+      "bytes": 9441,
+      "sha256": "9035388dd1555e3a6854c06e79184cc379a85e3718f4de5cc6b9f55fc37c3eff"
+    },
+    {
+      "repo_path": "artifact/holdout/probes.py",
+      "source": "sqj_enhancement_v1/experiments/oracle_mutation_holdout/probes.py",
+      "archive_role": "enhancement",
+      "bytes": 13975,
+      "sha256": "64e1a93f9a24146c78f3c6017e6c8ef23e64f64e77e5ef3ffb094789673a8378"
+    },
+    {
+      "repo_path": "artifact/holdout/variants_ext.py",
+      "source": "sqj_enhancement_v1/experiments/oracle_mutation_holdout/variants_ext.py",
+      "archive_role": "enhancement",
+      "bytes": 20287,
+      "sha256": "5419b37c261c1dbe40db5e39956cbfc707574be69e8cff3deb597230b46c8319"
+    },
+    {
+      "repo_path": "artifact/holdout/run_holdout.py",
+      "source": "sqj_enhancement_v1/experiments/oracle_mutation_holdout/run_holdout.py",
+      "archive_role": "enhancement",
+      "bytes": 11539,
+      "sha256": "d4ff7b9f5c4b3fa4c577144119d0766954f899f721b1e21aa764739978dcef9c"
+    },
+    {
+      "repo_path": "artifact/holdout/mutant_catalog.json",
+      "source": "sqj_enhancement_v1/manifests/mutant_catalog.json",
+      "archive_role": "enhancement",
+      "bytes": 2193,
+      "sha256": "d987c2f02df35e99fad1fa898f6075971051c5765ccb161846aa1793c4f1654d"
+    },
+    {
+      "repo_path": "artifact/gates/validity_gate_regression.py",
+      "source": "sqj_enhancement_v1/checks/validity_gate_regression.py",
+      "archive_role": "enhancement",
+      "bytes": 4912,
+      "sha256": "6bb97c77b9e61961d77896773c15de1dac9872f5768c30093d680be07d384f73"
+    },
+    {
+      "repo_path": "artifact/gates/order_cache_counterexample.py",
+      "source": "sqj_enhancement_v1/checks/order_cache_counterexample.py",
+      "archive_role": "enhancement",
+      "bytes": 7060,
+      "sha256": "3e1f951cd572b4632dde04384c8297609bb6b6d2a1d77f37e7f5079976247694"
+    },
+    {
+      "repo_path": "artifact/gates/scoring_regression.py",
+      "source": "sqj_enhancement_v1/checks/scoring_regression.py",
+      "archive_role": "enhancement",
+      "bytes": 4360,
+      "sha256": "2260362ea87294962c92dde28967e5d5c22b838c9666b0c06e1cfd44bfa9def6"
+    },
+    {
+      "repo_path": "artifact/gates/verify_sources.py",
+      "source": "sqj_enhancement_v1/checks/verify_sources.py",
+      "archive_role": "enhancement",
+      "bytes": 10302,
+      "sha256": "9211e96340d4cfabb9a60409358794d19e83187881372f73f599c79eceda9e10"
+    },
+    {
+      "repo_path": "artifact/gates/pin_s2.py",
+      "source": "sqj_enhancement_v1/checks/pin_s2.py",
+      "archive_role": "enhancement",
+      "bytes": 5431,
+      "sha256": "449f4847fc2d07e9b793b8bc490f89ab60852b0897f374b48164f9c829e4ced8"
+    },
+    {
+      "repo_path": "artifact/_boot.py",
+      "source": "sqj_enhancement_v1/_boot.py",
+      "archive_role": "enhancement",
+      "bytes": 3888,
+      "sha256": "18b0da95783d6572cbc4a188d818d5a2d35788c87ce2e40a2f76552b06cd1262"
+    },
+    {
+      "repo_path": "artifact/holdout/overhead.py",
+      "source": "sqj_enhancement_v1/experiments/oracle_mutation_holdout/overhead.py",
+      "archive_role": "enhancement",
+      "bytes": 5929,
+      "sha256": "9df7e27bdeabb6baaeece6537a4644710f6f09415ef0c50d23a1fdea379711d1"
+    },
+    {
+      "repo_path": "artifact/gates/clean_room.sh",
+      "source": "sqj_enhancement_v1/checks/clean_room.sh",
+      "archive_role": "enhancement",
+      "bytes": 4124,
+      "sha256": "ef791fbccb18c18e76116a6db31dfa396f267e6a75609f102b935aec1c425c30"
+    },
+    {
+      "repo_path": "artifact/experiments/e1_component/analyze_e1_full.py",
+      "source": "sqj/swe/analyze_e1_full.py",
+      "archive_role": "S2",
+      "bytes": 11164,
+      "sha256": "cc5974eeb7ab6101a0c38b588d82d5d6a7fa7cef9f2819ae58fce25df1c6b084"
+    },
+    {
+      "repo_path": "artifact/experiments/e1_component/env_lang_v2.py",
+      "source": "sqj/swe/env_lang_v2.py",
+      "archive_role": "S2",
+      "bytes": 4605,
+      "sha256": "efa166299b25f9fdb49345f59d737522b7198c67b01a0dfb1d4c0f8a1dc46682"
+    },
+    {
+      "repo_path": "artifact/experiments/e1_component/verify_env_lang_v2.py",
+      "source": "sqj/swe/verify_env_lang_v2.py",
+      "archive_role": "S2",
+      "bytes": 8329,
+      "sha256": "387e3754197b783d14c6cc63eaf7de1c539cab707098023d87b870d1ec5b3a2a"
+    },
+    {
+      "repo_path": "artifact/experiments/e1_component/runner_v2.py",
+      "source": "sqj/swe/runner_v2.py",
+      "archive_role": "S2",
+      "bytes": 14407,
+      "sha256": "65a00647facfa33a87b77915d9004f75c0f37972b902e50738b23451960d0e2f"
+    },
+    {
+      "repo_path": "artifact/experiments/e2_cross_domain/analyze_e2_full.py",
+      "source": "sqj/swe/analyze_e2_full.py",
+      "archive_role": "S2",
+      "bytes": 8437,
+      "sha256": "cb9163bd8c81ca4c741c1df4d8fe403741b18174071393b717200eaa010cbdff"
+    },
+    {
+      "repo_path": "artifact/experiments/e2_cross_domain/build_zh_suite_airline.py",
+      "source": "sqj/swe/build_zh_suite_airline.py",
+      "archive_role": "S2",
+      "bytes": 11244,
+      "sha256": "73b3b1696e4732d798a97a8642b7a8b90947ac9bfd426f3926a0450781f46f20"
+    },
+    {
+      "repo_path": "artifact/experiments/e3_adjudication/blind_adjudication.py",
+      "source": "sqj/swe/e3_blind_adjudication.py",
+      "archive_role": "S2",
+      "bytes": 17950,
+      "sha256": "e2fc883d23ea9391ae85df38bf24f1571fad0a681c1ea36792cb93d6b094614c"
+    },
+    {
+      "repo_path": "artifact/experiments/e3_adjudication/dump_inputs.py",
+      "source": "sqj/swe/dump_e3_inputs.py",
+      "archive_role": "S2",
+      "bytes": 2985,
+      "sha256": "77ed695e705285995a3dfe9018fe56668a9e436c9122debcb4a865ce2dae3248"
+    },
+    {
+      "repo_path": "artifact/experiments/e3_adjudication/build_input_manifest.py",
+      "source": "sqj_enhancement_v1/evidence/e3_inputs/build_manifest.py",
+      "archive_role": "enhancement",
+      "bytes": 8397,
+      "sha256": "36d49b22ab395f3d76dca04d8bdfe53955cf3d25adc6b37da8561225470e0be2"
+    },
+    {
+      "repo_path": "artifact/experiments/scoring/score_corrected.py",
+      "source": "sqj/swe/score_envzh_corrected.py",
+      "archive_role": "S2",
+      "bytes": 4327,
+      "sha256": "3033dbe005403066f9f55be1a059cb82f814671b800551ef28b35c71a124b9d7"
+    },
+    {
+      "repo_path": "artifact/experiments/scoring/check_golden.py",
+      "source": "sqj/swe/check_golden.py",
+      "archive_role": "S2",
+      "bytes": 6775,
+      "sha256": "606d3aad27d314d71931f5864005cbbbefe29e5b688d795e716e8ed16d0ee3e1"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/analyze_b.py",
+      "source": "sqj_enhancement_v1/analysis/analyze_b.py",
+      "archive_role": "enhancement",
+      "bytes": 19766,
+      "sha256": "8fe7980a9a1ec28cde08abdee0d2b780a72dcd88cf6cbed427aea89fa21aa92c"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/rerun_validity.py",
+      "source": "sqj_enhancement_v1/analysis/rerun_validity.py",
+      "archive_role": "enhancement",
+      "bytes": 6437,
+      "sha256": "f6b59fffe7d97e79b02586f54238507b6eba53223021a9aff0019e929e3dc0de"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/collapse_definition_robustness.py",
+      "source": "sqj_enhancement_v1/analysis/collapse_definition_robustness.py",
+      "archive_role": "enhancement",
+      "bytes": 10211,
+      "sha256": "b20eff09ea0950eaf02b09ec832c7462e2cc13c10d9786d4958f7c4834e553d9"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/table_significance.py",
+      "source": "simglot/scripts/table_significance.py",
+      "archive_role": "v1.0",
+      "bytes": 3804,
+      "sha256": "4aec15c63d8f8c8528797e20bbab0be5d9ce370aa01c906ec4dc6754de2c11fd"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/cluster_pvalues.py",
+      "source": "simglot/scripts/cluster_pvalues.py",
+      "archive_role": "v1.0",
+      "bytes": 4078,
+      "sha256": "bca29665998c42511d5bd4951c7b61b215c146766735a4718908007fdfa7370d"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/leaderboard_bootstrap.py",
+      "source": "simglot/scripts/leaderboard_bootstrap.py",
+      "archive_role": "v1.0",
+      "bytes": 9816,
+      "sha256": "ad2e14eace66eb51ae003b58b3b4476cee3ee907cd67ff256b4f79aa322c198c"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/frozen_table.py",
+      "source": "simglot/scripts/frozen_table.py",
+      "archive_role": "v1.0",
+      "bytes": 10450,
+      "sha256": "1155f5d7860a156ecbab2913543a823246b0d321957b01f0fa229cc6abdfc425"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/audit_counts.py",
+      "source": "simglot/scripts/audit_counts.py",
+      "archive_role": "v1.0",
+      "bytes": 9610,
+      "sha256": "81ebbf492f1d7dee745226a7efa4c65be3b71b2e3f420fec7c971fac80611e44"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/compare_lenmatch.py",
+      "source": "simglot/scripts/compare_lenmatch.py",
+      "archive_role": "v1.0",
+      "bytes": 12359,
+      "sha256": "0dd487f30fef16a66f5d70f1d7bde396e087190b83f6c546c2cedd1f9903cf76"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/degeneration_modes.py",
+      "source": "simglot/scripts/degeneration_modes.py",
+      "archive_role": "v1.0",
+      "bytes": 11019,
+      "sha256": "712ca02e480d86e7a6f80fd4c6e47299503dc109329f6d4fefdb0b1394500acd"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/scorer_variants.py",
+      "source": "simglot/scripts/scorer_variants.py",
+      "archive_role": "v1.0",
+      "bytes": 9818,
+      "sha256": "67c5c82cfebcc7142ddb7587f94629f281151d508332f18d9dbfdb862be3c68b"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/repro_scorer_pollution.py",
+      "source": "simglot/scripts/repro_scorer_pollution.py",
+      "archive_role": "v1.0",
+      "bytes": 13789,
+      "sha256": "fc4204b0b8544ee87e786ee09abf88cc08bfeb2a667303dc607705d277528688"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/db_replay.py",
+      "source": "simglot/scripts/db_replay.py",
+      "archive_role": "v1.0",
+      "bytes": 6892,
+      "sha256": "d0129b95bab63c18561a308de24743b8f63c3cb51712f43c9840be195551a7f8"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/replay_db_rescore.py",
+      "source": "simglot/scripts/replay_db_rescore.py",
+      "archive_role": "v1.0",
+      "bytes": 10066,
+      "sha256": "9849895931209c55bf819991d905dc815d6d21b7fc6a227a004017dd7e6daefe"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/critval.py",
+      "source": "simglot/scripts/critval.py",
+      "archive_role": "v1.0",
+      "bytes": 1166,
+      "sha256": "60a06ede86aa8a1841485af63510fe7c83db51b660e2eb4db6e0be8b8cf2b0b4"
+    },
+    {
+      "repo_path": "artifact/analysis/scripts/offline_repro.sh",
+      "source": "simglot/scripts/offline_repro.sh",
+      "archive_role": "v1.0",
+      "bytes": 5925,
+      "sha256": "0b7d0185c12762d731f1b76c539f2e4f2bb60d181765886eaa2aab35f4938123"
+    },
+    {
+      "repo_path": "artifact/configs/models.yaml",
+      "source": "simglot/config/providers.yaml",
+      "archive_role": "v1.0",
+      "bytes": 6052,
+      "sha256": "ce821a04a85907be69f718dae708c34da9dc96a7c284847f88b2c0e4b17902bf"
+    },
+    {
+      "repo_path": "artifact/configs/preregistration_v2.md",
+      "source": "sqj/preregistration_v2.md",
+      "archive_role": "S2",
+      "bytes": 13135,
+      "sha256": "db237993b312861df2b7967f94ab4d8a0b109b06383d313c53319e4ab86ef1b9"
+    },
+    {
+      "repo_path": "artifact/configs/preregistration_v0.md",
+      "source": "simglot/preregistration_v0.md",
+      "archive_role": "v1.0",
+      "bytes": 16981,
+      "sha256": "d6179e7d43a335e56a8003ee9bcaae970a8e9dcf11dbd740d0e8dbec49986dc2"
+    },
+    {
+      "repo_path": "artifact/configs/preregistration_addendum.md",
+      "source": "sqj_enhancement_v1/preregistration_addendum.md",
+      "archive_role": "enhancement",
+      "bytes": 5161,
+      "sha256": "bbec8eeea51083e4993dd4726218003d8f21b84741b89f1a0c3cd56b7d6d87d1"
+    },
+    {
+      "repo_path": "artifact/configs/deviations.md",
+      "source": "sqj_enhancement_v1/deviations.md",
+      "archive_role": "enhancement",
+      "bytes": 38161,
+      "sha256": "b9c810672ebbc1d9d4c2d47b79669295d117f4e863f4bd08420cb71880058c80"
+    },
+    {
+      "repo_path": "artifact/configs/v1_dependency.md",
+      "source": "sqj/V1_DEPENDENCY.md",
+      "archive_role": "S2",
+      "bytes": 3119,
+      "sha256": "5aeac6482ee928f314f0eded3ea5f5ef7694b044d427a7da75a1839cda473371"
+    },
+    {
+      "repo_path": "results/summary/b_matrix.csv",
+      "source": "sqj_enhancement_v1/results/b_matrix.csv",
+      "archive_role": "enhancement",
+      "bytes": 62388,
+      "sha256": "6af0355b3cda9c4210a7e5fbab377a6e68810e08d883de00831ee85314efdfe5"
+    },
+    {
+      "repo_path": "results/summary/b_validity.csv",
+      "source": "sqj_enhancement_v1/results/b_validity.csv",
+      "archive_role": "enhancement",
+      "bytes": 9886,
+      "sha256": "1006dfe50038a0b4ef938eb1311521ea797b04791ecdc83714cb51051a58c108"
+    },
+    {
+      "repo_path": "results/summary/b_baselines.csv",
+      "source": "sqj_enhancement_v1/results/b_baselines.csv",
+      "archive_role": "enhancement",
+      "bytes": 893,
+      "sha256": "c83f715d785e090d5186df968d89376cad7dd08887cc00e9611614e6528af30b"
+    },
+    {
+      "repo_path": "results/summary/b_ablation.csv",
+      "source": "sqj_enhancement_v1/results/b_ablation.csv",
+      "archive_role": "enhancement",
+      "bytes": 8446,
+      "sha256": "898c554e677948888bfd7ab124484edd5b51b9dde954d325d096c18d84693073"
+    },
+    {
+      "repo_path": "results/summary/b_analysis.txt",
+      "source": "sqj_enhancement_v1/results/b_analysis.txt",
+      "archive_role": "enhancement",
+      "bytes": 12075,
+      "sha256": "723966c1dbe0716f1511244a878f1ff391a1cccd0fa8e9cd10faa886210479cf"
+    },
+    {
+      "repo_path": "results/summary/b_overhead.txt",
+      "source": "sqj_enhancement_v1/results/b_overhead.txt",
+      "archive_role": "enhancement",
+      "bytes": 1170,
+      "sha256": "40bce1c8d9ae7a05c36b4a1eda880edf89ced9bb1f9dafe4ab0fb786636801ad"
+    },
+    {
+      "repo_path": "results/summary/c_power_sim.csv",
+      "source": "sqj_enhancement_v1/results/c_power_sim.csv",
+      "archive_role": "enhancement",
+      "bytes": 330,
+      "sha256": "4aa8e817979f6701f9f452902d9418887c7d3d523261bbe420c76c01e8e31f2c"
+    },
+    {
+      "repo_path": "results/summary/c_power_sim.txt",
+      "source": "sqj_enhancement_v1/results/c_power_sim.txt",
+      "archive_role": "enhancement",
+      "bytes": 6000,
+      "sha256": "e721c029de54c991908ccfb547a4b9141223eab63131cb6badd984a4011aaa57"
+    },
+    {
+      "repo_path": "results/summary/e1_full_analysis.txt",
+      "source": "sqj/results/e1_full_analysis.txt",
+      "archive_role": "S2",
+      "bytes": 3091,
+      "sha256": "fd3f0b7765fdbee77c77a4824748dd9db9fb4909d6fb7b87bfefab6cee8d524a"
+    },
+    {
+      "repo_path": "results/summary/e2_full_analysis.txt",
+      "source": "sqj/results/e2_full_analysis.txt",
+      "archive_role": "S2",
+      "bytes": 1839,
+      "sha256": "2dc1d23ce427c980e979b096b31b73976b29b27060f9ceec3e8fdb513da343c0"
+    },
+    {
+      "repo_path": "results/summary/e3_blind_adjudication.txt",
+      "source": "sqj/results/e3_blind_adjudication.txt",
+      "archive_role": "S2",
+      "bytes": 1348,
+      "sha256": "3a6e3355f84c4becbda7572f19dc939f773b651a16b19da96713aca21c264f41"
+    },
+    {
+      "repo_path": "results/summary/appworld_audit.txt",
+      "source": "sqj_enhancement_v1/results/appworld_audit.txt",
+      "archive_role": "enhancement",
+      "bytes": 5226,
+      "sha256": "29b3b53a36a285b736885d3312e98dcc8dfefaf121b976659cad96c6ba93512f"
+    },
+    {
+      "repo_path": "results/summary/appworld_applicability.csv",
+      "source": "sqj_enhancement_v1/results/appworld_applicability.csv",
+      "archive_role": "enhancement",
+      "bytes": 1268,
+      "sha256": "fe69319d40369c1b29d4706fe31fcf361c283709a140c6794a25d99fec58dff8"
+    },
+    {
+      "repo_path": "results/summary/oracle_audit_matrix.csv",
+      "source": "sqj/oracle_audit_kit/results/oracle_audit_matrix.csv",
+      "archive_role": "S2",
+      "bytes": 19712,
+      "sha256": "65908dac2f152bebe22ad298b5cc8c3dae47829c296bf4e8312f2a5516c17e95"
+    },
+    {
+      "repo_path": "manifests/FINAL_RELEASE_MANIFEST.json",
+      "source": "simglot_vfinal/FINAL_RELEASE_MANIFEST.json",
+      "archive_role": "workspaces",
+      "bytes": 5709,
+      "sha256": "7635dc7a0d79e0db5c293936738ac529773db9899065fefc05641c45be4c9614"
+    },
+    {
+      "repo_path": "manifests/FREEZE_MANIFEST.json",
+      "source": "simglot_vfinal/FREEZE_MANIFEST.json",
+      "archive_role": "workspaces",
+      "bytes": 3830,
+      "sha256": "6bd9383c54b8c2cb4c98d549ec14047caf2a0325f56be62ed951dc74d1d7a7a2"
+    },
+    {
+      "repo_path": "manifests/checksums.sha256",
+      "source": "simglot_vfinal/FREEZE_CHECKSUMS.txt",
+      "archive_role": "workspaces",
+      "bytes": 634,
+      "sha256": "feacb82b380c5c46452ef40f5cf9cd5ece1228a97e9e20835c2c8222bac8f596"
+    },
+    {
+      "repo_path": "manifests/versions.md",
+      "source": "simglot_vfinal/FREEZE.md",
+      "archive_role": "workspaces",
+      "bytes": 6528,
+      "sha256": "ee5218de7cd80ece06ed9648364ad246e5e04a1a86d0120f747b4923cc3b680c"
+    },
+    {
+      "repo_path": "manifests/scope.md",
+      "source": "simglot_vfinal/SCOPE.md",
+      "archive_role": "workspaces",
+      "bytes": 3747,
+      "sha256": "1f4c5a9ffd5c912e2b09f78738d5428914a28fec937c0ceb30a8a3502bf350bf"
+    },
+    {
+      "repo_path": "manifests/status.md",
+      "source": "simglot_vfinal/FINAL_STATUS.md",
+      "archive_role": "workspaces",
+      "bytes": 5957,
+      "sha256": "9553b446d6982ec0fef85c0753d2712d0d2d7432e7499de7fdc4e8bd470b2671"
+    },
+    {
+      "repo_path": "artifact/scripts/verify_freeze.py",
+      "source": "simglot_vfinal/checks/verify_freeze.py",
+      "archive_role": "workspaces",
+      "bytes": 11752,
+      "sha256": "ab30882c2d68e0cd49805784c44950b6558a86d5242fa791b7bebe01fd97769a"
+    },
+    {
+      "repo_path": "artifact/scripts/build_release_manifest.py",
+      "source": "simglot_vfinal/checks/build_release_manifest.py",
+      "archive_role": "workspaces",
+      "bytes": 9227,
+      "sha256": "ec72fd6cc085f578256d45ef8ab3cd6cdc0ee14ee62ead1f59b0cc73af2eb0ab"
+    },
+    {
+      "repo_path": "docs/third_party.md",
+      "source": "submission/replication/THIRD_PARTY_LICENSES.md",
+      "archive_role": "workspaces",
+      "bytes": 3070,
+      "sha256": "49395e4b146301c85d85e8e215639a16444f057934fdcceb720ffffc0e313209"
+    },
+    {
+      "repo_path": "docs/data_availability.md",
+      "source": "submission/replication/DATA_TERMS.md",
+      "archive_role": "workspaces",
+      "bytes": 3688,
+      "sha256": "438b918424164e9f7aae5ef2d1a877f20834007462d1c7f073f604d6fcaa6f37"
+    },
+    {
+      "repo_path": "artifact/analysis/figures/make_fig1_language_effects.py",
+      "source": "simglot/scripts/make_fig1_language_effects.py",
+      "archive_role": "v1.0",
+      "bytes": 15500,
+      "sha256": "37cbed9e53c2fcd612694c49fdce4959c5568b04cc798a20855c0c2a047cb71a"
+    },
+    {
+      "repo_path": "artifact/analysis/figures/make_fig2_2x2.py",
+      "source": "simglot/scripts/make_fig2_2x2.py",
+      "archive_role": "v1.0",
+      "bytes": 5446,
+      "sha256": "c17e20d44af7865349a7198ad0d842bcb51b7ac7200857e7cca47beb893bd089"
+    },
+    {
+      "repo_path": "results/figures/fig1_language_effects.png",
+      "source": "paper/figures/fig1_language_effects.png",
+      "archive_role": "v1.0",
+      "bytes": 364723,
+      "sha256": "60b0bc63a9e0d05cc4b1f5c8b208c7da5e1e7b2ce90b79a8ae35c34cd994b712"
+    },
+    {
+      "repo_path": "results/figures/fig1_language_effects.svg",
+      "source": "paper/figures/fig1_language_effects.svg",
+      "archive_role": "v1.0",
+      "bytes": 191249,
+      "sha256": "4554234a082d786d092b377b1e58773ae3a611f077078bc05de6a6724a35eb1b"
+    },
+    {
+      "repo_path": "results/figures/fig2_env_lang_2x2.png",
+      "source": "paper/figures/fig2_env_lang_2x2.png",
+      "archive_role": "v1.0",
+      "bytes": 107915,
+      "sha256": "cab653f1ee10762f1e1415fd69a825b975cfb2237a32a923ca6a328da2440a51"
+    },
+    {
+      "repo_path": "results/figures/fig2_env_lang_2x2.svg",
+      "source": "paper/figures/fig2_env_lang_2x2.svg",
+      "archive_role": "v1.0",
+      "bytes": 66186,
+      "sha256": "320b6e8a291c2ab7f41b41216e6d069fb1ffe4c15c72afa819bfb4fb0777578c"
+    },
+    {
+      "repo_path": "artifact/configs/tasks/tasks_zh.json",
+      "source": "simglot/data/tasks_zh.json",
+      "archive_role": "v1.0",
+      "bytes": 39179,
+      "sha256": "74f51dfa7c8d85e1df1d8c9b46275ae96c187b4578fa8fb0a651b9fa43640f52"
+    },
+    {
+      "repo_path": "artifact/configs/tasks/tasks_zh.md",
+      "source": "simglot/data/tasks_zh.md",
+      "archive_role": "v1.0",
+      "bytes": 39091,
+      "sha256": "def167a73bf31b1bd044daef0997505c3e4a5ba19a9c69de7e6f0de542d8fa79"
+    },
+    {
+      "repo_path": "artifact/configs/tasks/tasks_zh_airline.json",
+      "source": "sqj/data/tasks_zh_airline.json",
+      "archive_role": "S2",
+      "bytes": 55967,
+      "sha256": "d518fa448193aa87ae6fd41ee70219b07410ca3717b2768bd324d7215b3b00ef"
+    },
+    {
+      "repo_path": "artifact/configs/output_aliases.json",
+      "source": "simglot/data/output_aliases.json",
+      "archive_role": "v1.0",
+      "bytes": 3027,
+      "sha256": "7c0d05f94160e19382ea91ab2d92cc6074eecf26e974883203ca27a2a42d4381"
+    },
+    {
+      "repo_path": "artifact/configs/backtranslation.json",
+      "source": "simglot/data/backtranslation.json",
+      "archive_role": "v1.0",
+      "bytes": 57904,
+      "sha256": "59e725cfaaf02ee3cdf804e0b8cf26983369cb919146b4af8d8eb82c63f0f104"
+    },
+    {
+      "repo_path": "artifact/configs/tasks/task_sample.json",
+      "source": "simglot/data/task_sample.json",
+      "archive_role": "v1.0",
+      "bytes": 25606,
+      "sha256": "400aac8035f92462388673a03fb4c5034b7b75847768775c292b673981036879"
+    },
+    {
+      "repo_path": "artifact/configs/drift_probe.json",
+      "source": "simglot/data/drift_probe.json",
+      "archive_role": "v1.0",
+      "bytes": 65569,
+      "sha256": "6ee01481485deaf417adc312b453a6a56eff68c17e7ddc91098b567707f1d691"
+    },
+    {
+      "repo_path": "artifact/configs/frozen_config_manifest.json",
+      "source": "simglot/data/freeze_manifest.json",
+      "archive_role": "v1.0",
+      "bytes": 4469,
+      "sha256": "bbbefb48e1de836efc641de870a505dd72ce248af575e90e4b1c02418322614e"
+    },
+    {
+      "repo_path": "artifact/harness/_offline.py",
+      "source": "simglot/scripts/_offline.py",
+      "archive_role": "v1.0",
+      "bytes": 4219,
+      "sha256": "59da14274a4330b8f117bd17412af7a7be4251ec887b060783fc6959fbd465e7"
+    },
+    {
+      "repo_path": "artifact/harness/_tee.py",
+      "source": "simglot/scripts/_tee.py",
+      "archive_role": "v1.0",
+      "bytes": 1668,
+      "sha256": "4c5b3a69d8ba077cd19df9f0d936e0555e960e11789bad9b9a99ff0fb8b19f8b"
+    },
+    {
+      "repo_path": "vendor/tau-bench/LICENSE",
+      "source": "simglot/vendor/tau-bench/LICENSE",
+      "archive_role": "v1.0",
+      "bytes": 1063,
+      "sha256": "243d23d45b80122b5ac575586ccef352fdc9c45e6d7d2605449aca8a17478b42"
+    },
+    {
+      "repo_path": "vendor/tau-bench/README.md",
+      "source": "simglot/vendor/tau-bench/README.md",
+      "archive_role": "v1.0",
+      "bytes": 8447,
+      "sha256": "1a4b1b00634fe46fd677dd11dfa25a9bf357b5d7c3d726ff83025e8f104329f9"
+    },
+    {
+      "repo_path": "vendor/tau-bench/run.py",
+      "source": "simglot/vendor/tau-bench/run.py",
+      "archive_role": "v1.0",
+      "bytes": 3251,
+      "sha256": "777fa6c1191215364131e701cc6d1ec684bc1fd5bc69b9240e19224ac0c03863"
+    },
+    {
+      "repo_path": "artifact/harness/__init__.py",
+      "source": "simglot/harness/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 685,
+      "sha256": "c466d71b899d07ddf99fa257fd2accf2864c8c53df8990977ccdc2dad00b4119"
+    },
+    {
+      "repo_path": "artifact/harness/agent.py",
+      "source": "simglot/harness/agent.py",
+      "archive_role": "v1.0",
+      "bytes": 4357,
+      "sha256": "8283fb34339b2fdf86cc76586342845dc7dab9a12fff1b98840a7c915a1a33b7"
+    },
+    {
+      "repo_path": "artifact/harness/client.py",
+      "source": "simglot/harness/client.py",
+      "archive_role": "v1.0",
+      "bytes": 9899,
+      "sha256": "2f1cd70e8251ef43fd92bcff0ed63abe77584b8c3d574788b8273c29f63a1e2c"
+    },
+    {
+      "repo_path": "artifact/harness/env_lang.py",
+      "source": "simglot/harness/env_lang.py",
+      "archive_role": "v1.0",
+      "bytes": 25271,
+      "sha256": "d55a3705656aacae1bf2c059c7823071b3ce63165e8bb143ef2ecf8c3dd7b31f"
+    },
+    {
+      "repo_path": "artifact/harness/episode.py",
+      "source": "simglot/harness/episode.py",
+      "archive_role": "v1.0",
+      "bytes": 7731,
+      "sha256": "34a97fc58d67e41e6a9d25041b0777db9bbc8ea25845af600862a3035c2bfd53"
+    },
+    {
+      "repo_path": "artifact/harness/prompts.py",
+      "source": "simglot/harness/prompts.py",
+      "archive_role": "v1.0",
+      "bytes": 4377,
+      "sha256": "d6c397f21eba038b4e3d14da78a241c16eeaaaded7cbb8b9dc423df4194c4dec"
+    },
+    {
+      "repo_path": "artifact/harness/run_batch.py",
+      "source": "simglot/harness/run_batch.py",
+      "archive_role": "v1.0",
+      "bytes": 7710,
+      "sha256": "988f5eac1c2bddc3d35c2a4c4c28e109b5dd6cdcc20e14484a32d5adc5291da2"
+    },
+    {
+      "repo_path": "artifact/harness/run_episode.py",
+      "source": "simglot/harness/run_episode.py",
+      "archive_role": "v1.0",
+      "bytes": 2842,
+      "sha256": "e9571c575f2e7bffbfa82c3adbdb1aee5a722898342f4a35a1f3be0c0f117127"
+    },
+    {
+      "repo_path": "artifact/harness/scoring.py",
+      "source": "simglot/harness/scoring.py",
+      "archive_role": "v1.0",
+      "bytes": 7224,
+      "sha256": "40c8a0ef1c6ea9d8191e53014f1838cd7ab509c078b4d106637c5e050bfb9c7b"
+    },
+    {
+      "repo_path": "artifact/harness/user_sim.py",
+      "source": "simglot/harness/user_sim.py",
+      "archive_role": "v1.0",
+      "bytes": 4542,
+      "sha256": "0edd0ab870da2e7adbe196d5d3cb31e0ad16e057986f3f75979e909849b3457f"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 112,
+      "sha256": "be00bb8ea6d5a3bf99b20ae7cc35dd9839acf837e8577f1a8c8cbfd67e45edf9"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/agents/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/agents/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 19,
+      "sha256": "48747a78fd49944aaef6f540269b5b77e558b8b996cb0f7210b80317769bc032"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/agents/base.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/agents/base.py",
+      "archive_role": "v1.0",
+      "bytes": 336,
+      "sha256": "d9c5b6e76048777db644039b40aba76ea1d57694d9604d1df2571947450308d1"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/agents/chat_react_agent.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/agents/chat_react_agent.py",
+      "archive_role": "v1.0",
+      "bytes": 6731,
+      "sha256": "c545fe77d51a24d0595e719d6bd234f1342a33477f507bc72a29545c04193cb9"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/agents/few_shot_agent.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/agents/few_shot_agent.py",
+      "archive_role": "v1.0",
+      "bytes": 3950,
+      "sha256": "7e57348ad6a18a4de4d6ba75a6dfa1f6de4442f7f90b17127e26574ef348b612"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/agents/tool_calling_agent.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/agents/tool_calling_agent.py",
+      "archive_role": "v1.0",
+      "bytes": 3252,
+      "sha256": "2d4a02ccd14cb6bdbbeafde49d5d682690625875feb6c9506f903bf98b0792f8"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 1073,
+      "sha256": "a11d9a4de44b931c111ca32042278bdbbda0902364b2a85386f20e30499d6ffe"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 104,
+      "sha256": "05a6a8b66b8bb5e8494ea7deedb08fe5427323e788102bb77c676db89a88a5af"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/data/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/data/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 564,
+      "sha256": "eca21174cec321e2c3e0438e9bf67035dbb3a8551dc2a1d3a793b4395d8192c1"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/data/flights.json",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/data/flights.json",
+      "archive_role": "v1.0",
+      "bytes": 2114218,
+      "sha256": "444d7565c68434a3e3fb72efd717f9f9cd5c56dce227f6f56e078f1cb0ed233a"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/data/reservations.json",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/data/reservations.json",
+      "archive_role": "v1.0",
+      "bytes": 2325594,
+      "sha256": "1cf0bbc58ad984be9de7c24dba6dd27393f94cdbd482d8524f6a54db1f561a8c"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/data/users.json",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/data/users.json",
+      "archive_role": "v1.0",
+      "bytes": 595947,
+      "sha256": "bd264e2a31e0fa35cdfef8987e70a0dd3776828b582fe90e7a44823a12eb4cea"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/env.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/env.py",
+      "archive_role": "v1.0",
+      "bytes": 1234,
+      "sha256": "e198f7f9d9f516df164ac990df38bb9b4fe26035bd25fcfb5dac696394bdd413"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/rules.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/rules.py",
+      "archive_role": "v1.0",
+      "bytes": 31,
+      "sha256": "da3d5a5db6ddbf3d0071e5ece8d9297ccf89914ded93c8187043c5eecf58adfc"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tasks.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tasks.py",
+      "archive_role": "v1.0",
+      "bytes": 72697,
+      "sha256": "5db940002a4b103eb7409f6425e91dd9090d35d7f9abbcdd3f10bc0358535c31"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tasks_test.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tasks_test.py",
+      "archive_role": "v1.0",
+      "bytes": 67250,
+      "sha256": "14cdb6b4fe810faac9a0cc8395d3c7b32c883a979d1cde8c8003ae25a93d2ff3"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 1088,
+      "sha256": "98cbafc429cf917a088112b652ec6ef8641b509f0981c04047875f90ec4967f3"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/book_reservation.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/book_reservation.py",
+      "archive_role": "v1.0",
+      "bytes": 10282,
+      "sha256": "927ca66e6bf289d27582c939d7300ee028ed0a237e2592afed160265f9953304"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/calculate.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/calculate.py",
+      "archive_role": "v1.0",
+      "bytes": 1266,
+      "sha256": "3be497428304817e4dae17222dc9d1d41a27d28bf0abc2a613687a6e890d70fe"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/cancel_reservation.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/cancel_reservation.py",
+      "archive_role": "v1.0",
+      "bytes": 1528,
+      "sha256": "5dd83916f9dce20a4bac6ecf45c2f4555ae28f0981339c7d237d3f98af2e6b98"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/get_reservation_details.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/get_reservation_details.py",
+      "archive_role": "v1.0",
+      "bytes": 1082,
+      "sha256": "3c45957d9489e4226000de99f015c67ca5cc920f867c5a5739edba20cd920b6b"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/get_user_details.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/get_user_details.py",
+      "archive_role": "v1.0",
+      "bytes": 1028,
+      "sha256": "50cd80bee1fa2da99852ebd37289964f0b5f34994d9f34104f7d6953216fa7c4"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/list_all_airports.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/list_all_airports.py",
+      "archive_role": "v1.0",
+      "bytes": 1633,
+      "sha256": "8c6921b793ce6e93bfa18024e40fa1136f8c4e8204f8fa6f0248beaf674651ba"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/search_direct_flight.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/search_direct_flight.py",
+      "archive_role": "v1.0",
+      "bytes": 2014,
+      "sha256": "ca64bab422da436c0ab9e3a77135f786ca934e8cb917d502f0dbab2847716c78"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/search_onestop_flight.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/search_onestop_flight.py",
+      "archive_role": "v1.0",
+      "bytes": 3240,
+      "sha256": "205b32a28de70bff29f8846c875964af78c6d6d94685bf79579861b3308efa3d"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/send_certificate.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/send_certificate.py",
+      "archive_role": "v1.0",
+      "bytes": 1765,
+      "sha256": "d067a526d0a3579cd4a814fa14d231a62da4854520124ff2af8969f16715a773"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/think.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/think.py",
+      "archive_role": "v1.0",
+      "bytes": 980,
+      "sha256": "ff2b17409d3d6fade8657e2ada46b0b50e33c6570502cba4ec0202652c51ffa5"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/transfer_to_human_agents.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/transfer_to_human_agents.py",
+      "archive_role": "v1.0",
+      "bytes": 1144,
+      "sha256": "d3f105f8a8efc11e8dbb039b12e9e1d86d7c1f1ae16a26bd2bbf41cde2b21db6"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/update_reservation_baggages.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/update_reservation_baggages.py",
+      "archive_role": "v1.0",
+      "bytes": 3268,
+      "sha256": "5b72dc0fcd0a2ae21bb116ddc0a76dcc5d2fc2c71dec1fae75942f24f5d6eafd"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/update_reservation_flights.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/update_reservation_flights.py",
+      "archive_role": "v1.0",
+      "bytes": 6070,
+      "sha256": "58ef41d20d5ba53782dce1bbcbd514aaa6fcb0670980f54070d8263ab9f8b985"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/tools/update_reservation_passengers.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/tools/update_reservation_passengers.py",
+      "archive_role": "v1.0",
+      "bytes": 2712,
+      "sha256": "6ed46b57dc3c6c487219720a10f116774686046f11868c747493ae9a703d2957"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/wiki.md",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/wiki.md",
+      "archive_role": "v1.0",
+      "bytes": 6155,
+      "sha256": "56c335801c16e26b54f600f9db99eb04d31db477e86eb160341d5c66b796c5c8"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/airline/wiki.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/airline/wiki.py",
+      "archive_role": "v1.0",
+      "bytes": 151,
+      "sha256": "efaca90439528324fabb991574fc1725c06fdcd88e1eb1983aebede4ba03b9ed"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/base.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/base.py",
+      "archive_role": "v1.0",
+      "bytes": 6521,
+      "sha256": "22666ac23fcb1758290c1beac6bdd58abf77d330b4c46054e44e284b304b32e6"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 101,
+      "sha256": "39a98c9311d0713c4464a0c17630c373fb74b4a24379f24dfd9f7cec5f130c0f"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/data/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/data/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 544,
+      "sha256": "aaa0bc456497d79438c5c7602194444d2774f6d225ece1e9d3ad91e03bc1d288"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/data/orders.json",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/data/orders.json",
+      "archive_role": "v1.0",
+      "bytes": 1810945,
+      "sha256": "2598a12586d28f2d6bd16bc86f4c800029b6af18e0abb5c475ef5c869c11ced1"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/data/products.json",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/data/products.json",
+      "archive_role": "v1.0",
+      "bytes": 172258,
+      "sha256": "a9eabcc1a9742c5f5288c2779acce52b9308423383ed24706bbaf0889f762a0f"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/data/readme.md",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/data/readme.md",
+      "archive_role": "v1.0",
+      "bytes": 1420,
+      "sha256": "448640f4b5e104f15e4476e2aa10f3b6616181135dc38262a86e71ed1b30737d"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/data/users.json",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/data/users.json",
+      "archive_role": "v1.0",
+      "bytes": 322932,
+      "sha256": "6f4fd104cc5e80b92166c4035315c31532c6cea52a90dcdf18425ee7f87c2b82"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/env.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/env.py",
+      "archive_role": "v1.0",
+      "bytes": 1445,
+      "sha256": "4d97b3f69c703d85665b5110ce75e4c1841f7c3064dbf0b7991606da9b32c516"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/rules.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/rules.py",
+      "archive_role": "v1.0",
+      "bytes": 970,
+      "sha256": "f4450639d5a21713953685e0a430b8cfd4f359db3fdd4de45ff228449b05c812"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tasks.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tasks.py",
+      "archive_role": "v1.0",
+      "bytes": 178995,
+      "sha256": "11f2da9e3f05998736f95cf4e9943724603d95a6929d7f95024d7b000afa8bc5"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tasks_dev.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tasks_dev.py",
+      "archive_role": "v1.0",
+      "bytes": 19326,
+      "sha256": "87dfe578d0271e7b0b5dfb40621a5c0dcc0e8452a75b8f3f8d1dcf0abac4ff14"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tasks_test.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tasks_test.py",
+      "archive_role": "v1.0",
+      "bytes": 169476,
+      "sha256": "6f09468923c6cfb6162e94fe659264d6aee70816c18d51278fb4a581db7765a4"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tasks_train.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tasks_train.py",
+      "archive_role": "v1.0",
+      "bytes": 471974,
+      "sha256": "30880ce4e8d524dd0fdd18c1d3a5713551fc8638e82673de3e0fd1ab70046c6f"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 1302,
+      "sha256": "db8f1252a01eaa333ee409d78858d5dcf5cdc2f27c24bc6d941615ccd2ac54df"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/calculate.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/calculate.py",
+      "archive_role": "v1.0",
+      "bytes": 1324,
+      "sha256": "2c3380802673493843ef6d7f3e569e2aed52265ca0b9f7ac248346828d0c75f7"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/cancel_pending_order.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/cancel_pending_order.py",
+      "archive_role": "v1.0",
+      "bytes": 3320,
+      "sha256": "c33151a896b62ac87ed1bcbcbd62dabcd47c8c1eaf47bbb5e2f15f8b6283b19d"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/exchange_delivered_order_items.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/exchange_delivered_order_items.py",
+      "archive_role": "v1.0",
+      "bytes": 5370,
+      "sha256": "d547d44b28e97513d4a15714d4bd2bbca13f76827bfe06b71e1b51a742f44489"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/find_user_id_by_email.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/find_user_id_by_email.py",
+      "archive_role": "v1.0",
+      "bytes": 1132,
+      "sha256": "a289f00eb689146f102d97951d6e7b29c9c639314c203efbfcd888f893d91560"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/find_user_id_by_name_zip.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/find_user_id_by_name_zip.py",
+      "archive_role": "v1.0",
+      "bytes": 2013,
+      "sha256": "22c176ffc285b25db573e0e38d82d678e2641298c6d1318f69d2582d52eb7433"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/get_order_details.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/get_order_details.py",
+      "archive_role": "v1.0",
+      "bytes": 1087,
+      "sha256": "ca6c23cc89c1e981251b9adb1e6d705e364ff942aee986b12335b36e94281056"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/get_product_details.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/get_product_details.py",
+      "archive_role": "v1.0",
+      "bytes": 1104,
+      "sha256": "9578fb31b5e092361a5d0e5d4a8e2afe4b8fb4a96d279d031b01266d9b5c768d"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/get_user_details.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/get_user_details.py",
+      "archive_role": "v1.0",
+      "bytes": 1021,
+      "sha256": "f22b59126c2a2aaa102f39dea778653a9298d1902477dd5246509d019318e8d3"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/list_all_product_types.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/list_all_product_types.py",
+      "archive_role": "v1.0",
+      "bytes": 1035,
+      "sha256": "63b9f562f893bab36fc6fb91da92978ba9c106f2d6fad88aee3ca20801e4a2e3"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/modify_pending_order_address.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/modify_pending_order_address.py",
+      "archive_role": "v1.0",
+      "bytes": 3212,
+      "sha256": "8f23d24511078ca10818fac8501db358ad699584952233d696a695e78993d001"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/modify_pending_order_items.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/modify_pending_order_items.py",
+      "archive_role": "v1.0",
+      "bytes": 5707,
+      "sha256": "f1a39d42e42c162dc961afa7f1b4d29c73c5a3710a3b9dff318a076213b6c858"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/modify_pending_order_payment.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/modify_pending_order_payment.py",
+      "archive_role": "v1.0",
+      "bytes": 4364,
+      "sha256": "6c2d4c329fae0d66d50bd48cb6ae9520167137f8b20d3385fa407aa5b03d2fe5"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/modify_user_address.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/modify_user_address.py",
+      "archive_role": "v1.0",
+      "bytes": 2920,
+      "sha256": "b1f8ac2141056ccee668824d6ab124ce659ea3574e7b186b39af3f558c07ac61"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/return_delivered_order_items.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/return_delivered_order_items.py",
+      "archive_role": "v1.0",
+      "bytes": 3632,
+      "sha256": "7d92e8962c17e5fa9c8e3240d21e31fc1adf5e68100c92bb0f67e0a67ea5b7bf"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/think.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/think.py",
+      "archive_role": "v1.0",
+      "bytes": 1160,
+      "sha256": "9d9423922fcdc98578c1d6544f35d28ff155e9a5a172355b662db326ef7eb1fc"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/tools/transfer_to_human_agents.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/tools/transfer_to_human_agents.py",
+      "archive_role": "v1.0",
+      "bytes": 1200,
+      "sha256": "2b6d4685da53f72709b28b60e14e1897947ac366bc7ecee6d2b7c7169a3d95a6"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/wiki.md",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/wiki.md",
+      "archive_role": "v1.0",
+      "bytes": 5718,
+      "sha256": "d539fd2a46a8b8dd2e934ff9ed92f43e9f6b56bc7a718db8d2803ba8ad8f6bf7"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/retail/wiki.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/retail/wiki.py",
+      "archive_role": "v1.0",
+      "bytes": 151,
+      "sha256": "efaca90439528324fabb991574fc1725c06fdcd88e1eb1983aebede4ba03b9ed"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/tool.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/tool.py",
+      "archive_role": "v1.0",
+      "bytes": 233,
+      "sha256": "0a158be298092fc64862ae8843f35f57cfba139aa02c2ee8fbe87b1e4a1de0fc"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/envs/user.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/envs/user.py",
+      "archive_role": "v1.0",
+      "bytes": 13515,
+      "sha256": "ab24eeed85e6261eb2f45420432d84a390cc39b82fc5910b8a4ccd3cee36f07e"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 3203,
+      "sha256": "7a4e4e286712c8e13a838c9a73f6edea366df7854ffc10bfe47d0b85d3d4b72e"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/_model_methods.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/_model_methods.py",
+      "archive_role": "v1.0",
+      "bytes": 120,
+      "sha256": "c1a613fc5c6251cd0af7a54f984d8a5ab727fc56886aabaa58eff98cd5e44ab5"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/api.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/api.py",
+      "archive_role": "v1.0",
+      "bytes": 15432,
+      "sha256": "db9ac68d2938d7dba8dfc05e71a53b29637792e809081d82f7816be6f9555cb2"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/cache.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/cache.py",
+      "archive_role": "v1.0",
+      "bytes": 2655,
+      "sha256": "fea02a824a4ad21cabd15b5abe023814c614374de4ea4394240080ed0c4129eb"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/datapoint.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/datapoint.py",
+      "archive_role": "v1.0",
+      "bytes": 9514,
+      "sha256": "d19134576c883e9414cedbfc9153d972758663ac94117a5e8e8f016b503da185"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/exception.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/exception.py",
+      "archive_role": "v1.0",
+      "bytes": 2042,
+      "sha256": "f23ac2600caff549490e4c6abee7a7b3acd0bbba0264f4178c6a3227a3c7db0c"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/logging.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/logging.py",
+      "archive_role": "v1.0",
+      "bytes": 2692,
+      "sha256": "402eca16e0e1ca25f2353f003c8c79eb0148d3330a99dc1fcecdec656f4bf170"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/router.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/router.py",
+      "archive_role": "v1.0",
+      "bytes": 3536,
+      "sha256": "c03364cbe8a0cbf2ea94987fcd4c8eef839ed5d4d4bf083e78964f217e9bf3b6"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/sample.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/sample.py",
+      "archive_role": "v1.0",
+      "bytes": 8204,
+      "sha256": "4a49775a09eec4c198a794dedff0bd39414ffa307d9eb5df746b6afaa3cb1147"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/tokens.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/tokens.py",
+      "archive_role": "v1.0",
+      "bytes": 3047,
+      "sha256": "231fada0466ae7ce3d8e93a084ff3067ecb0490b1ca3d4df6669f383e716303a"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/api/types.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/api/types.py",
+      "archive_role": "v1.0",
+      "bytes": 52,
+      "sha256": "73095fac04c2b6e46391eba5fe4944fb7a38b7dc81b66b37bbd2fc1b4f5c6dad"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/args.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/args.py",
+      "archive_role": "v1.0",
+      "bytes": 369,
+      "sha256": "7b666b719a2e0f012dd8aac48af83d038a70486f3c8846af86a95b82446c93d2"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/func_tools/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/func_tools/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 129,
+      "sha256": "b811b44335720385ba403bdadc417081c66b2c40175f2d8142c7d5fb7f9f6cc0"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/func_tools/filter.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/func_tools/filter.py",
+      "archive_role": "v1.0",
+      "bytes": 457,
+      "sha256": "32927e7a401a8327cff55802d4c58126e56f3f11aa60f03c43b4b0a8674af532"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/func_tools/map.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/func_tools/map.py",
+      "archive_role": "v1.0",
+      "bytes": 593,
+      "sha256": "19ab4b7a68d3210f26fa1d1188d743ac72d498a6a0b0911aa91739a9511f20e4"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/__init__.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/__init__.py",
+      "archive_role": "v1.0",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/anyscale.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/anyscale.py",
+      "archive_role": "v1.0",
+      "bytes": 3229,
+      "sha256": "01ce7efb92902bcbaa9a1f507408722f13b9b22f701376834bca60d9189a16f8"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/chat.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/chat.py",
+      "archive_role": "v1.0",
+      "bytes": 21999,
+      "sha256": "65e4abbb97d7b63f05d152ac8270fed097dfaf55326aa42a1a237e85b8502299"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/claude.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/claude.py",
+      "archive_role": "v1.0",
+      "bytes": 5102,
+      "sha256": "09e5ddc57be1525033aa4ebe1e2cc0ca3b79435dd6728d588e193a33f0bab5b5"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/completion.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/completion.py",
+      "archive_role": "v1.0",
+      "bytes": 18672,
+      "sha256": "0366dc5dd6e96d5b24c3f7c42bb6497e2b41874cad338a7cc70c4cfcfd8fa135"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/exception.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/exception.py",
+      "archive_role": "v1.0",
+      "bytes": 522,
+      "sha256": "85c6bae66bb8bab645b4ec50a85b5d5fef6c1551707d738ead2acc6330223659"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/general_model.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/general_model.py",
+      "archive_role": "v1.0",
+      "bytes": 5541,
+      "sha256": "11d598ef02dfdba042557b345c6411a6f9a02de75432b045ac281b026618b448"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/mistral.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/mistral.py",
+      "archive_role": "v1.0",
+      "bytes": 3170,
+      "sha256": "2044c93a035c517bafd1a854a3cfab4c0a7bcf683cfd1ab05d5ba8dbae516724"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/model.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/model.py",
+      "archive_role": "v1.0",
+      "bytes": 3154,
+      "sha256": "e3d459f0a7ff90d4ea417799d81abeda46e99f305ab0d024a25f2deaf9243f6b"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/openai.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/openai.py",
+      "archive_role": "v1.0",
+      "bytes": 4133,
+      "sha256": "473c3d9e40c27dc1903b7943358198299001f0e6a5a225995249cc45e223f457"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/outlines_completion.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/outlines_completion.py",
+      "archive_role": "v1.0",
+      "bytes": 1186,
+      "sha256": "3ccfa6bda904d44f2c1fc41268ef889ded1d0507b575cbdcb47b2ec038e85d9a"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/utils.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/utils.py",
+      "archive_role": "v1.0",
+      "bytes": 4250,
+      "sha256": "68c7f0f481bb66899e27bdad25064f5393c9db1024b8cb5f1f85dd96a313c455"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/vllm_chat.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/vllm_chat.py",
+      "archive_role": "v1.0",
+      "bytes": 4759,
+      "sha256": "8ee611568db1c6db7ab99f9e8f13413e713f1151b23835377240e1ab2fdb4278"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/vllm_completion.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/vllm_completion.py",
+      "archive_role": "v1.0",
+      "bytes": 4467,
+      "sha256": "ae7cd7935774f3bc2133ca06e535cc1fdf4fbcbed3f2b54583b3688c46b9f486"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/model_utils/model/vllm_utils.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/model_utils/model/vllm_utils.py",
+      "archive_role": "v1.0",
+      "bytes": 980,
+      "sha256": "86d79c580fe0e48b0177e1df3147377390ac9cbeb728639152be8cbe8c3a58f7"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/run.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/run.py",
+      "archive_role": "v1.0",
+      "bytes": 7640,
+      "sha256": "da3a2f3300a973b499a1a5e874357d05fe8c6e327dc394667b4ae665c7924d87"
+    },
+    {
+      "repo_path": "vendor/tau-bench/tau_bench/types.py",
+      "source": "simglot/vendor/tau-bench/tau_bench/types.py",
+      "archive_role": "v1.0",
+      "bytes": 1823,
+      "sha256": "38c2e79f48f9ac87fbdd7bb763c3ef7e8a825cd3de3998f51b12ecf55733b9db"
+    },
+    {
+      "repo_path": "vendor/tau-bench/few_shot_data/MockAirlineDomainEnv-few_shot.jsonl",
+      "source": "simglot/vendor/tau-bench/few_shot_data/MockAirlineDomainEnv-few_shot.jsonl",
+      "archive_role": "v1.0",
+      "bytes": 129793,
+      "sha256": "7b14cd22355cd8245662e6d2b54e5dcad7e7e7e14f2e2e009a5649f915d9ac11"
+    },
+    {
+      "repo_path": "vendor/tau-bench/few_shot_data/MockRetailDomainEnv-few_shot.jsonl",
+      "source": "simglot/vendor/tau-bench/few_shot_data/MockRetailDomainEnv-few_shot.jsonl",
+      "archive_role": "v1.0",
+      "bytes": 632679,
+      "sha256": "091066a735d3d2605441764e0a2c6dcc93fb6595b400ff5e354416e6c8ba4a3a"
+    },
+    {
+      "repo_path": "paper/manuscript.pdf",
+      "source": "(generated from submission/)",
+      "archive_role": "workspaces",
+      "bytes": 312330,
+      "sha256": "b3f0a48ecfdaa0c9a9536ac7ecf448df11ab3f3c623594b615c34ff2f5c90691"
+    },
+    {
+      "repo_path": "paper/supplementary.pdf",
+      "source": "(generated from submission/)",
+      "archive_role": "workspaces",
+      "bytes": 461617,
+      "sha256": "799a42b5a7dfd525294512a2ab27d7584fb6983c6ed194927595718a01a065ae"
+    }
+  ]
+}

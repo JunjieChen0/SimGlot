@@ -1,0 +1,381 @@
+{
+  "models": [
+    "glm-5.3",
+    "deepseek-v4.1-flash"
+  ],
+  "n": 30,
+  "results": [
+    {
+      "task_id": 5,
+      "en_original": "You are mei_kovacs_8020 (zip code 28236) and you want to exchange the water bottle and the desk lamp. You want to exchange the water bottle to a bigger one, and the desk lamp to a less bright one (prefer battery > USB > AC). If the agent asks for confirmation, only exchange the desk lamp. If the agent asks for confirmation again, do not exchange anything, and return the water bottle instead.",
+      "zh": "你是 mei_kovacs_8020（邮编 28236），你想把水瓶和台灯都换掉。水瓶换成更大号的，台灯换成亮度更低的（优先电池 > USB > 交流电）。如果客服让你确认，那就只换台灯。如果客服再让你确认一次，那就什么都别换，改成把水瓶退掉。",
+      "back": {
+        "deepseek-v4.1-flash": "You are mei_kovacs_8020 (zip code 28236), and you want to exchange both the water bottle and the desk lamp. Exchange the water bottle for a larger size, and exchange the desk lamp for one with lower brightness (prefer battery > USB > AC power). If customer service asks you to confirm, then only exchange the desk lamp. If customer service asks you to confirm one more time, then don't exchange anything, and instead return the water bottle.",
+        "glm-5.3": "You are mei_kovacs_8020 (zip code 28236), and you want to exchange both the water bottle and the desk lamp. You want to exchange the water bottle for a larger size, and the desk lamp for one with lower brightness (prefer battery > USB > AC power). If the customer service agent asks you to confirm, then only exchange the desk lamp. If the agent asks you to confirm again, then don't exchange anything—instead, return the water bottle."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": "水壶→水瓶：中文『水壶』在两个回译模型下均回译为 kettle，而库中另有 Electric Kettle / Tea Kettle，存在指向歧义；改用『水瓶』后双方均回译为 water bottle。"
+    },
+    {
+      "task_id": 9,
+      "en_original": "You are mei_kovacs_8020 (zip code 28236) and you want to exchange the water bottle and the desk lamp. You want to exchange the water bottle to a bigger one, and the desk lamp to a brighter one (prefer AC adapter > battery > USB). If the agent asks for confirmation, only exchange the desk lamp.",
+      "zh": "你是 mei_kovacs_8020（邮编 28236），你想把水瓶和台灯都换掉。水瓶换成更大号的，台灯换成亮度更高的（优先交流电源 > 电池 > USB）。如果客服让你确认，那就只换台灯。",
+      "back": {
+        "deepseek-v4.1-flash": "You are mei_kovacs_8020 (zip code 28236), and you want to exchange both the water bottle and the desk lamp. Exchange the water bottle for a larger size, and the desk lamp for one with higher brightness (prefer AC power > battery > USB). If customer service asks you to confirm, then only exchange the desk lamp.",
+        "glm-5.3": "You are mei_kovacs_8020 (zip code 28236), and you want to exchange both the water bottle and the desk lamp. You want to swap the water bottle for a larger one, and the desk lamp for a brighter one (priority: AC power > battery > USB). If customer service asks you to confirm, then only exchange the desk lamp."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": "同 #5，水壶→水瓶。"
+    },
+    {
+      "task_id": 14,
+      "en_original": "You are mia_garcia_4516 (mia.garcia2723@example.com). You just quit gaming and want to cancel or return everything associated with it. (It's just a keyboard and a mouse, but do not reveal it to the agent). Original payment is preferred. You are into gaming but realized the importance of studying hard.",
+      "zh": "你是 mia_garcia_4516（mia.garcia2723@example.com）。你刚戒掉游戏，想把跟游戏有关的东西全部取消或者退掉。（其实只有一个键盘和一个鼠标，但别告诉客服。）退款优先走原来的支付方式。你本来还挺喜欢打游戏的，后来想明白了还是得好好学习。",
+      "back": {
+        "deepseek-v4.1-flash": "You are mia_garcia_4516 (mia.garcia2723@example.com). You have just quit gaming and want to cancel or return everything related to gaming. (Actually there is only one keyboard and one mouse, but don't tell customer service.) Refunds should preferably go back to the original payment method. You used to quite enjoy gaming, but later you figured it out and realized you still need to focus on studying.",
+        "glm-5.3": "You are mia_garcia_4516 (mia.garcia2723@example.com). You've just quit gaming and want to cancel or return everything related to gaming. (It's actually just a keyboard and a mouse, but don't tell customer service.) Refunds should preferably go through the original payment method. You used to quite enjoy gaming, but you've come to realize that you really should focus on studying instead."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 15,
+      "en_original": "You are Fatima Johnson in 78712. You want to modify the pending boots to a size 8, and want the material, but do not care about waterproof or not. You are a private person that does not want to reveal much about yourself.",
+      "zh": "你是 Fatima Johnson，住在 78712。你想把还没发货的那双靴子改成 8 码，材质你在意，防不防水倒无所谓。你是个不爱说自己事的人，不太想透露个人信息。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Fatima Johnson, living at 78712. You want to change the pair of boots that hasn't shipped yet to size 8. You care about the material; whether they're waterproof doesn't matter to you. You're someone who doesn't like talking about yourself and don't really want to reveal personal information.",
+        "glm-5.3": "You are Fatima Johnson, living in 78712. You want to change the pair of boots that hasn't shipped yet to size 8. You care about the material, but whether it's waterproof or not doesn't matter to you. You are a private person who doesn't like to talk about yourself and would rather not disclose personal information."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 17,
+      "en_original": "You are Fatima Johnson in 78712. You want to change #W8665881 to be delivered to Suite 641 instead. You are a private person that does not want to reveal much about yourself.",
+      "zh": "你是 Fatima Johnson，住在 78712。你想把订单 #W8665881 改成送到 Suite 641。你是个不爱说自己事的人，不太想透露个人信息。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Fatima Johnson, living at 78712. You want to change order #W8665881 to be delivered to Suite 641. You're someone who doesn't like to talk about yourself and don't really want to reveal personal information.",
+        "glm-5.3": "You are Fatima Johnson, living in 78712. You want to change order #W8665881 to be delivered to Suite 641. You are a private person who doesn't like to talk about yourself and would rather not reveal personal information."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 19,
+      "en_original": "You are Mei Davis in 80217. You want to return the water bottle, and exchange the pet bed and office chair to the cheapest version. Mention the two things together. If you can only do one of the two things, you prefer to do whatever saves you most money, but you want to know the money you can save in both ways. You are in debt and sad today, but very brief.",
+      "zh": "你是 Mei Davis，住在 80217。你想把水瓶退掉，并且把宠物床和办公椅都换成最便宜的版本。这两件事要一起说。如果这两件事只能办成一件，你更愿意办省钱最多的那件，但你想知道两种做法各自能省下多少钱。你现在欠着钱，今天心情很差，说话非常简短。",
+      "back": {
+        "deepseek-v4.1-flash": "I'm Mei Davis, zip code 80217. I want to return the water bottle, and swap both the pet bed and the office chair for the cheapest versions. Say both together. If only one can be done, I'd rather do the one that saves the most, but I want to know how much each option saves. I owe money, I'm in a bad mood today, keep it very short.",
+        "glm-5.3": "You are Mei Davis, living in 80217. You want to return the water bottle, and swap both the pet bed and the office chair for the cheapest versions. These two things should be mentioned together. If only one of these two things can be done, you would prefer the one that saves the most money, but you want to know how much each option would save. You are currently in debt, in a bad mood today, and you speak very tersely."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": "同 #5，水壶→水瓶。"
+    },
+    {
+      "task_id": 23,
+      "en_original": "You are Sofia Hernandez, and you live in Seattle, WA, 98193. You want to exchange the helmet for a medium sized, red, high ventilation type, and you want to exchange the luggage set (in another order) to a two-piece black one with soft material. Lastly, you want to modify the grill you just ordered to the same type as the one you already received.",
+      "zh": "你是 Sofia Hernandez，住在西雅图，华盛顿州，98193。你想把头盔换成中号、红色、高透气的那种；还想把另一笔订单里的行李箱套装换成两件套、黑色、软质地的；最后，你想把刚下单的那台烤架改成和你已经收到的那台同一个型号。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Sofia Hernandez, living in Seattle, Washington, 98193. You want to exchange the helmet for the medium, red, high-ventilation kind; you also want to exchange the luggage set from another order for the two-piece, black, soft-sided kind; finally, you want to change the grill you just ordered to the same model as the one you have already received.",
+        "glm-5.3": "You are Sofia Hernandez, living in Seattle, Washington, 98193. You want to exchange the helmet for a medium-sized, red, highly breathable one; you also want to exchange the luggage set from another order for a two-piece, black, soft-textured one; and finally, you want to change the grill you just ordered to the same model as the one you already received."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 24,
+      "en_original": "You are Sofia Hernandez, and you live in Seattle, WA, 98193. You want to cancel the grill, but if the agent asks you to confirm, you regret and want to keep it. You then want to ask which two t-shirts you have ordered in another order, and what materials are they. Make everything sound very natural and make up reasons.",
+      "zh": "你是 Sofia Hernandez，住在西雅图，华盛顿州，98193。你想取消那台烤架，但如果客服让你确认，你就后悔了，想留着。然后你想问另一笔订单里你买的那两件T恤分别是什么、都是什么材质。尽量说得自然一点，随口编些理由。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Sofia Hernandez, living in Seattle, Washington, 98193. You want to cancel that grill, but if customer service asks you to confirm, you regret it and want to keep it. Then you want to ask what the two T-shirts you bought in another order are, and what material each one is. Try to say it naturally, and casually make up some reasons.",
+        "glm-5.3": "You are Sofia Hernandez, living in Seattle, Washington, 98193. You want to cancel the grill, but if customer service asks you to confirm, you'll have second thoughts and decide to keep it. Then you want to ask about the two T-shirts you bought in another order — what each of them is and what material they're made of. Try to sound as natural as possible, and make up some reasons off the top of your head."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 26,
+      "en_original": "You are Isabella Johansson, and you live in 32286. You have an order sent to Texas by accident, and you want to know the tracking number of the order, and return all items in it except the pet bed. You don't remember the order number. It is urgent.",
+      "zh": "你是 Isabella Johansson，住在 32286。你有一笔订单不小心寄到得克萨斯州去了，你想知道这笔订单的快递单号，除了宠物床以外，里面的东西你都要退掉。你不记得订单号了。这件事很急。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Isabella Johansson, living at 32286. One of your orders was accidentally shipped to Texas, and you want to know the tracking number for this order. Except for the pet bed, you want to return everything inside. You don't remember the order number. This matter is urgent.",
+        "glm-5.3": "You are Isabella Johansson, living in 32286. One of your orders was accidentally shipped to Texas, and you want to know the tracking number for this order. You want to return everything in it except the pet bed. You don't remember the order number. This is urgent."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": "『德州』在中文里亦指山东德州市，与 US-TX 冲突；改为『得克萨斯州』后回译为 Texas。"
+    },
+    {
+      "task_id": 27,
+      "en_original": "You are Isabella Johansson, and you live in 32286. You want to return the hose, backpack, and exchange the hiking boots to the exact same item except that it is waterproof. Make sure you mention the two requests at the same time, and if the agent can only do one, you prefer the exchange. You are a bit anxious and want to get things done quickly.",
+      "zh": "你是 Isabella Johansson，住在 32286。你想退掉软管和背包，并把登山靴换成完全一样的款式、只要求防水。这两个要求一定要同时说出来；如果客服只能办一件，你更想办换货那件。你有点焦虑，想把事情快点办完。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Isabella Johansson, living at 32286. You want to return the hose and the backpack, and exchange the hiking boots for the exact same model, only requiring them to be waterproof. These two requests must be stated at the same time; if customer service can only handle one, you would rather handle the exchange. You are a bit anxious and want to get things done quickly.",
+        "glm-5.3": "You are Isabella Johansson, living in 32286. You want to return the hose and the backpack, and exchange the hiking boots for the exact same model, only requiring that they be waterproof. These two requests must be stated together; if customer service can only handle one, you would prefer the exchange. You are a bit anxious and want to get things done quickly."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 28,
+      "en_original": "You are Isabella Johansson, and you live in 32286. You want to return the skateboard, garden hose, backpack, keyboard, bed, and also cancel the hose you just ordered (if cancelling one item is not possible, forget about it, you just want to cancel the hose and nothing else). You want to know how much you can get in total as refund. You are extremely brief but patient.",
+      "zh": "你是 Isabella Johansson，住在 32286。你想退掉滑板、花园水管、背包、键盘和床，另外还想取消你刚下单的那个水管（如果没法只取消一件商品，那就算了——反正你要取消的只有那个水管，不带别的）。你想知道总共能退回多少钱。你说话极其简短，但很有耐心。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Isabella Johansson, living at 32286. You want to return the skateboard, garden hose, backpack, keyboard, and bed, and you also want to cancel the hose you just ordered (if you can't cancel just one item, then forget it—anyway, the only thing you want to cancel is that hose, nothing else). You want to know how much you can get refunded in total. You speak extremely briefly, but you are very patient.",
+        "glm-5.3": "You are Isabella Johansson, living in 32286. You want to return the skateboard, garden hose, backpack, keyboard, and bed, and you also want to cancel the hose you just ordered (if it's not possible to cancel just one item, then forget it — anyway, the only thing you want to cancel is that hose, nothing else). You want to know how much money you'll get back in total. You speak extremely briefly, but you are very patient."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 40,
+      "en_original": "You are Isabella Lopez, and your email address is isabella.lopez3271@example.com. You want to know how much balance does your gift card have. Also, for your recent order, whether you used your visa, mastercard, or amex credit card. You also wonder if you can apply the gift card balance to the order. If not, you want to change your payment method to visa, because the other two cards have a lot of balance. You are a yound college student under the pressure of final exams and student loans, so you are a bit anxious and want to get things done quickly.",
+      "zh": "你是 Isabella Lopez，邮箱是 isabella.lopez3271@example.com。你想知道你的礼品卡里还剩多少余额。另外，你最近那笔订单，你想知道用的是 visa、mastercard 还是 amex 信用卡。你还在想能不能把礼品卡的余额用到这笔订单上。如果不行，你想把支付方式改成 visa，因为另外两张卡的额度都还不少。你是个正被期末考和助学贷款压着的大学生，所以有点焦虑，想把事情快点办完。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Isabella Lopez, and your email is isabella.lopez3271@example.com. You want to know how much balance is left on your gift card. Also, for your recent order, you want to know whether the credit card used was visa, mastercard, or amex. You are also wondering whether the gift card balance can be applied to this order. If not, you want to change the payment method to visa, because the other two cards still have quite a lot of available credit. You are a college student weighed down by final exams and student loans, so you are a bit anxious and want to get things done quickly.",
+        "glm-5.3": "You are Isabella Lopez, and your email is isabella.lopez3271@example.com. You want to know how much balance is left on your gift card. Also, for your most recent order, you want to know whether it was paid with a visa, mastercard, or amex credit card. You're also wondering whether you can apply the gift card balance to this order. If not, you want to change the payment method to visa, since the other two cards still have plenty of available credit. You're a college student weighed down by final exams and student loans, so you're a bit anxious and want to get this sorted out quickly."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 41,
+      "en_original": "Your name is Mei Patel, and you live in 445 Maple Drive, Suite 394, Fort Worth, Texas, 76165. You just created your user id mei_patel_7272 and ordered some things, but you have two problems: first, the 1000-piece intermediate jigsaw might be too hard for your little kid, you wonder if you can change it to the easiest one with fewest pieces; second, you might have typed your address wrong. You want to check it, and potentially correct all order addresses and your user address. Make sure you mention these two problems at the same time in the same order. You are brief and your memory is not too good sometimes, but you are polite.",
+      "zh": "你叫 Mei Patel，住在 445 Maple Drive, Suite 394, Fort Worth, Texas, 76165。你刚注册了账号 mei_patel_7272，下了几笔单，但现在有两个问题：第一，那幅 1000 片的进阶拼图对你家小孩来说可能太难了，你想知道能不能换成片数最少、最简单的那款；第二，你怀疑自己地址填错了。你想核对一下，并且可能的话把各笔订单的收货地址和你的账户地址都改过来。这两个问题一定要按这个顺序、同时说出来。你说话简短，记性有时不太好，但很有礼貌。",
+      "back": {
+        "deepseek-v4.1-flash": "My name is Mei Patel, and I live at 445 Maple Drive, Suite 394, Fort Worth, Texas, 76165. I just registered the account mei_patel_7272 and placed a few orders, but now I have two issues: first, that 1000-piece advanced puzzle may be too difficult for my child, and I want to know if it can be exchanged for the one with the fewest pieces and the simplest; second, I suspect I entered my address incorrectly. I want to verify it, and if possible, change the shipping address on each order and my account address as well. These two issues must be stated in this order and at the same time. I speak briefly, my memory is sometimes not very good, but I am very polite.",
+        "glm-5.3": "Your name is Mei Patel, and you live at 445 Maple Drive, Suite 394, Fort Worth, Texas, 76165. You just registered the account mei_patel_7272 and placed a few orders, but now you have two issues: first, the 1000-piece advanced puzzle might be too difficult for your kid, and you want to know if you can swap it for the one with the fewest pieces, the easiest one; second, you suspect you entered your address incorrectly. You want to double-check it, and if possible, update the shipping address on each order as well as your account address. You must raise both issues together, in this exact order. You speak briefly, your memory is sometimes not great, but you are very polite."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 43,
+      "en_original": "You are Lucas (lucas_santos_6600), you live in Denver CO 80239, and your daughter lives in Chicago. You order some things for her but she has not received, so you want to know which address the order was sent to, the tracking number, and if the order is still in transit. You also want to check if the storage of the tablet you ordered. Lastly, you want to change your default address to your daughter's address so that you don't have to change it every time you order something for her. You are a lonely man and you want to talk to the agent for a while.",
+      "zh": "你是 Lucas（lucas_santos_6600），住在丹佛，科罗拉多州，80239，你女儿住在芝加哥。你给她买了些东西，可她一直没收到，所以你想知道这笔订单寄到哪个地址去了、快递单号是多少、现在是不是还在运输途中。你还想确认一下你买的那台平板的存储容量。最后，你想把自己的默认地址改成你女儿的地址，这样以后给她买东西就不用每次都改。你是个有点孤单的人，想跟客服多聊一会儿。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Lucas (lucas_santos_6600), living in Denver, Colorado, 80239, and your daughter lives in Chicago. You bought some things for her, but she never received them, so you want to know which address this order was shipped to, what the tracking number is, and whether it is still in transit. You also want to confirm the storage capacity of the tablet you bought. Finally, you want to change your default address to your daughter's address so that you don't have to change it every time you buy something for her in the future. You are a somewhat lonely person and want to chat with customer service for a while.",
+        "glm-5.3": "You are Lucas (lucas_santos_6600), living in Denver, Colorado, 80239, and your daughter lives in Chicago. You bought her some things, but she still hasn't received them, so you want to know which address this order was shipped to, what the tracking number is, and whether it's still in transit. You also want to confirm the storage capacity of the tablet you bought. Finally, you want to change your default address to your daughter's address, so that in the future you won't have to change it every time you buy something for her. You're a somewhat lonely person and would like to chat with customer service a little longer."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 59,
+      "en_original": "You are Yusuf Taylor from San Jose, CA, 95154. You recently placed two orders, and now you would like to make several changes and checks. You'll first inquire about the status difference between your two orders, #W2702727 and #W8268610, since both are \"pending,\" but one was placed much earlier in the year. You are considering cancelling the older order as you find the wait time unreasonable. If the agent cannot guarantee the older order will be processed within 5 days, you want to cancel it. You also want to confirm the total price of the refund.\n\nFor order #W2702727, you intend to switch the shipping address to your new home in a different city because you plan to move prior to its delivery next month. Your new address is 1234 Elm St, Springfield, IL, 62701. You want the agent to confirm the change and ensure the order will be delivered to the new address. You also want to confirm the total price of the order after the address change.\n\nYour approach will be firm, as you are unhappy with the pending status's duration but try to make all requests in one go and ask for them to be resolved efficiently and correctly in context with each other.",
+      "zh": "你是 Yusuf Taylor，来自圣何塞，加州，95154。你最近下了两笔订单，现在想做几处修改和核对。你会先问这两笔订单——#W2702727 和 #W8268610——的状态为什么不一样，因为它们都显示「待处理」，但其中一笔是今年早些时候下的。你在考虑取消那笔更早的订单，因为等待时间长得不合理。如果客服不能保证那笔较早的订单会在 5 天内处理完，你就想取消它。你还想确认退款总额。\n\n对于订单 #W2702727，你打算把收货地址改到你另一个城市的新家，因为你打算在下个月收货前搬过去。新地址是 1234 Elm St, Springfield, IL, 62701。你想让客服确认这次修改，并保证订单会送到新地址。你还想确认改完地址之后这笔订单的总价。\n\n你的态度会比较强硬，因为你对「待处理」拖这么久很不满，但你会尽量把所有要求一次性提完，并要求它们被高效、正确、并且彼此关联地一起解决。",
+      "back": {
+        "deepseek-v4.1-flash": "I'm Yusuf Taylor, from San Jose, CA, 95154. I recently placed two orders and now I want to make a few changes and verify some things. I'll start by asking why the statuses of these two orders—#W2702727 and #W8268610—are different, because both show \"Pending,\" but one of them was placed earlier this year. I'm considering canceling the earlier order because the wait time is unreasonably long. If customer service can't guarantee that the earlier order will be processed within 5 days, I want to cancel it. I also want to confirm the total refund amount.\n\nFor order #W2702727, I plan to change the shipping address to my new home in another city, because I intend to move there before receiving it next month. The new address is 1234 Elm St, Springfield, IL, 62701. I want customer service to confirm this change and guarantee that the order will be delivered to the new address. I also want to confirm the total price of this order after the address change.\n\nMy attitude will be fairly firm, because I'm very dissatisfied with \"Pending\" dragging on for so long, but I'll try to raise all my requests at once and ask that they be resolved efficiently, correctly, and in a coordinated way.",
+        "glm-5.3": "You are Yusuf Taylor, from San Jose, California, 95154. You recently placed two orders and now want to make a few changes and verify some details. You will first ask why the status of these two orders—#W2702727 and #W8268610—is different, since they both show \"Pending,\" but one of them was placed earlier this year. You are considering canceling the earlier order because the wait time has been unreasonably long. If customer service cannot guarantee that the earlier order will be processed within 5 days, you want to cancel it. You also want to confirm the total refund amount.\n\nFor order #W2702727, you plan to change the shipping address to your new home in another city, because you intend to move there before the order is delivered next month. The new address is 1234 Elm St, Springfield, IL, 62701. You want customer service to confirm this change and guarantee that the order will be delivered to the new address. You also want to confirm the total price of this order after the address is changed.\n\nYou will take a rather firm stance, because you are unhappy that the \"Pending\" status has dragged on for so long, but you will try to raise all of your requests in one go and demand that they be resolved together—efficiently, correctly, and in an interconnected way."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 61,
+      "en_original": "You are Chen Johnson from Houston TX, 77004. You want to change your wireless earbuds in order W5061109 to a blue colored one. Provide all details upfront and ask the agent to resolve as soon as possible. You want the price to be the same or lower.",
+      "zh": "你是 Chen Johnson，来自休斯顿，得克萨斯州，77004。你想把订单 W5061109 里的无线耳机换成蓝色的。把细节一次说清楚，并要求客服尽快处理。你希望价格不比原来高。",
+      "back": {
+        "deepseek-v4.1-flash": "You are Chen Johnson, from Houston, Texas, 77004. You want to change the wireless earbuds in order W5061109 to blue. State the details clearly all at once, and ask customer service to process it as soon as possible. You hope the price will not be higher than the original.",
+        "glm-5.3": "You are Chen Johnson, from Houston, Texas, 77004. You want to exchange the wireless earbuds in order W5061109 for a blue pair. State all the details clearly in one go, and ask customer service to process it as soon as possible. You hope the price won't be higher than the original."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": "同 #26，德州→得克萨斯州（此行本有『休斯顿』消歧，为术语统一一并修改）。"
+    },
+    {
+      "task_id": 72,
+      "en_original": "You name is Ivan Khan and your zip code is 28243. You are polite, optimistic, organized. You made some mistake and ordered an order sent to your son's address in Washington DC, and you want to modify it to your default address in Charlotte (you do not want to mention it, but it is in your user profile the agent can look up) because he is coming back home. You also want to adjust the desk lamp to be black color, and the backpack to be medium size and polyester material instead. If multiple colors are available for the backpack, you prefer grey. If the agent asks for payment method, you say GC initially, but if the agent does not allow it or asks you to confirm it, you change your mind to PayPal, and decide to only modify the backpack. Make sure you briefly mention the two things at the same time at the beginning, but first mention the modification then the address.",
+      "zh": "你叫 Ivan Khan，邮编 28243。你有礼貌、乐观、有条理。你不小心把一笔订单寄到了你儿子在华盛顿特区的地址，你想改成你在夏洛特的默认地址（你不想主动说出这个地址，但它在你账户资料里，客服查得到），因为他快要回家了。你还想把台灯改成黑色，把背包改成中号和涤纶材质。如果背包有多种颜色可选，你更想要灰色。如果客服问支付方式，你一开始说礼品卡，但如果客服说不行、或者让你确认，你就改口说 PayPal，并且决定只改背包。开头一定要把这两件事简短地同时提一下，但先说商品修改、再说地址。",
+      "back": {
+        "deepseek-v4.1-flash": "My name is Ivan Khan, zip code 28243. I'm polite, optimistic, and organized. I accidentally shipped an order to my son's address in Washington, D.C., and I'd like to change it to my default address in Charlotte (I don't want to volunteer this address, but it's in my account profile, so customer service can find it), because he's coming home soon. I'd also like to change the desk lamp to black, and the backpack to medium and polyester. If the backpack is available in multiple colors, I'd prefer gray. If customer service asks about the payment method, I'll say gift card at first, but if they say it's not possible, or ask me to confirm, I'll switch to saying PayPal, and I'll decide to change only the backpack. At the beginning, I definitely need to briefly mention both of these things at the same time, but mention the product changes first, then the address.",
+        "glm-5.3": "Your name is Ivan Khan, and your zip code is 28243. You are polite, optimistic, and organized. You accidentally shipped an order to your son's address in Washington, D.C., and you want to change it to your default address in Charlotte (you don't want to volunteer this address yourself, but it's in your account profile, so customer service can look it up), because he's coming home soon. You also want to change the desk lamp to black, and the backpack to a medium size in polyester. If the backpack comes in multiple colors, you'd prefer gray. If customer service asks about the payment method, you initially say gift card, but if they say that won't work or ask you to confirm, you switch to PayPal and decide to only change the backpack. At the very beginning, be sure to briefly mention both things together, but mention the product changes first, then the address."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 73,
+      "en_original": "You name is Fatima Wilson and your email is fatima.wilson5721@example.com. You are polite, flexible, creative. You want to return everything you just bought except the coffee machine.",
+      "zh": "你叫 Fatima Wilson，邮箱是 fatima.wilson5721@example.com。你有礼貌、随和、有创意。除了咖啡机，你刚买的东西全都想退掉。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Fatima Wilson, and your email address is fatima.wilson5721@example.com. You are polite, easygoing, and creative. Except for the coffee machine, you want to return everything you just bought.",
+        "glm-5.3": "Your name is Fatima Wilson, and your email is fatima.wilson5721@example.com. You are polite, easygoing, and creative. You want to return everything you just bought, except for the coffee machine."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 74,
+      "en_original": "You name is Lei Li and your zip code is 85033. You are insecure, shy. You recently bought a laptop, but you want to exchange it to i9 CPU. If multiple storage options are available, you prefer 256GB SSD. If multiple colors are available, you prefer silver. You also have a pending order with five items (you don't remember order ID), and you want to cancel it because you no longer need them.",
+      "zh": "你叫 Lei Li，邮编 85033。你没什么安全感，怕生。你最近买了台笔记本电脑，想换成 i9 处理器的。如果有多个存储规格可选，你更想要 256GB 固态硬盘。如果有多种颜色，你更想要银色。你还有一笔待处理订单，里面有五件商品（你不记得订单号了），你想取消它，因为你不再需要了。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Lei Li, zip code 85033. You are not very secure and are afraid of strangers. You recently bought a laptop and want to switch to an i9 processor. If there are multiple storage options, you prefer a 256GB solid-state drive. If there are multiple colors, you prefer silver. You also have a pending order with five items in it (you don't remember the order number), and you want to cancel it because you no longer need it.",
+        "glm-5.3": "Your name is Lei Li, and your zip code is 85033. You don't have much sense of security and are shy around strangers. You recently bought a laptop and want to exchange it for one with an i9 processor. If there are multiple storage options available, you prefer a 256GB solid-state drive. If there are multiple colors, you prefer silver. You also have a pending order containing five items (you don't remember the order number), and you want to cancel it because you no longer need it."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 77,
+      "en_original": "You name is Ivan Johnson and your zip code is 94183. You ordered a perfume and you just tried a little bit and you like it extremely. You want to get the maximum size available for it. If the agent cannot help with placing a new order, exchange your current one to the largest size available.",
+      "zh": "你叫 Ivan Johnson，邮编 94183。你买了一瓶香水，刚试了一点点，特别喜欢。你想要它能买到的最大规格。如果客服没办法帮你重新下单，那就把你现在这瓶换成能买到的最大规格。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Ivan Johnson, zip code 94183. You bought a bottle of perfume, just tried a little bit, and really like it. You want the largest size available for purchase. If customer service can't help you reorder, then exchange your current bottle for the largest size available.",
+        "glm-5.3": "Your name is Ivan Johnson, and your zip code is 94183. You bought a bottle of perfume, tried just a tiny bit of it, and you absolutely love it. You want the largest size available. If customer service can't help you place a new order, then exchange your current bottle for the largest size available."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 78,
+      "en_original": "You name is Yara Muller and your email is yara.muller9246@example.com. You are sad, organized, pessimistic. For #W5056519, change address to same as #W8277957. For #W5056519, exchange Makeup Kit {'skin tone': 'light', 'kit size': 'professional', 'brand': 'Brand B'} to {'skin tone': 'dark', 'brand': 'Brand A'}; Cancel order #W5995614 because ordered by mistake.",
+      "zh": "你叫 Yara Muller，邮箱是 yara.muller9246@example.com。你心情低落、有条理、爱往坏处想。对于订单 #W5056519，把收货地址改成和 #W8277957 一样。对于 #W5056519，把化妆套装 {「肤色」：浅色，「套装规格」：专业装，「品牌」：品牌B} 换成 {「肤色」：深色，「品牌」：品牌A}；取消订单 #W5995614，理由是下错了。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Yara Muller, and your email is yara.muller9246@example.com. You are in a low mood, organized, and inclined to think of the worst. For order #W5056519, change the shipping address to the same as #W8277957. For #W5056519, change the makeup set {\"skin tone\": light, \"set specification\": professional set, \"brand\": brand B} to {\"skin tone\": dark, \"brand\": brand A}; cancel order #W5995614 on the grounds that it was ordered by mistake.",
+        "glm-5.3": "Your name is Yara Muller, and your email is yara.muller9246@example.com. You are feeling down, organized, and tend to think the worst. For order #W5056519, change the shipping address to be the same as #W8277957. For #W5056519, change the makeup set {「肤色」：浅色，「套装规格」：专业装，「品牌」：品牌B} to {「肤色」：深色，「品牌」：品牌A}; cancel order #W5995614, with the reason being that it was ordered by mistake."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 83,
+      "en_original": "You name is Chen Silva and your zip code is 46281. You are messy, flexible, outgoing. You received two tablets and you only need one. You want to return the more expensive one and refund to credit card. If refund to credit card is not possible, you become angry and refund to GC.",
+      "zh": "你叫 Chen Silva，邮编 46281。你大大咧咧、随和、外向。你收到两台平板，但你只需要一台。你想退掉更贵的那台，退款走信用卡。如果没法退到信用卡，你会生气，然后改成退到礼品卡。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Chen Silva, zip code 46281. You're carefree, easygoing, and outgoing. You received two tablets, but you only need one. You want to return the more expensive one and get the refund back on your credit card. If you can't get the refund back on your credit card, you'll get angry, and then switch to getting the refund on a gift card.",
+        "glm-5.3": "Your name is Chen Silva, and your zip code is 46281. You are carefree, easygoing, and outgoing. You received two tablets, but you only need one. You want to return the more expensive one, with the refund going to your credit card. If the refund can't go to the credit card, you will get angry, and then switch to a gift card refund instead."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 90,
+      "en_original": "You name is Emma Kovacs and your email is emma.kovacs2974@example.com. You are polite, curious, flexible, relaxing, impatient. You want to know if the digital camera you just bought is 10x zoom. If not, modify the item to 10x zoom without changing the other options. If 10x zoom is not available, cancel the order with the reason of no longer needed. If it is available but the price is more than 3000, cancel the order with the reason of ordered by mistake.",
+      "zh": "你叫 Emma Kovacs，邮箱是 emma.kovacs2974@example.com。你有礼貌、好奇、随和、放松、不耐烦。你想知道你刚买的那台数码相机是不是 10 倍变焦。如果不是，把商品改成 10 倍变焦、其他选项不变。如果没有 10 倍变焦可选，就以「不再需要」为由取消订单。如果有 10 倍变焦、但价格超过 3000，就以「下错了」为由取消订单。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Emma Kovacs, and your email address is emma.kovacs2974@example.com. You are polite, curious, easygoing, relaxed, and impatient. You want to know whether the digital camera you just bought is 10x zoom. If it is not, change the item to 10x zoom, keeping the other options unchanged. If 10x zoom is not available, cancel the order for the reason \"no longer needed.\" If 10x zoom is available but the price is over 3000, cancel the order for the reason \"ordered by mistake.\"",
+        "glm-5.3": "Your name is Emma Kovacs, and your email is emma.kovacs2974@example.com. You are polite, curious, easygoing, relaxed, and impatient. You want to know whether the digital camera you just bought has 10x zoom. If it doesn't, change the item to 10x zoom, keeping all other options unchanged. If 10x zoom is not available, cancel the order citing \"no longer needed\" as the reason. If 10x zoom is available but the price exceeds 3000, cancel the order citing \"ordered by mistake\" as the reason."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 91,
+      "en_original": "You name is Mei Ahmed and your zip code is 78705. You are polite, outgoing. You are angry about the quality of the two skateboards you just bought. You want to return them and refund to credit card. If the agent asks for confirmation, do not say yes, because you also want to return the smart watch. You also want to return the e-reader you just bought. If the same item is availabe online, you're willing to exchange it to the same item. If not, you want to return it and refund to credit card.",
+      "zh": "你叫 Mei Ahmed，邮编 78705。你有礼貌、外向。你对你刚买的两块滑板的质量很生气。你想退掉它们，退款走信用卡。如果客服让你确认，你先别答应，因为你还要退智能手表。你另外还想退掉刚买的电子书阅读器。如果网上有同样的商品，你愿意换成同款。如果没有，你就想退掉、退款走信用卡。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Mei Ahmed, zip code 78705. You are polite and outgoing. You are very angry about the quality of the two skateboards you just bought. You want to return them and get a refund to your credit card. If customer service asks you to confirm, don't agree right away, because you still need to return the smartwatch. You also want to return the e-reader you just bought. If the same item is available online, you are willing to exchange it for the same model. If not, you want to return it and get a refund to your credit card.",
+        "glm-5.3": "Your name is Mei Ahmed, and your zip code is 78705. You are polite and outgoing. You are very angry about the quality of the two skateboards you just bought. You want to return them and get a refund to your credit card. If customer service asks you to confirm, don't agree yet, because you still need to return a smartwatch. You also want to return the e-reader you just bought. If the same item is available online, you are willing to exchange it for the same model. If not, you want to return it and get a refund to your credit card."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 92,
+      "en_original": "You name is Mei Ahmed and your zip code is 78705. You are polite, outgoing. You are angry about the quality of the two skateboards you just bought. You want to return them and refund to credit card. If the agent asks for confirmation, do not say yes, because you also want to return the smart watch and e-reader.",
+      "zh": "你叫 Mei Ahmed，邮编 78705。你有礼貌、外向。你对你刚买的两块滑板的质量很生气。你想退掉它们，退款走信用卡。如果客服让你确认，你先别答应，因为你还要退智能手表和电子书阅读器。",
+      "back": {
+        "glm-5.3": "Your name is Mei Ahmed, and your zip code is 78705. You are polite and outgoing. You are angry about the quality of the two skateboards you just bought. You want to return them, with the refund going to your credit card. If customer service asks you to confirm, don't agree yet, because you also want to return a smartwatch and an e-reader.",
+        "deepseek-v4.1-flash": "Your name is Mei Ahmed, zip code 78705. You are polite and outgoing. You are very angry about the quality of the two skateboards you just bought. You want to return them and get a refund to your credit card. If customer service asks you to confirm, don't agree right away, because you still need to return a smartwatch and an e-reader."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 95,
+      "en_original": "You name is Lei Wilson and your zip code is 32255. You are confident, organized, creative, impatient. You received a laptop and you want to exchange it to i7 processor, 8GB, 1TB SSD. If the agent asks for which laptop, it is 15-inch, 32GB.",
+      "zh": "你叫 Lei Wilson，邮编 32255。你自信、有条理、有创意、不耐烦。你收到一台笔记本电脑，你想换成 i7 处理器、8GB 内存、1TB 固态硬盘。如果客服问是哪台笔记本，就是 15 英寸、32GB 那台。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Lei Wilson, zip code 32255. You are confident, organized, creative, and impatient. You received a laptop, and you want to exchange it for an i7 processor, 8GB of RAM, and a 1TB solid-state drive. If customer service asks which laptop it is, it's the 15-inch, 32GB one.",
+        "glm-5.3": "Your name is Lei Wilson, zip code 32255. You are confident, organized, creative, and impatient. You received a laptop and want to exchange it for one with an i7 processor, 8GB RAM, and a 1TB SSD. If customer service asks which laptop it is, it's the 15-inch, 32GB one."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 105,
+      "en_original": "You name is Lucas Brown and your email is lucas.brown9344@example.com. You are busy, happy, outgoing, messy, optimistic. You want to return the bookshelf and jigsaw you received in different orders. Make sure you mention at the beginning that you want to cancel these two things, and they are from different orders. You also want to return the backpack you received with the vacuum cleaner. You also want to change your pending order item to red, and address to your default Chicago home (you won't reveal it for private reasons but it's in your profile). You want to get the tracking number of your cancelled order. You like to say one thing at a time.",
+      "zh": "你叫 Lucas Brown，邮箱是 lucas.brown9344@example.com。你忙碌、快乐、外向、大大咧咧、乐观。你想退掉你在不同订单里收到的书架和拼图。开头一定要说明你想取消这两样东西，而且它们来自不同的订单。你还想退掉和吸尘器一起收到的那个背包。你还想把你那笔待处理订单里的商品改成红色，把地址改成你在芝加哥的默认住址（出于隐私你不想透露，但它在你资料里）。你想拿到你已取消订单的快递单号。你喜欢一次只说一件事。",
+      "back": {
+        "deepseek-v4.1-flash": "My name is Lucas Brown, and my email is lucas.brown9344@example.com. I'm busy, happy, outgoing, easygoing, and optimistic. I want to return the bookshelf and the puzzle I received in different orders. I have to start by saying I want to cancel these two things, and they came from different orders. I also want to return the backpack that came with the vacuum. I also want to change the items in my pending order to red, and change the address to my default address in Chicago (for privacy I don't want to reveal it, but it's in my profile). I want to get the tracking number for my canceled order. I like to say only one thing at a time.",
+        "glm-5.3": "Your name is Lucas Brown, and your email is lucas.brown9344@example.com. You are busy, happy, outgoing, carefree, and optimistic. You want to return the bookshelf and the puzzle you received in different orders. At the very beginning, be sure to state that you want to cancel these two items and that they come from different orders. You also want to return the backpack that came with the vacuum cleaner. You also want to change the item in your pending order to red, and change the address to your default address in Chicago (you don't want to reveal it for privacy reasons, but it is in your profile). You want to get the tracking number for your canceled order. You prefer to say one thing at a time."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 108,
+      "en_original": "You name is Yara Ito and your zip code is 75284. You are happy, messy. Your received hiking boots but seem like already worn, you are unhappy about it and want to send for a new pair with the same specs. You also want to exchange your jigsaw to a more fancy theme, with 500 pieces less. But you want to keep the same difficulty level.",
+      "zh": "你叫 Yara Ito，邮编 75284。你快乐、大大咧咧。你收到一双登山靴，但看起来像是被人穿过了，你很不满，想换成一双规格完全一样的新靴子。你还想把你的拼图换成一个更花哨的主题，片数少 500 片。但你想保持同样的难度等级。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Yara Ito, zip code 75284. You are happy and carefree. You received a pair of hiking boots, but they look like they've been worn by someone, and you're very unhappy about it. You want to exchange them for a new pair of boots with exactly the same specifications. You also want to exchange your puzzle for a fancier theme, with 500 fewer pieces. But you want to keep the same difficulty level.",
+        "glm-5.3": "Your name is Yara Ito, and your zip code is 75284. You are cheerful and carefree. You received a pair of hiking boots, but they look like they have already been worn by someone, and you are very unhappy about it—you want to exchange them for a brand-new pair with exactly the same specifications. You also want to exchange your jigsaw puzzle for one with a fancier theme, with 500 fewer pieces. But you want to keep the same difficulty level."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 112,
+      "en_original": "You name is Yara Silva and your zip code is 77159. You are sad and cautious. You want to modify the laptop order to your NYC address (you don't want to reveal it but should be in your orders profile). You also like to modify the laptop to be {'processor': 'i5', 'storage': '256GB SSD', 'color': 'space grey'};  You also want to exchange your watch to be black dial color but keep the leather strap. You like to say things together.",
+      "zh": "你叫 Yara Silva，邮编 77159。你心情低落、谨慎。你想把笔记本电脑那笔订单改送到你在纽约的地址（你不想透露，但它应该在你的订单资料里）。你还想把这台笔记本改成 {「处理器」：i5，「存储」：256GB 固态硬盘，「颜色」：深空灰}。你还想把你的手表换成黑色表盘，但保留皮表带。你喜欢把事情一起说。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Yara Silva, zip code 77159. You're feeling down and cautious. You want to change the shipping of the laptop order to your address in New York (you don't want to reveal it, but it should be in your order profile). You also want to change this laptop to {\"processor\": i5, \"storage\": 256GB SSD, \"color\": space gray}. You also want to change your watch to a black dial, but keep the leather strap. You like to say things all together.",
+        "glm-5.3": "Your name is Yara Silva, zip code 77159. You are feeling down and cautious. You want to have the laptop order redirected to your address in New York (you don't want to reveal it, but it should be in your order records). You also want to change the laptop to {processor: i5, storage: 256GB SSD, color: Space Gray}. You also want to switch your watch to a black dial, but keep the leather strap. You like to bring everything up at once."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    },
+    {
+      "task_id": 113,
+      "en_original": "You name is Yara Silva and your zip code is 77159. You are sad and cautious. You want to modify the laptop order to your NYC address (you don't want to reveal it but should be in your orders profile). You also like to modify the laptop to be 9844888101. You also want to exchange your watch to be black dial color but keep the leather strap. You like to say things piecewise.",
+      "zh": "你叫 Yara Silva，邮编 77159。你心情低落、谨慎。你想把笔记本电脑那笔订单改送到你在纽约的地址（你不想透露，但它应该在你的订单资料里）。你还想把这台笔记本改成 9844888101。你还想把你的手表换成黑色表盘，但保留皮表带。你喜欢一件一件地说。",
+      "back": {
+        "deepseek-v4.1-flash": "Your name is Yara Silva, zip code 77159. You're feeling down and cautious. You want to change the shipping of the laptop order to your address in New York (you don't want to reveal it, but it should be in your order profile). You also want to change this laptop to 9844888101. You also want to change your watch to a black dial, but keep the leather strap. You like to say things one at a time.",
+        "glm-5.3": "Your name is Yara Silva, zip code 77159. You are feeling down and cautious. You want to change the delivery address for the laptop order to your address in New York (you don't want to reveal it, but it should be in your order records). You also want to change this laptop to 9844888101. You also want to switch your watch to a black dial, but keep the leather strap. You prefer to bring things up one at a time."
+      },
+      "flags": [],
+      "verdict": "consistent",
+      "verdict_note": ""
+    }
+  ],
+  "summary": {
+    "n": 30,
+    "consistent": 30,
+    "drift": 0,
+    "reviewed_by": "ClawsGO Science Agent",
+    "models": [
+      "glm-5.3",
+      "deepseek-v4.1-flash"
+    ],
+    "outcome": "30/30 语义一致。过程中发现并修正 2 类漂移（水壶/water bottle 指代歧义、德州/US-TX 歧义），修正后由两个回译模型确认。",
+    "residual": "商品名与选项值的中英映射负担被有意保留——它是本审计要测的能力，而非缺陷。"
+  }
+}

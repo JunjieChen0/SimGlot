@@ -1,0 +1,90 @@
+{
+  "_comment": "变体目录：名 → 缺陷类 / 是否预留。由 run_holdout.py 生成。",
+  "generated": "2026-10-10",
+  "variants": {
+    "C1 state_mutation": {
+      "defect_class": "state_mutation",
+      "held_out": false
+    },
+    "C2 exception_leak": {
+      "defect_class": "exception_leak",
+      "held_out": false
+    },
+    "C3 actions_not_restored": {
+      "defect_class": "actions_not_restored",
+      "held_out": false
+    },
+    "C4 order_dependent": {
+      "defect_class": "order_dependent",
+      "held_out": false
+    },
+    "C5 saturated": {
+      "defect_class": "saturated",
+      "held_out": false
+    },
+    "C6 db_blind": {
+      "defect_class": "db_blind",
+      "held_out": false
+    },
+    "C7 strict_format": {
+      "defect_class": "strict_format",
+      "held_out": false
+    },
+    "G1a_replay_in_place": {
+      "defect_class": "state_mutation",
+      "held_out": true
+    },
+    "G1b_partial_partition": {
+      "defect_class": "state_mutation",
+      "held_out": true
+    },
+    "G2a_raise_mid_replay": {
+      "defect_class": "exception_leak",
+      "held_out": true
+    },
+    "G2b_cleanup_only_expected": {
+      "defect_class": "exception_leak",
+      "held_out": true
+    },
+    "G3a_partial_truncate": {
+      "defect_class": "actions_not_restored",
+      "held_out": true
+    },
+    "G3b_list_alias": {
+      "defect_class": "actions_not_restored",
+      "held_out": true
+    },
+    "G4a_keyless_cache": {
+      "defect_class": "order_dependent",
+      "held_out": true
+    },
+    "G4b_prev_verdict_reuse": {
+      "defect_class": "order_dependent",
+      "held_out": true
+    },
+    "G5a_dead_branch": {
+      "defect_class": "saturated",
+      "held_out": true
+    },
+    "G5b_exception_swallow": {
+      "defect_class": "saturated",
+      "held_out": true
+    },
+    "G6a_respond_only": {
+      "defect_class": "db_blind",
+      "held_out": true
+    },
+    "G6b_partial_partitions": {
+      "defect_class": "db_blind",
+      "held_out": true
+    },
+    "G7a_case_only": {
+      "defect_class": "strict_format",
+      "held_out": true
+    },
+    "G7b_comma_only": {
+      "defect_class": "strict_format",
+      "held_out": true
+    }
+  }
+}

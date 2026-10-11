@@ -1,0 +1,44 @@
+====================================================================================================
+工作包 A · AppWorld 审计（一进程一世界）
+====================================================================================================
+分区：开发集 [0, 1, 2, 3]（`preregistration_addendum.md` §A-2）｜保留验证集 21 条（索引 6–26，7 个未被开发集触碰的生成器）
+
+====================================================================================================
+AppWorld 审计 · set=holdout｜任务 21 个（索引 6–26）× 变体 9 × episode 4 = 756 个子进程
+====================================================================================================
+完成 744/756（失败 12），墙钟 1979 s（6 路并发）
+  ✗ t6 A1_replay_no_restore unsolved：FileNotFoundError: [Errno 2] No such file or directory: '/home/user/ClawsGO/project-202610
+  ✗ t7 native solved_twice：FileNotFoundError: [Errno 2] No such file or directory: '/home/user/ClawsGO/project-202610
+  ✗ t7 A1_replay_no_restore unsolved：FileNotFoundError: [Errno 2] No such file or directory: '/home/user/ClawsGO/project-202610
+  ✗ t8 A6_completion_flag_only solved：FileNotFoundError: [Errno 2] No such file or directory: '/home/user/ClawsGO/project-202610
+  ✗ t9 A4a_keyless_cache unsolved：FileNotFoundError: [Errno 2] No such file or directory: '/home/user/ClawsGO/project-202610
+  ✗ t12 A4a_keyless_cache solved_twice：FileNotFoundError: [Errno 2] No such file or directory: 'splitwise.jsonl'
+
+变体                               CTL-2 正对照     CTL-1 负对照      INV-1 状态保持      INV-2 重复一致
+native                              17/20          0/20            0/20            0/20 
+A1_replay_no_restore                18/21          3/21           21/21           21/21 
+A2_exception_after_replay           21/21          0/21           21/21           21/21 
+A3_requests_not_restored            18/21          3/21           21/21           21/21 
+A4a_keyless_cache                   18/21          0/21            0/21            0/21 
+A4b_prev_verdict_reuse              17/20          0/20            0/20            0/20 
+A5_saturated                         0/21         21/21            0/21            0/21 
+A6_completion_flag_only              0/20          0/20            0/20            0/20 
+A7_strict_answer_match               0/21          0/21            0/21            0/21 
+
+  ✗ 特异性失败：native 上 CTL-2 17、CTL-1 0、INV-1 0、INV-2 0
+  灵敏度：6/8 个注入变体被至少一个适用探针检出
+      检出：A1_replay_no_restore, A2_exception_after_replay, A3_requests_not_restored, A4a_keyless_cache, A4b_prev_verdict_reuse, A5_saturated
+      未检出（如实保留）：A6_completion_flag_only, A7_strict_answer_match
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+迁移后的适用性（**检测概念经目标适配器复现**，不是「八个检测器一字不改」）
+────────────────────────────────────────────────────────────────────────────────────────────────────
+检测器                       可用性                   不适用类别                   说明
+INV-1 状态保持                适用（重写为目标探针）           契约本质适用                  `solved` episode 打分**前后**的业务状态签名是否相同
+INV-2 重复评分一致              适用（重写为目标探针）           契约本质适用                  `solved_twice`：同一环境连评两次，判定与状态是否都相同
+INV-3 顺序无关                不适用（适配器限制）            当前适配器暂时不可观测             需同一任务两个环境；AppWorld 同进程重复建世界会 401，一进程一世界下无从构造
+INV-4 异常路径还原              不适用（契约差异）             契约本质不适用                 原生 `evaluate()` 不经过环境动作路径，注入不进去
+INV-5 结束步状态稳定             部分适用                  契约差异                    AppWorld 的「结束」是 `supervisor.complete_task`；以 `solved` episode 的状态稳定性代替
+CTL-1 负对照                 适用（重写为目标探针）           契约本质适用                  `unsolved` 与 `solved_minus_last` 都必须**不通过**
+CTL-2 正对照                 适用（重写为目标探针）           契约本质适用                  `solved`（回放全部参考调用）必须**通过**
+CTL-3 格式容忍                不适用（契约差异）             契约本质不适用                 任务定义没有 `outputs` 字段（答案在 supervisor 任务记录里），构造不出「声明过的等价写法」

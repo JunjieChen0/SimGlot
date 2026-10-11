@@ -1,0 +1,581 @@
+{
+  "source": "tau-bench retail tasks_test",
+  "frame": "可评分帧 91 条（经 scripts/audit_tasks.py 从原 115 条中筛出）",
+  "n_frame": 91,
+  "n_source": 115,
+  "n_sample": 30,
+  "seed": 20261007,
+  "rule": "联合分层：(意图族 × 复杂度) 按总体占比做最大余数法配额（格容量封顶，无强制下限）；稀有意图族若全军覆没则从配额≥2的格调剂1个保底（见 repairs）；格内固定种子抽取。",
+  "cells_counts": {
+    "address|4-5": 2,
+    "address|6+": 4,
+    "cancel|0-1": 2,
+    "cancel|2-3": 6,
+    "cancel|4-5": 2,
+    "cancel|6+": 5,
+    "items|0-1": 16,
+    "items|2-3": 6,
+    "items|4-5": 9,
+    "items|6+": 20,
+    "items+address|2-3": 11,
+    "items+address|4-5": 2,
+    "items+address|6+": 2,
+    "none|0-1": 1,
+    "none|6+": 1,
+    "payment|4-5": 1,
+    "transfer|6+": 1
+  },
+  "cells_quota": {
+    "address|4-5": 1,
+    "address|6+": 1,
+    "cancel|0-1": 1,
+    "cancel|2-3": 2,
+    "cancel|4-5": 0,
+    "cancel|6+": 1,
+    "items|0-1": 4,
+    "items|2-3": 3,
+    "items|4-5": 2,
+    "items|6+": 7,
+    "items+address|2-3": 3,
+    "items+address|4-5": 1,
+    "items+address|6+": 1,
+    "none|0-1": 1,
+    "none|6+": 0,
+    "payment|4-5": 1,
+    "transfer|6+": 1
+  },
+  "repairs": [
+    {
+      "intent": "transfer",
+      "reason": "allocate() 内置保底约束：每族 ≥ 1 条"
+    },
+    {
+      "intent": "payment",
+      "reason": "allocate() 内置保底约束：每族 ≥ 1 条"
+    },
+    {
+      "intent": "none",
+      "reason": "allocate() 内置保底约束：每族 ≥ 1 条"
+    }
+  ],
+  "task_ids": [
+    5,
+    9,
+    14,
+    15,
+    17,
+    19,
+    23,
+    24,
+    26,
+    27,
+    28,
+    40,
+    41,
+    43,
+    59,
+    61,
+    72,
+    73,
+    74,
+    77,
+    78,
+    83,
+    90,
+    91,
+    92,
+    95,
+    105,
+    108,
+    112,
+    113
+  ],
+  "tasks": [
+    {
+      "task_id": 5,
+      "intent": "items",
+      "complexity": "4-5",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 5,
+      "n_outputs": 0,
+      "instruction_len": 394,
+      "tools_used": [
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_product_details",
+        "get_user_details",
+        "return_delivered_order_items"
+      ],
+      "instruction": "You are mei_kovacs_8020 (zip code 28236) and you want to exchange the water bottle and the desk lamp. You want to exchange the water bottle to a bigger one, and the desk lamp to a less bright one (prefer battery > USB > AC). If the agent asks for confirmation, only exchange the desk lamp. If the agent asks for confirmation again, do not exchange anything, and return the water bottle instead."
+    },
+    {
+      "task_id": 9,
+      "intent": "items",
+      "complexity": "6+",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 6,
+      "n_outputs": 0,
+      "instruction_len": 294,
+      "tools_used": [
+        "exchange_delivered_order_items",
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_product_details",
+        "get_user_details"
+      ],
+      "instruction": "You are mei_kovacs_8020 (zip code 28236) and you want to exchange the water bottle and the desk lamp. You want to exchange the water bottle to a bigger one, and the desk lamp to a brighter one (prefer AC adapter > battery > USB). If the agent asks for confirmation, only exchange the desk lamp."
+    },
+    {
+      "task_id": 14,
+      "intent": "items",
+      "complexity": "6+",
+      "has_outputs": false,
+      "n_write_actions": 2,
+      "n_gt_actions": 6,
+      "n_outputs": 0,
+      "instruction_len": 302,
+      "tools_used": [
+        "find_user_id_by_email",
+        "get_order_details",
+        "get_user_details",
+        "return_delivered_order_items"
+      ],
+      "instruction": "You are mia_garcia_4516 (mia.garcia2723@example.com). You just quit gaming and want to cancel or return everything associated with it. (It's just a keyboard and a mouse, but do not reveal it to the agent). Original payment is preferred. You are into gaming but realized the importance of studying hard."
+    },
+    {
+      "task_id": 15,
+      "intent": "items",
+      "complexity": "6+",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 7,
+      "n_outputs": 0,
+      "instruction_len": 221,
+      "tools_used": [
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_product_details",
+        "get_user_details",
+        "modify_pending_order_items"
+      ],
+      "instruction": "You are Fatima Johnson in 78712. You want to modify the pending boots to a size 8, and want the material, but do not care about waterproof or not. You are a private person that does not want to reveal much about yourself."
+    },
+    {
+      "task_id": 17,
+      "intent": "address",
+      "complexity": "6+",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 6,
+      "n_outputs": 0,
+      "instruction_len": 174,
+      "tools_used": [
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_user_details",
+        "modify_pending_order_address"
+      ],
+      "instruction": "You are Fatima Johnson in 78712. You want to change #W8665881 to be delivered to Suite 641 instead. You are a private person that does not want to reveal much about yourself."
+    },
+    {
+      "task_id": 19,
+      "intent": "items",
+      "complexity": "6+",
+      "has_outputs": true,
+      "n_write_actions": 1,
+      "n_gt_actions": 7,
+      "n_outputs": 2,
+      "instruction_len": 359,
+      "tools_used": [
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_product_details",
+        "get_user_details",
+        "return_delivered_order_items"
+      ],
+      "instruction": "You are Mei Davis in 80217. You want to return the water bottle, and exchange the pet bed and office chair to the cheapest version. Mention the two things together. If you can only do one of the two things, you prefer to do whatever saves you most money, but you want to know the money you can save in both ways. You are in debt and sad today, but very brief."
+    },
+    {
+      "task_id": 23,
+      "intent": "items",
+      "complexity": "6+",
+      "has_outputs": false,
+      "n_write_actions": 3,
+      "n_gt_actions": 12,
+      "n_outputs": 0,
+      "instruction_len": 349,
+      "tools_used": [
+        "exchange_delivered_order_items",
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_product_details",
+        "get_user_details",
+        "modify_pending_order_items"
+      ],
+      "instruction": "You are Sofia Hernandez, and you live in Seattle, WA, 98193. You want to exchange the helmet for a medium sized, red, high ventilation type, and you want to exchange the luggage set (in another order) to a two-piece black one with soft material. Lastly, you want to modify the grill you just ordered to the same type as the one you already received."
+    },
+    {
+      "task_id": 24,
+      "intent": "none",
+      "complexity": "0-1",
+      "has_outputs": true,
+      "n_write_actions": 0,
+      "n_gt_actions": 0,
+      "n_outputs": 2,
+      "instruction_len": 320,
+      "tools_used": [],
+      "instruction": "You are Sofia Hernandez, and you live in Seattle, WA, 98193. You want to cancel the grill, but if the agent asks you to confirm, you regret and want to keep it. You then want to ask which two t-shirts you have ordered in another order, and what materials are they. Make everything sound very natural and make up reasons."
+    },
+    {
+      "task_id": 26,
+      "intent": "transfer",
+      "complexity": "6+",
+      "has_outputs": false,
+      "n_write_actions": 2,
+      "n_gt_actions": 8,
+      "n_outputs": 0,
+      "instruction_len": 248,
+      "tools_used": [
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_user_details",
+        "return_delivered_order_items",
+        "transfer_to_human_agents"
+      ],
+      "instruction": "You are Isabella Johansson, and you live in 32286. You have an order sent to Texas by accident, and you want to know the tracking number of the order, and return all items in it except the pet bed. You don't remember the order number. It is urgent."
+    },
+    {
+      "task_id": 27,
+      "intent": "items",
+      "complexity": "6+",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 6,
+      "n_outputs": 0,
+      "instruction_len": 347,
+      "tools_used": [
+        "exchange_delivered_order_items",
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_product_details",
+        "get_user_details"
+      ],
+      "instruction": "You are Isabella Johansson, and you live in 32286. You want to return the hose, backpack, and exchange the hiking boots to the exact same item except that it is waterproof. Make sure you mention the two requests at the same time, and if the agent can only do one, you prefer the exchange. You are a bit anxious and want to get things done quickly."
+    },
+    {
+      "task_id": 28,
+      "intent": "items",
+      "complexity": "6+",
+      "has_outputs": true,
+      "n_write_actions": 3,
+      "n_gt_actions": 11,
+      "n_outputs": 1,
+      "instruction_len": 370,
+      "tools_used": [
+        "calculate",
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_user_details",
+        "return_delivered_order_items"
+      ],
+      "instruction": "You are Isabella Johansson, and you live in 32286. You want to return the skateboard, garden hose, backpack, keyboard, bed, and also cancel the hose you just ordered (if cancelling one item is not possible, forget about it, you just want to cancel the hose and nothing else). You want to know how much you can get in total as refund. You are extremely brief but patient."
+    },
+    {
+      "task_id": 40,
+      "intent": "payment",
+      "complexity": "4-5",
+      "has_outputs": true,
+      "n_write_actions": 1,
+      "n_gt_actions": 4,
+      "n_outputs": 2,
+      "instruction_len": 554,
+      "tools_used": [
+        "find_user_id_by_email",
+        "get_order_details",
+        "get_user_details",
+        "modify_pending_order_payment"
+      ],
+      "instruction": "You are Isabella Lopez, and your email address is isabella.lopez3271@example.com. You want to know how much balance does your gift card have. Also, for your recent order, whether you used your visa, mastercard, or amex credit card. You also wonder if you can apply the gift card balance to the order. If not, you want to change your payment method to visa, because the other two cards have a lot of balance. You are a yound college student under the pressure of final exams and student loans, so you are a bit anxious and want to get things done quickly."
+    },
+    {
+      "task_id": 41,
+      "intent": "items+address",
+      "complexity": "6+",
+      "has_outputs": false,
+      "n_write_actions": 4,
+      "n_gt_actions": 10,
+      "n_outputs": 0,
+      "instruction_len": 634,
+      "tools_used": [
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_product_details",
+        "get_user_details",
+        "modify_pending_order_address",
+        "modify_pending_order_items",
+        "modify_user_address"
+      ],
+      "instruction": "Your name is Mei Patel, and you live in 445 Maple Drive, Suite 394, Fort Worth, Texas, 76165. You just created your user id mei_patel_7272 and ordered some things, but you have two problems: first, the 1000-piece intermediate jigsaw might be too hard for your little kid, you wonder if you can change it to the easiest one with fewest pieces; second, you might have typed your address wrong. You want to check it, and potentially correct all order addresses and your user address. Make sure you mention these two problems at the same time in the same order. You are brief and your memory is not too good sometimes, but you are polite."
+    },
+    {
+      "task_id": 43,
+      "intent": "address",
+      "complexity": "4-5",
+      "has_outputs": true,
+      "n_write_actions": 1,
+      "n_gt_actions": 5,
+      "n_outputs": 7,
+      "instruction_len": 555,
+      "tools_used": [
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_user_details",
+        "modify_user_address"
+      ],
+      "instruction": "You are Lucas (lucas_santos_6600), you live in Denver CO 80239, and your daughter lives in Chicago. You order some things for her but she has not received, so you want to know which address the order was sent to, the tracking number, and if the order is still in transit. You also want to check if the storage of the tablet you ordered. Lastly, you want to change your default address to your daughter's address so that you don't have to change it every time you order something for her. You are a lonely man and you want to talk to the agent for a while."
+    },
+    {
+      "task_id": 59,
+      "intent": "cancel",
+      "complexity": "6+",
+      "has_outputs": true,
+      "n_write_actions": 2,
+      "n_gt_actions": 6,
+      "n_outputs": 2,
+      "instruction_len": 1157,
+      "tools_used": [
+        "calculate",
+        "cancel_pending_order",
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "modify_pending_order_address"
+      ],
+      "instruction": "You are Yusuf Taylor from San Jose, CA, 95154. You recently placed two orders, and now you would like to make several changes and checks. You'll first inquire about the status difference between your two orders, #W2702727 and #W8268610, since both are \"pending,\" but one was placed much earlier in the year. You are considering cancelling the older order as you find the wait time unreasonable. If the agent cannot guarantee the older order will be processed within 5 days, you want to cancel it. You also want to confirm the total price of the refund.\n\nFor order #W2702727, you intend to switch the shipping address to your new home in a different city because you plan to move prior to its delivery next month. Your new address is 1234 Elm St, Springfield, IL, 62701. You want the agent to confirm the change and ensure the order will be delivered to the new address. You also want to confirm the total price of the order after the address change.\n\nYour approach will be firm, as you are unhappy with the pending status's duration but try to make all requests in one go and ask for them to be resolved efficiently and correctly in context with each other."
+    },
+    {
+      "task_id": 61,
+      "intent": "items",
+      "complexity": "4-5",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 5,
+      "n_outputs": 0,
+      "instruction_len": 248,
+      "tools_used": [
+        "calculate",
+        "find_user_id_by_name_zip",
+        "get_order_details",
+        "get_product_details",
+        "modify_pending_order_items"
+      ],
+      "instruction": "You are Chen Johnson from Houston TX, 77004. You want to change your wireless earbuds in order W5061109 to a blue colored one. Provide all details upfront and ask the agent to resolve as soon as possible. You want the price to be the same or lower."
+    },
+    {
+      "task_id": 72,
+      "intent": "items+address",
+      "complexity": "2-3",
+      "has_outputs": false,
+      "n_write_actions": 2,
+      "n_gt_actions": 2,
+      "n_outputs": 0,
+      "instruction_len": 876,
+      "tools_used": [
+        "modify_pending_order_address",
+        "modify_pending_order_items"
+      ],
+      "instruction": "You name is Ivan Khan and your zip code is 28243. You are polite, optimistic, organized. You made some mistake and ordered an order sent to your son's address in Washington DC, and you want to modify it to your default address in Charlotte (you do not want to mention it, but it is in your user profile the agent can look up) because he is coming back home. You also want to adjust the desk lamp to be black color, and the backpack to be medium size and polyester material instead. If multiple colors are available for the backpack, you prefer grey. If the agent asks for payment method, you say GC initially, but if the agent does not allow it or asks you to confirm it, you change your mind to PayPal, and decide to only modify the backpack. Make sure you briefly mention the two things at the same time at the beginning, but first mention the modification then the address."
+    },
+    {
+      "task_id": 73,
+      "intent": "items",
+      "complexity": "0-1",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 1,
+      "n_outputs": 0,
+      "instruction_len": 183,
+      "tools_used": [
+        "return_delivered_order_items"
+      ],
+      "instruction": "You name is Fatima Wilson and your email is fatima.wilson5721@example.com. You are polite, flexible, creative. You want to return everything you just bought except the coffee machine."
+    },
+    {
+      "task_id": 74,
+      "intent": "cancel",
+      "complexity": "2-3",
+      "has_outputs": false,
+      "n_write_actions": 2,
+      "n_gt_actions": 2,
+      "n_outputs": 0,
+      "instruction_len": 392,
+      "tools_used": [
+        "cancel_pending_order",
+        "modify_pending_order_items"
+      ],
+      "instruction": "You name is Lei Li and your zip code is 85033. You are insecure, shy. You recently bought a laptop, but you want to exchange it to i9 CPU. If multiple storage options are available, you prefer 256GB SSD. If multiple colors are available, you prefer silver. You also have a pending order with five items (you don't remember order ID), and you want to cancel it because you no longer need them."
+    },
+    {
+      "task_id": 77,
+      "intent": "items",
+      "complexity": "0-1",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 1,
+      "n_outputs": 0,
+      "instruction_len": 292,
+      "tools_used": [
+        "exchange_delivered_order_items"
+      ],
+      "instruction": "You name is Ivan Johnson and your zip code is 94183. You ordered a perfume and you just tried a little bit and you like it extremely. You want to get the maximum size available for it. If the agent cannot help with placing a new order, exchange your current one to the largest size available."
+    },
+    {
+      "task_id": 78,
+      "intent": "cancel",
+      "complexity": "2-3",
+      "has_outputs": false,
+      "n_write_actions": 3,
+      "n_gt_actions": 3,
+      "n_outputs": 0,
+      "instruction_len": 363,
+      "tools_used": [
+        "cancel_pending_order",
+        "modify_pending_order_address",
+        "modify_pending_order_items"
+      ],
+      "instruction": "You name is Yara Muller and your email is yara.muller9246@example.com. You are sad, organized, pessimistic. For #W5056519, change address to same as #W8277957. For #W5056519, exchange Makeup Kit {'skin tone': 'light', 'kit size': 'professional', 'brand': 'Brand B'} to {'skin tone': 'dark', 'brand': 'Brand A'}; Cancel order #W5995614 because ordered by mistake. "
+    },
+    {
+      "task_id": 83,
+      "intent": "items",
+      "complexity": "0-1",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 1,
+      "n_outputs": 0,
+      "instruction_len": 279,
+      "tools_used": [
+        "return_delivered_order_items"
+      ],
+      "instruction": "You name is Chen Silva and your zip code is 46281. You are messy, flexible, outgoing. You received two tablets and you only need one. You want to return the more expensive one and refund to credit card. If refund to credit card is not possible, you become angry and refund to GC."
+    },
+    {
+      "task_id": 90,
+      "intent": "cancel",
+      "complexity": "0-1",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 1,
+      "n_outputs": 0,
+      "instruction_len": 458,
+      "tools_used": [
+        "cancel_pending_order"
+      ],
+      "instruction": "You name is Emma Kovacs and your email is emma.kovacs2974@example.com. You are polite, curious, flexible, relaxing, impatient. You want to know if the digital camera you just bought is 10x zoom. If not, modify the item to 10x zoom without changing the other options. If 10x zoom is not available, cancel the order with the reason of no longer needed. If it is available but the price is more than 3000, cancel the order with the reason of ordered by mistake."
+    },
+    {
+      "task_id": 91,
+      "intent": "items",
+      "complexity": "2-3",
+      "has_outputs": false,
+      "n_write_actions": 2,
+      "n_gt_actions": 2,
+      "n_outputs": 0,
+      "instruction_len": 495,
+      "tools_used": [
+        "exchange_delivered_order_items",
+        "return_delivered_order_items"
+      ],
+      "instruction": "You name is Mei Ahmed and your zip code is 78705. You are polite, outgoing. You are angry about the quality of the two skateboards you just bought. You want to return them and refund to credit card. If the agent asks for confirmation, do not say yes, because you also want to return the smart watch. You also want to return the e-reader you just bought. If the same item is availabe online, you're willing to exchange it to the same item. If not, you want to return it and refund to credit card."
+    },
+    {
+      "task_id": 92,
+      "intent": "items",
+      "complexity": "2-3",
+      "has_outputs": false,
+      "n_write_actions": 2,
+      "n_gt_actions": 2,
+      "n_outputs": 0,
+      "instruction_len": 312,
+      "tools_used": [
+        "return_delivered_order_items"
+      ],
+      "instruction": "You name is Mei Ahmed and your zip code is 78705. You are polite, outgoing. You are angry about the quality of the two skateboards you just bought. You want to return them and refund to credit card. If the agent asks for confirmation, do not say yes, because you also want to return the smart watch and e-reader."
+    },
+    {
+      "task_id": 95,
+      "intent": "items",
+      "complexity": "0-1",
+      "has_outputs": false,
+      "n_write_actions": 1,
+      "n_gt_actions": 1,
+      "n_outputs": 0,
+      "instruction_len": 239,
+      "tools_used": [
+        "exchange_delivered_order_items"
+      ],
+      "instruction": "You name is Lei Wilson and your zip code is 32255. You are confident, organized, creative, impatient. You received a laptop and you want to exchange it to i7 processor, 8GB, 1TB SSD. If the agent asks for which laptop, it is 15-inch, 32GB."
+    },
+    {
+      "task_id": 105,
+      "intent": "items+address",
+      "complexity": "4-5",
+      "has_outputs": true,
+      "n_write_actions": 4,
+      "n_gt_actions": 4,
+      "n_outputs": 1,
+      "instruction_len": 653,
+      "tools_used": [
+        "modify_pending_order_address",
+        "modify_pending_order_items",
+        "return_delivered_order_items"
+      ],
+      "instruction": "You name is Lucas Brown and your email is lucas.brown9344@example.com. You are busy, happy, outgoing, messy, optimistic. You want to return the bookshelf and jigsaw you received in different orders. Make sure you mention at the beginning that you want to cancel these two things, and they are from different orders. You also want to return the backpack you received with the vacuum cleaner. You also want to change your pending order item to red, and address to your default Chicago home (you won't reveal it for private reasons but it's in your profile). You want to get the tracking number of your cancelled order. You like to say one thing at a time."
+    },
+    {
+      "task_id": 108,
+      "intent": "items",
+      "complexity": "2-3",
+      "has_outputs": false,
+      "n_write_actions": 2,
+      "n_gt_actions": 2,
+      "n_outputs": 0,
+      "instruction_len": 334,
+      "tools_used": [
+        "exchange_delivered_order_items"
+      ],
+      "instruction": "You name is Yara Ito and your zip code is 75284. You are happy, messy. Your received hiking boots but seem like already worn, you are unhappy about it and want to send for a new pair with the same specs. You also want to exchange your jigsaw to a more fancy theme, with 500 pieces less. But you want to keep the same difficulty level."
+    },
+    {
+      "task_id": 112,
+      "intent": "items+address",
+      "complexity": "2-3",
+      "has_outputs": false,
+      "n_write_actions": 3,
+      "n_gt_actions": 3,
+      "n_outputs": 0,
+      "instruction_len": 431,
+      "tools_used": [
+        "modify_pending_order_address",
+        "modify_pending_order_items"
+      ],
+      "instruction": "You name is Yara Silva and your zip code is 77159. You are sad and cautious. You want to modify the laptop order to your NYC address (you don't want to reveal it but should be in your orders profile). You also like to modify the laptop to be {'processor': 'i5', 'storage': '256GB SSD', 'color': 'space grey'};  You also want to exchange your watch to be black dial color but keep the leather strap. You like to say things together."
+    },
+    {
+      "task_id": 113,
+      "intent": "items+address",
+      "complexity": "2-3",
+      "has_outputs": false,
+      "n_write_actions": 3,
+      "n_gt_actions": 3,
+      "n_outputs": 0,
+      "instruction_len": 375,
+      "tools_used": [
+        "modify_pending_order_address",
+        "modify_pending_order_items"
+      ],
+      "instruction": "You name is Yara Silva and your zip code is 77159. You are sad and cautious. You want to modify the laptop order to your NYC address (you don't want to reveal it but should be in your orders profile). You also like to modify the laptop to be 9844888101. You also want to exchange your watch to be black dial color but keep the leather strap. You like to say things piecewise."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+quantity,value,note
+primary_denominator,57,confirmed-differ variant x target combinations
+unresolved,6,probes could not separate them from the reference
+confirmed_equivalent,0,no variant was shown equivalent
+detected_primary,54,of 57
+conservative_denominator,63,
+detected_conservative,56,of 63
+combinations_not_detected,3,synthetic/tiny/G5b_exception_swallow; tau-bench/airline/G5b_exception_swallow; tau-bench/retail/G5b_exception_swallow
+unique_detections_total,35,sum over detectors of leave-one-out-unique hits
+unique_INV-1,0,detections no other check contributes
+unique_INV-2,0,detections no other check contributes
+unique_INV-3,9,detections no other check contributes
+unique_INV-4,6,detections no other check contributes
+unique_INV-5,0,detections no other check contributes
+unique_CTL-1,15,detections no other check contributes
+unique_CTL-2,0,detections no other check contributes
+unique_CTL-3,5,detections no other check contributes

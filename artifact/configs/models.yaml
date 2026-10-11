@@ -1,0 +1,98 @@
+# SimGlot 模型通道与阵容配置
+# 密钥在 config/.env（600 权限，不进版本库）。本文件可进版本库。
+# 生成：ClawsGO Science Agent，2026-10-07，依据本账号 /models 实测结果
+
+version: 1
+active_channel: token_plan
+
+channels:
+  token_plan:
+    base_url: https://token-plan.maas.qianwenaiapi.com/compatible-mode/v1
+    api_key_env: DASHSCOPE_API_KEY
+    max_concurrency: 8          # 个人版并发上限（以控制台为准）
+    note: 百炼 Token Plan，专属 sk-sp- key；用户已与客服确认可用于自研脚本批量调用
+  pay_as_you_go:
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    api_key_env: DASHSCOPE_API_KEY
+    max_concurrency: 20
+    note: 备用通道（按量付费）。新用户免费额度仅在此通道生效，Token Plan 不适用
+  dmxapi:
+    base_url: https://www.dmxapi.cn/v1
+    api_key_env: DMXAPI_API_KEY
+    max_concurrency: 8
+    note: >-
+      第三方聚合站，2026-10-07 由用户提供，**只用于 DeepSeek 系列**（国产模型，改走聚合站而非百炼，
+      以分担百炼额度）。该站另有 GPT / Claude / Gemini 等境外模型，按本研究的硬约束**一律不用**。
+      复现性注意：与百炼官方通道相比服务栈不同，论文须披露 DeepSeek 侧的通道来源。
+      2026-10-07 实测 /v1/models 返回 525 个模型，含 deepseek-v4.1-flash、deepseek-v4-pro。
+
+# ── 请求参数适配（2026-10-07 实测）──────────────────────────────
+# qwen / deepseek 默认开思考模式，会无视 max_tokens 把预算烧在推理上（实测超限 4–25 倍、
+# 延迟达 11s），且会让模拟用户说话像在推理 —— 必须关闭。
+# glm 的思考模式**由平台强制开启、无法关闭**：传 enable_thinking: false 返回 400
+#   `The value of the enable_thinking parameter is restricted to True.`
+# 思考 token 同样计入 max_tokens，故 glm 的预算须单独放宽，否则会"想完了却说不出话"。
+adapters:
+  qwen:     { extra_body: { enable_thinking: false } }
+  deepseek: { extra_body: { enable_thinking: false } }
+  glm:      { extra_body: {} }   # 强制思考，无可关闭参数；靠下面的预算与截断兜底处理
+  _fallback: { on_400_strip_extra_body: true }   # 未知参数导致 400 时，剥离 extra_body 重试一次
+
+# 通道级适配（优先于上面的扁平配置）：同一模型族在不同通道上关思考的写法不同。
+# 2026-10-07 实测 DMXAPI：`enable_thinking: false` 与 `chat_template_kwargs` 均**被静默忽略**
+# （不报 400，返回体里 reasoning_content 非空、content 为空），须改用 Anthropic 风格的
+# `thinking: {type: disabled}`（实测 comp_tok 300+→63，reasoning_content 清零）。
+adapters_by_channel:
+  dmxapi:
+    deepseek: { extra_body: { thinking: { type: disabled } } }
+
+request_defaults:
+  temperature: 0
+  max_tokens: 512        # 通用默认；模拟用户与智能体各自显式传值
+  timeout_s: 90
+  max_retries: 3
+  retry_backoff_s: [1, 4, 12]
+
+# 模拟用户每轮的 token 预算（按厂商给，依据 scripts/measure_sim_budget.py 实测）
+#   qwen     峰值  80 → 200
+#   deepseek 峰值  76 → 200
+#   glm      ≥ 1172（思考长度在同输入下波动很大，实测同一任务出现 598 / 1172 两值）→ 2000
+# 上限只起"防截断"作用，不改变模型自然停止时的输出（模型自行发出结束符即停），
+# 故给 glm 放宽预算不会让它的可见发言变长——实测各模型可见字符数相当。
+# 附加保障：若某次调用仍撞到上限（completion ≥ 0.98×预算）或返回空，
+# 执行体按 3 倍预算循环扩容（最多 3 次），并把该轮记为 budget_escalated / truncated_final。
+simulator_max_tokens:
+  default: 200
+  qwen: 200
+  deepseek: 200
+  glm: 2000
+
+# ── 阵容（本账号无 Kimi / MiniMax，故为 3 厂商 × 6 个模拟器）──
+# 档位标注已于 2026-10-07 更正（见 DEVIATIONS.md D6）：原文按模型名猜档位，
+# 把 deepseek-v4-pro 标为 frontier、deepseek-v4.1-flash 标为 cheap，与真实代际相反。
+# 事实：v4.1-flash 于 2026-09-10 发布，是 DeepSeek 现行旗舰；官方自 2026-09-14 起
+# 把 deepseek-v4-pro 的请求路由到 v4.1-flash。故 DeepSeek 的这两个成员是**两代**而非两档。
+# 注意：tier 字段不被任何代码消费，纯注释性元数据；改它不影响数据与 harness。
+simulators:
+  - { id: qwen3.8-max,          vendor: qwen,     tier: frontier }
+  - { id: qwen3.7-plus,         vendor: qwen,     tier: mid }
+  - { id: qwen3.8-flash,        vendor: qwen,     tier: cheap }
+  - { id: deepseek-v4.1-flash,  vendor: deepseek, tier: frontier }   # 现行旗舰（2026-09-10 发布）
+  - { id: deepseek-v4-pro,      vendor: deepseek, tier: prev_gen }   # 上一代；百炼仍单独供应，实测与上者可区分
+  - { id: glm-5.3,              vendor: glm,      tier: mid }
+
+# 智能体阵容：Qwen 三级能力阶梯（frontier / mid / cheap）+ 1 个跨厂商锚点。
+# 锚点取 DeepSeek 现行旗舰，而非已退役的 v4-pro——理由是可追溯性：官方已把
+# v4-pro 的路由改指 v4.1-flash，若用 v4-pro，论文无法说清所调模型的身份。
+agents:
+  - { id: qwen3.8-max,          tier: frontier }
+  - { id: qwen3.7-plus,         tier: mid }
+  - { id: deepseek-v4.1-flash,  tier: frontier }
+  - { id: qwen3.8-flash,        tier: cheap }
+
+# ── 版本固定 ──────────────────────────────────────────────────
+version_pinning:
+  pinned_snapshots: [deepseek-v4-flash-0731]   # 名字自带日期，天然稳定
+  rolling_aliases:  [qwen3.8-max, qwen3.7-plus, qwen3.8-flash,
+                     deepseek-v4-pro, deepseek-v4.1-flash, glm-5.3, glm-5.2]
+  rule: 滚动别名必须在每次运行的日志里记录调用日期；如平台提供带日期的快照名，优先改用快照名

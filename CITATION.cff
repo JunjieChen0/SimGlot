@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite the paper, and cite the archived data by its DOI."
+title: "SimGlot: Oracle-Integrity Auditing and Configuration-Dependent Measurement in an LLM Agent Benchmark"
+abstract: >-
+  Artifact for an empirical study that treats an LLM agent benchmark's evaluation harness --
+  its task suite, input generator and reward function -- as software under test. It contains the
+  oracle-integrity auditing suite (eight checks in two families), a twenty-one-variant
+  fault-injection battery over seven defect classes, the analyses behind every table and figure in
+  the paper, and the version-binding records that tie each number to a frozen archive revision.
+type: software
+authors:
+  - family-names: Chen
+    given-names: Junjie
+    affiliation: "School of Computer Science and Engineering, Nanjing University of Science and Technology"
+    orcid: ""
+    email: junjie_chen@njust.edu.cn
+repository-code: "https://github.com/JunjieChen0/SimGlot"
+license: MIT
+keywords:
+  - test oracle
+  - oracle problem
+  - fault injection
+  - benchmark quality
+  - measurement validity
+  - LLM agent evaluation
+  - empirical software engineering
+  - replication package
+version: 1.0.0
+date-released: "2026-10-11"
+preferred-citation:
+  type: article
+  title: "When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and Configuration-Dependent Measurement in an LLM Agent Benchmark"
+  authors:
+    - family-names: Chen
+      given-names: Junjie
+  journal: "Empirical Software Engineering"
+  year: 2026
+  note: "Under review. The archived data have their own DOI; see the paper's data availability statement."
+# 待作者填写（不得代填）：
+#   · 上面 authors 的 orcid —— 若没有可留空
+#   · preferred-citation 的 doi 与 pages/volume（接收后补）
+#   · 一个 identifiers: 段落，指向 Zenodo 的数据 DOI，例如
+#       identifiers:
+#         - type: doi
+#           value: 10.5281/zenodo.XXXXXXX
+#           description: "Frozen archives and the replication package"

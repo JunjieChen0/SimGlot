@@ -1,0 +1,127 @@
+========================================================================================================
+工作包 B3/B4 · 基线对照与检测器消融
+========================================================================================================
+有效性三态（`b_validity.csv`，第二轮复审后）：
+  已分辨（confirmed_differ）57/63｜未定（unresolved）6｜已证等价（confirmed_equivalent）0｜其他 0
+  主分母 = 已分辨；保守分母 = 已分辨 + 未定（未定**不等于等价**，只是探针没分辨出来）。
+进入统计的变体 × 目标 = 63 条｜目标 ['synthetic/tiny', 'tau-bench/airline', 'tau-bench/retail']
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+B3 · 基线对照：各方法检出的**变体数 / 主分母**（分母 = 该目标已分辨的变体数）
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+目标                        主分母                 原框架随带测试         仅重复评分一致 (INV-2)       仅状态不变量 (INV-1..5)      仅已知答案对照 (CTL-1..3)              完整套件 (8 项)
+synthetic/tiny             20               N/A（无可比项）             6/20                  11/20                  10/20                  19/20      
+tau-bench/airline          20               N/A（无可比项）             7/20                  12/20                  10/20                  19/20      
+tau-bench/retail           17               N/A（无可比项）             6/17                  11/17                   8/17                  16/17      
+  ↳ 逐目标检出合计 54 = 主分母总体检出 54（B4/B4b 用的就是这个总体）
+
+B3b · 按缺陷类（**七类聚合**）：完整套件 vs 仅状态不变量 vs 仅对照
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+缺陷类                        n        仅不变量         仅对照        完整套件      预留命中
+actions_not_restored       9         9/9          0/9          9/9        6/6
+db_blind                   7         0/7          7/7          7/7        4/4
+exception_leak             9         9/9          3/9          9/9        6/6
+order_dependent            9         9/9          0/9          9/9        6/6
+saturated                  9         0/9          6/9          6/9        3/6
+state_mutation             9         7/9          7/9          9/9        6/6
+strict_format              5         0/5          5/5          5/5        3/3
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+B3c · 跨仪器核对：有效性探针**未定**、而矩阵检测器**报警**的变体
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+  共 2 条。**两个仪器不一致**，不得把它们当作已分辨（也不得当作等价）：
+    · tau-bench/retail / C7 strict_format（strict_format）→ 报警检测器 ['CTL-3']
+        · 有效性探针在该目标上**没分辨出**与参考实现的差别（见 b_validity.csv 的 detail）
+    · tau-bench/retail / G7a_case_only（strict_format）→ 报警检测器 ['CTL-3']
+        · 有效性探针在该目标上**没分辨出**与参考实现的差别（见 b_validity.csv 的 detail）
+  ⇒ 论文口径：这些是**未定**；它们的检测器报警**计入**「保守分母」下的检出，
+     但**不**计入主分母。两个数都要给，不能只给其中一个。
+     全量已报警对象（主分母已检出 54 + 上述 2）= 56；B4/B4b 用的是前者 54。
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+B4 · 检测器消融：总体 = **主分母**（已分辨的 57 条），逐个移除一个检测器
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+  总体：57 条（= B3 各目标主分母之和 57）
+移除的检测器                             丢失的独有检出         可被替代的检出
+INV-1                                    0              19
+INV-2                                    0              19
+INV-3                                    9               0
+      · 独有：synthetic/tiny / C4 order_dependent
+      · 独有：synthetic/tiny / G4a_keyless_cache
+      · 独有：synthetic/tiny / G4b_prev_verdict_reuse
+      · 独有：tau-bench/airline / C4 order_dependent
+      · 独有：tau-bench/airline / G4a_keyless_cache
+      · 独有：tau-bench/airline / G4b_prev_verdict_reuse
+      · 独有：tau-bench/retail / C4 order_dependent
+      · 独有：tau-bench/retail / G4a_keyless_cache
+      · 独有：tau-bench/retail / G4b_prev_verdict_reuse
+INV-4                                    6              15
+      · 独有：synthetic/tiny / C2 exception_leak
+      · 独有：synthetic/tiny / G2b_cleanup_only_expected
+      · 独有：tau-bench/airline / C2 exception_leak
+      · 独有：tau-bench/airline / G2b_cleanup_only_expected
+      · 独有：tau-bench/retail / C2 exception_leak
+      · 独有：tau-bench/retail / G2b_cleanup_only_expected
+INV-5                                    0              19
+CTL-1                                   15               5
+      · 独有：synthetic/tiny / C5 saturated
+      · 独有：synthetic/tiny / C6 db_blind
+      · 独有：synthetic/tiny / G1a_replay_in_place
+      · 独有：synthetic/tiny / G5a_dead_branch
+      · 独有：synthetic/tiny / G6a_respond_only
+      · 独有：tau-bench/airline / C5 saturated
+      · 独有：tau-bench/airline / C6 db_blind
+      · 独有：tau-bench/airline / G5a_dead_branch
+      · 独有：tau-bench/airline / G6a_respond_only
+      · 独有：tau-bench/airline / G6b_partial_partitions
+      · 独有：tau-bench/retail / C5 saturated
+      · 独有：tau-bench/retail / C6 db_blind
+      · 独有：tau-bench/retail / G1a_replay_in_place
+      · 独有：tau-bench/retail / G5a_dead_branch
+      · 独有：tau-bench/retail / G6a_respond_only
+CTL-2                                    0               4
+CTL-3                                    5               3
+      · 独有：synthetic/tiny / C7 strict_format
+      · 独有：synthetic/tiny / G7a_case_only
+      · 独有：synthetic/tiny / G7b_comma_only
+      · 独有：tau-bench/airline / C7 strict_format
+      · 独有：tau-bench/airline / G7a_case_only
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+B4b · 最小可用子集（贪心覆盖**主分母中已检出**的变体）
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+  + INV-4                     新增覆盖 21（累计 21/54）
+  + CTL-1                     新增覆盖 16（累计 37/54）
+  + INV-3                     新增覆盖 9（累计 46/54）
+  + CTL-3                     新增覆盖 8（累计 54/54）
+  ⇒ 最小可用子集（贪心）：['INV-4', 'CTL-1', 'INV-3', 'CTL-3']
+     覆盖 54/54 个**主分母中已检出**的变体；全部 8 项为 8 项，去掉 4 项不改覆盖。
+     ⚠ 贪心不是最优解；此处只给一个**够用的**子集，不声称最小。
+     ⚠ 该子集的成立范围**只是**主分母（已分辨的变体），不是全部 63 条。
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+汇总 · 主分母（已分辨）与保守分母（已分辨 + 未定）
+────────────────────────────────────────────────────────────────────────────────────────────────────────
+  synthetic/tiny        主分母     开发 7（未检出 0）｜预留 13（未检出 1）｜预留未检出：G5b_exception_swallow
+  synthetic/tiny        保守分母    开发 7（未检出 0）｜预留 14（未检出 2）｜预留未检出：G5b_exception_swallow, G6b_partial_partitions
+  tau-bench/airline     主分母     开发 7（未检出 0）｜预留 13（未检出 1）｜预留未检出：G5b_exception_swallow
+  tau-bench/airline     保守分母    开发 7（未检出 0）｜预留 14（未检出 2）｜预留未检出：G5b_exception_swallow, G7b_comma_only
+  tau-bench/retail      主分母     开发 6（未检出 0）｜预留 11（未检出 1）｜预留未检出：G5b_exception_swallow
+  tau-bench/retail      保守分母    开发 7（未检出 0）｜预留 14（未检出 3）｜预留未检出：G5b_exception_swallow, G6b_partial_partitions, G7b_comma_only
+
+  总账（两套分母，**不得混用**）：
+    主分母57 条（已分辨）｜检出 54｜未检出 3
+    保守分母63 条（已分辨 + 未定）｜检出 56｜未检出 7
+    ⚠ 「全量已报警」= 56，是**保守分母**下的口径；B4/B4b 用的是主分母下的 54。两者不可互换。
+
+  在**任何**目标上都未被检出的**已分辨**变体：G5b_exception_swallow
+
+  未定（unresolved）的变体——探针没分辨出来，**不等于等价**：
+      · synthetic/tiny / G6b_partial_partitions（db_blind，预留）
+      · tau-bench/airline / G7b_comma_only（strict_format，预留）
+      · tau-bench/retail / C7 strict_format（strict_format，开发）（该目标上检测器报警，见 B3c）
+      · tau-bench/retail / G6b_partial_partitions（db_blind，预留）
+      · tau-bench/retail / G7a_case_only（strict_format，预留）（该目标上检测器报警，见 B3c）
+      · tau-bench/retail / G7b_comma_only（strict_format，预留）
+
+  注：运行时间**不**在此推导——见 `overhead.py` 的实测。

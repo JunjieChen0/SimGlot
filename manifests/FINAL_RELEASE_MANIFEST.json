@@ -1,0 +1,110 @@
+{
+  "_comment": "SimGlot-vFinal 发布清单：每个归档**支撑论文的哪一段、对应哪项实验**。由 checks/build_release_manifest.py 生成，并与 FREEZE_MANIFEST.json 交叉校验哈希。**论文里的每一个数字都必须能在这四个角色里找到一个来源。**",
+  "generated": "2026-10-11",
+  "generator": "ClawsGO Science Agent",
+  "authority": "本文件与 FREEZE_MANIFEST.json 共同构成版本身份的唯一记录；两者哈希必须一致。",
+  "cross_check": {
+    "against": "FREEZE_MANIFEST.json",
+    "rule": "同一角色的 sha256 与 bytes 必须逐位相等；本脚本每次运行都重算。",
+    "problems": []
+  },
+  "roles": [
+    {
+      "role": "v1.0-full",
+      "file": "simglot-v1.0-final.tar.gz",
+      "bytes": 81481922,
+      "sha256": "2380993ab6f7fafd740427f07153d667fe32fc50f2de0c04d356fc7850eeba0f",
+      "data_scope": "主矩阵 4,320 格原始记录 + 49 页稿源与 PDF；论文的 v1.0 全部数字出自此包",
+      "experiments": [
+        "主矩阵：4,320 episode（retail，30 任务 × 6 模拟器 × 2 用户语言 × 3 重复，另含扩展臂）",
+        "评分器污染：归档标签 vs 回放标签（4,194 → 2,883 数据库通过；94.3% → 65.5%）",
+        "长度配平臂的对照数据（zhp 的环境侧）"
+      ],
+      "paper_sections": [
+        "§1 贡献 2（预言机缺陷与回放修正）",
+        "§4.1 The correction（4,194 / 2,883 / 94.3%→65.5%）",
+        "§4.2 Table 2 的英文基线与长度配平行",
+        "§6.2 内部效度（漂移探针与批次边界）"
+      ],
+      "not_for": "不含 E1/E2/E3 与 E0 套件——那些在 S2 与增强包里",
+      "retired_revisions": [
+        "215d656fecd00d675d10dfdf0676dc2e475c18d58ab4c16ffc82a600376e03f2"
+      ],
+      "hash_verified_on_disk": true
+    },
+    {
+      "role": "v1.0-anon",
+      "file": "simglot-v1.0-anon-final.tar.gz",
+      "bytes": 80734508,
+      "sha256": "f0afa24478df6db74f8d688cba919d04bdba8f75c601636c7c6d4c5fa2736d2b",
+      "data_scope": "与完整包同内容的双盲版本，绑同一个最终 PDF",
+      "experiments": [
+        "与 v1.0-full 同内容，去标识化的双盲版本"
+      ],
+      "paper_sections": [
+        "投稿用（双盲提交）；不承载任何独有数字"
+      ],
+      "not_for": "任何论文数字都不得单独引用此包，它与 v1.0-full 绑同一个最终 PDF",
+      "retired_revisions": [
+        "13a6ffd20f4d8db8a593dff716e87bb5e7c2bd72882b6250ee6c025872929832"
+      ],
+      "hash_verified_on_disk": true
+    },
+    {
+      "role": "S2",
+      "file": "simglot-S2-final.tar.gz",
+      "bytes": 70518492,
+      "sha256": "8e41d28ebfa19506a3da9232a98e830d8b9cfe69c794e46cbf2779ef557fd64e",
+      "data_scope": "E0 预言机审计套件 + E1 三组件消融（3,240 格）+ E2 跨域（1,200 格）+ E3 遮蔽盲评（212 条）；含 sqj/ 全树与 vendored τ-bench",
+      "experiments": [
+        "E0 预言机审计套件本体（8 检查器：INV-1..5 + CTL-1..3）",
+        "E1 三组件单臂消融：3,240 格（retail，30 任务 × 6 模拟器 × 2 语言 × 3 重复 × 3 单组件臂）",
+        "E2 跨域检验：1,200 格（airline，50 任务 × 6 模拟器 × 2 语言 × 2 重复）",
+        "E3 遮蔽盲评：212 条裁定输入",
+        "评分修正的重算（score_envzh_corrected）与 32 项 golden"
+      ],
+      "paper_sections": [
+        "§3.2 Oracle-integrity testing（检查器定义）",
+        "§4.1 套件与其验证（Table 1 的报警并集）",
+        "§4.2 Table 2 全部（组件消融）",
+        "§4.3 第二个任务域反转（−12.00 pp [−16.33, −7.67]）",
+        "§4.3 独立语言模型裁定（212 条，一致率 98.1%）"
+      ],
+      "not_for": "不含 AppWorld 迁移、不含变体级 54/57 与留一必要性——那些在增强包里",
+      "retired_revisions": [
+        "24e8f4c0c60e46aa4bd14cc0b105df81a31d5b93f83c9a567ae68f90640447c3"
+      ],
+      "hash_verified_on_disk": true
+    },
+    {
+      "role": "enhancement",
+      "file": "simglot-enhancement-final.tar.gz",
+      "bytes": 400028,
+      "sha256": "dffa09ef0b912e3ed20f9c068698bf6be94e94e00dc0b3f57627a2bf4b0f59e9",
+      "data_scope": "A（AppWorld 迁移，负结果）+ B（预留变体/消融/基线/开销）+ C（共时三臂功效与预算，未执行）+ D（E3 证据闭合）+ §7 发布工程",
+      "experiments": [
+        "E0 升级轮：21 变体 × 3 目标 = 63 组合；有效性三态 57/6/0；主分母检出 54/57",
+        "留一必要性消融（哪些检查器是承重的）",
+        "AppWorld 迁移：保留验证集正对照 3/21（负结果）",
+        "C 功效模拟（未执行实验）：1.11 pp → 17.2% 功效",
+        "发布工程：打包门禁、clean-room、来源绑定"
+      ],
+      "paper_sections": [
+        "§4.1 What the class-level summary hides（54/57、两套分母、唯一漏检 G5b）",
+        "§4.1 Table 1 的 necessary 列（留一必要性，由本包数据现算）",
+        "§4.2 功效披露（1.11 pp → 17%）",
+        "§6.3 外部效度（AppWorld 可移植性边界，负结果）",
+        "§3.6 Replication package"
+      ],
+      "not_for": "不含 S2 的 E1/E2/E3 原始数据；本包是增量包",
+      "retired_revisions": [
+        "b03b7c80eeaffdcfcea5a78cc642c6f938ca2f8dfd227d1cc9d95c5680ce10a0",
+        "ffcfaa09cf9c73209a5fcfe1396921e742de3c5e0d82d9d46b65dca518b1dbb5",
+        "2a82a8956e0a83bf2c92a927249f0d8dae638e2079f0b13de1aa02cf181f78c7",
+        "9e8ffd8fbd81c40c6291fdde290be3b86680d39bc0d9311aebced38f7110d604",
+        "628f47be"
+      ],
+      "hash_verified_on_disk": true
+    }
+  ]
+}

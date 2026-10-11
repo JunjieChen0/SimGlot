@@ -1,0 +1,193 @@
+target,defect,detector,violated,ran,n_checked,detail
+tau-bench/retail,C0 none (as-shipped),INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/retail,C0 none (as-shipped),INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/retail,C0 none (as-shipped),INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/retail,C0 none (as-shipped),INV-4,0,1,6,异常路径下未还原状态的任务：[]
+tau-bench/retail,C0 none (as-shipped),INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/retail,C0 none (as-shipped),CTL-1,0,1,12,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/retail,C0 none (as-shipped),CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/retail,C0 none (as-shipped),CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/retail,C1 state_mutation,INV-1,1,1,6,"打分改变了状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/retail,C1 state_mutation,INV-2,1,1,6,"两次评分不一致的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/retail,C1 state_mutation,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/retail,C1 state_mutation,INV-4,1,1,6,"异常路径下未还原状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/retail,C1 state_mutation,INV-5,1,1,6,"结束步改变了数据库或留下多余动作的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/retail,C1 state_mutation,CTL-1,1,1,12,"①未做事被判通过：[0, 1, 5, 6, 7]；②只说未做被判通过：[2, 3, 4, 16, 19]"
+tau-bench/retail,C1 state_mutation,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/retail,C1 state_mutation,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/retail,C2 exception_leak,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/retail,C2 exception_leak,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/retail,C2 exception_leak,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/retail,C2 exception_leak,INV-4,1,1,6,"异常路径下未还原状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/retail,C2 exception_leak,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/retail,C2 exception_leak,CTL-1,0,1,12,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/retail,C2 exception_leak,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/retail,C2 exception_leak,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/retail,C3 actions_not_restored,INV-1,1,1,6,"打分改变了状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/retail,C3 actions_not_restored,INV-2,1,1,6,"两次评分不一致的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/retail,C3 actions_not_restored,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/retail,C3 actions_not_restored,INV-4,1,1,6,"异常路径下未还原状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/retail,C3 actions_not_restored,INV-5,1,1,6,"结束步改变了数据库或留下多余动作的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/retail,C3 actions_not_restored,CTL-1,0,1,12,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/retail,C3 actions_not_restored,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/retail,C3 actions_not_restored,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/retail,C4 order_dependent,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/retail,C4 order_dependent,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/retail,C4 order_dependent,INV-3,1,1,6,"判定随顺序改变 (task,先nothing,先solved)：[(0, {'nothing': False, 'solved': False}, {'solved': True, 'nothing': True}), (1, {'nothing': False, 'solved': False}, {'solved': True, 'nothing': True}), (2, {'nothing': False, 'solved': False}, {'solved': True, 'nothing': False})]"
+tau-bench/retail,C4 order_dependent,INV-4,0,1,6,异常路径下未还原状态的任务：[]
+tau-bench/retail,C4 order_dependent,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/retail,C4 order_dependent,CTL-1,0,1,12,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/retail,C4 order_dependent,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/retail,C4 order_dependent,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/retail,C5 saturated,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/retail,C5 saturated,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/retail,C5 saturated,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/retail,C5 saturated,INV-4,,0,0,预言机不经过内部执行路径，本探针不适用
+tau-bench/retail,C5 saturated,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/retail,C5 saturated,CTL-1,1,1,12,"①未做事被判通过：[0, 1, 5, 6, 7]；②只说未做被判通过：[2, 3, 4, 16, 19]"
+tau-bench/retail,C5 saturated,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/retail,C5 saturated,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/retail,C6 db_blind,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/retail,C6 db_blind,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/retail,C6 db_blind,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/retail,C6 db_blind,INV-4,,0,0,预言机不经过内部执行路径，本探针不适用
+tau-bench/retail,C6 db_blind,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/retail,C6 db_blind,CTL-1,1,1,12,"①未做事被判通过：[0, 1, 5, 6, 7]；②只说未做被判通过：[2, 3, 4, 16, 19]"
+tau-bench/retail,C6 db_blind,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/retail,C6 db_blind,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/retail,C7 strict_format,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/retail,C7 strict_format,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/retail,C7 strict_format,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/retail,C7 strict_format,INV-4,0,1,6,异常路径下未还原状态的任务：[]
+tau-bench/retail,C7 strict_format,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/retail,C7 strict_format,CTL-1,0,1,12,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/retail,C7 strict_format,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/retail,C7 strict_format,CTL-3,1,1,1,该接受而未接受的等价写法：[16]
+tau-bench/airline,C0 none (as-shipped),INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/airline,C0 none (as-shipped),INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/airline,C0 none (as-shipped),INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/airline,C0 none (as-shipped),INV-4,0,1,6,异常路径下未还原状态的任务：[]
+tau-bench/airline,C0 none (as-shipped),INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/airline,C0 none (as-shipped),CTL-1,0,1,9,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/airline,C0 none (as-shipped),CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/airline,C0 none (as-shipped),CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/airline,C1 state_mutation,INV-1,1,1,6,"打分改变了状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/airline,C1 state_mutation,INV-2,1,1,6,"两次评分不一致的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/airline,C1 state_mutation,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/airline,C1 state_mutation,INV-4,1,1,6,"异常路径下未还原状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/airline,C1 state_mutation,INV-5,1,1,6,"结束步改变了数据库或留下多余动作的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/airline,C1 state_mutation,CTL-1,1,1,9,"①未做事被判通过：[0, 1, 3, 4, 5]；②只说未做被判通过：[2, 8, 9]"
+tau-bench/airline,C1 state_mutation,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/airline,C1 state_mutation,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/airline,C2 exception_leak,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/airline,C2 exception_leak,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/airline,C2 exception_leak,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/airline,C2 exception_leak,INV-4,1,1,6,"异常路径下未还原状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/airline,C2 exception_leak,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/airline,C2 exception_leak,CTL-1,0,1,9,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/airline,C2 exception_leak,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/airline,C2 exception_leak,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/airline,C3 actions_not_restored,INV-1,1,1,6,"打分改变了状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/airline,C3 actions_not_restored,INV-2,1,1,6,"两次评分不一致的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/airline,C3 actions_not_restored,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/airline,C3 actions_not_restored,INV-4,1,1,6,"异常路径下未还原状态的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/airline,C3 actions_not_restored,INV-5,1,1,6,"结束步改变了数据库或留下多余动作的任务：[0, 1, 2, 3, 4, 5]"
+tau-bench/airline,C3 actions_not_restored,CTL-1,0,1,9,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/airline,C3 actions_not_restored,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/airline,C3 actions_not_restored,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/airline,C4 order_dependent,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/airline,C4 order_dependent,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/airline,C4 order_dependent,INV-3,1,1,6,"判定随顺序改变 (task,先nothing,先solved)：[(0, {'nothing': False, 'solved': False}, {'solved': True, 'nothing': True}), (1, {'nothing': False, 'solved': False}, {'solved': True, 'nothing': True}), (2, {'nothing': False, 'solved': False}, {'solved': True, 'nothing': False})]"
+tau-bench/airline,C4 order_dependent,INV-4,0,1,6,异常路径下未还原状态的任务：[]
+tau-bench/airline,C4 order_dependent,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/airline,C4 order_dependent,CTL-1,0,1,9,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/airline,C4 order_dependent,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/airline,C4 order_dependent,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/airline,C5 saturated,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/airline,C5 saturated,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/airline,C5 saturated,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/airline,C5 saturated,INV-4,,0,0,预言机不经过内部执行路径，本探针不适用
+tau-bench/airline,C5 saturated,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/airline,C5 saturated,CTL-1,1,1,9,"①未做事被判通过：[0, 1, 3, 4, 5]；②只说未做被判通过：[2, 8, 9]"
+tau-bench/airline,C5 saturated,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/airline,C5 saturated,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/airline,C6 db_blind,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/airline,C6 db_blind,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/airline,C6 db_blind,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/airline,C6 db_blind,INV-4,,0,0,预言机不经过内部执行路径，本探针不适用
+tau-bench/airline,C6 db_blind,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/airline,C6 db_blind,CTL-1,1,1,9,"①未做事被判通过：[0, 1, 3, 4, 5]；②只说未做被判通过：[2, 8, 9]"
+tau-bench/airline,C6 db_blind,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/airline,C6 db_blind,CTL-3,0,1,1,该接受而未接受的等价写法：[]
+tau-bench/airline,C7 strict_format,INV-1,0,1,6,打分改变了状态的任务：[]
+tau-bench/airline,C7 strict_format,INV-2,0,1,6,两次评分不一致的任务：[]
+tau-bench/airline,C7 strict_format,INV-3,0,1,6,"判定随顺序改变 (task,先nothing,先solved)：[]"
+tau-bench/airline,C7 strict_format,INV-4,0,1,6,异常路径下未还原状态的任务：[]
+tau-bench/airline,C7 strict_format,INV-5,0,1,6,结束步改变了数据库或留下多余动作的任务：[]
+tau-bench/airline,C7 strict_format,CTL-1,0,1,9,①未做事被判通过：[]；②只说未做被判通过：[]
+tau-bench/airline,C7 strict_format,CTL-2,0,1,6,参考解被判不通过的任务：[]
+tau-bench/airline,C7 strict_format,CTL-3,1,1,1,该接受而未接受的等价写法：[2]
+synthetic/tiny,C0 none (as-shipped),INV-1,0,1,3,打分改变了状态的任务：[]
+synthetic/tiny,C0 none (as-shipped),INV-2,0,1,3,两次评分不一致的任务：[]
+synthetic/tiny,C0 none (as-shipped),INV-3,0,1,3,"判定随顺序改变 (task,先nothing,先solved)：[]"
+synthetic/tiny,C0 none (as-shipped),INV-4,0,1,3,异常路径下未还原状态的任务：[]
+synthetic/tiny,C0 none (as-shipped),INV-5,0,1,3,结束步改变了数据库或留下多余动作的任务：[]
+synthetic/tiny,C0 none (as-shipped),CTL-1,0,1,3,①未做事被判通过：[]；②只说未做被判通过：[]
+synthetic/tiny,C0 none (as-shipped),CTL-2,0,1,3,参考解被判不通过的任务：[]
+synthetic/tiny,C0 none (as-shipped),CTL-3,0,1,2,该接受而未接受的等价写法：[]
+synthetic/tiny,C1 state_mutation,INV-1,1,1,3,"打分改变了状态的任务：[0, 1, 2]"
+synthetic/tiny,C1 state_mutation,INV-2,1,1,3,"两次评分不一致的任务：[0, 1, 2]"
+synthetic/tiny,C1 state_mutation,INV-3,0,1,3,"判定随顺序改变 (task,先nothing,先solved)：[]"
+synthetic/tiny,C1 state_mutation,INV-4,1,1,3,"异常路径下未还原状态的任务：[0, 1, 2]"
+synthetic/tiny,C1 state_mutation,INV-5,1,1,3,"结束步改变了数据库或留下多余动作的任务：[0, 1, 2]"
+synthetic/tiny,C1 state_mutation,CTL-1,1,1,3,"①未做事被判通过：[2]；②只说未做被判通过：[0, 1]"
+synthetic/tiny,C1 state_mutation,CTL-2,0,1,3,参考解被判不通过的任务：[]
+synthetic/tiny,C1 state_mutation,CTL-3,0,1,2,该接受而未接受的等价写法：[]
+synthetic/tiny,C2 exception_leak,INV-1,0,1,3,打分改变了状态的任务：[]
+synthetic/tiny,C2 exception_leak,INV-2,0,1,3,两次评分不一致的任务：[]
+synthetic/tiny,C2 exception_leak,INV-3,0,1,3,"判定随顺序改变 (task,先nothing,先solved)：[]"
+synthetic/tiny,C2 exception_leak,INV-4,1,1,3,"异常路径下未还原状态的任务：[0, 1, 2]"
+synthetic/tiny,C2 exception_leak,INV-5,0,1,3,结束步改变了数据库或留下多余动作的任务：[]
+synthetic/tiny,C2 exception_leak,CTL-1,0,1,3,①未做事被判通过：[]；②只说未做被判通过：[]
+synthetic/tiny,C2 exception_leak,CTL-2,0,1,3,参考解被判不通过的任务：[]
+synthetic/tiny,C2 exception_leak,CTL-3,0,1,2,该接受而未接受的等价写法：[]
+synthetic/tiny,C3 actions_not_restored,INV-1,1,1,3,"打分改变了状态的任务：[0, 1, 2]"
+synthetic/tiny,C3 actions_not_restored,INV-2,1,1,3,"两次评分不一致的任务：[0, 1, 2]"
+synthetic/tiny,C3 actions_not_restored,INV-3,0,1,3,"判定随顺序改变 (task,先nothing,先solved)：[]"
+synthetic/tiny,C3 actions_not_restored,INV-4,1,1,3,"异常路径下未还原状态的任务：[0, 1, 2]"
+synthetic/tiny,C3 actions_not_restored,INV-5,1,1,3,"结束步改变了数据库或留下多余动作的任务：[0, 1, 2]"
+synthetic/tiny,C3 actions_not_restored,CTL-1,0,1,3,①未做事被判通过：[]；②只说未做被判通过：[]
+synthetic/tiny,C3 actions_not_restored,CTL-2,0,1,3,参考解被判不通过的任务：[]
+synthetic/tiny,C3 actions_not_restored,CTL-3,0,1,2,该接受而未接受的等价写法：[]
+synthetic/tiny,C4 order_dependent,INV-1,0,1,3,打分改变了状态的任务：[]
+synthetic/tiny,C4 order_dependent,INV-2,0,1,3,两次评分不一致的任务：[]
+synthetic/tiny,C4 order_dependent,INV-3,1,1,3,"判定随顺序改变 (task,先nothing,先solved)：[(0, {'nothing': False, 'solved': False}, {'solved': True, 'nothing': False}), (1, {'nothing': False, 'solved': False}, {'solved': True, 'nothing': False}), (2, {'nothing': False, 'solved': False}, {'solved': True, 'nothing': True})]"
+synthetic/tiny,C4 order_dependent,INV-4,0,1,3,异常路径下未还原状态的任务：[]
+synthetic/tiny,C4 order_dependent,INV-5,0,1,3,结束步改变了数据库或留下多余动作的任务：[]
+synthetic/tiny,C4 order_dependent,CTL-1,0,1,3,①未做事被判通过：[]；②只说未做被判通过：[]
+synthetic/tiny,C4 order_dependent,CTL-2,0,1,3,参考解被判不通过的任务：[]
+synthetic/tiny,C4 order_dependent,CTL-3,0,1,2,该接受而未接受的等价写法：[]
+synthetic/tiny,C5 saturated,INV-1,0,1,3,打分改变了状态的任务：[]
+synthetic/tiny,C5 saturated,INV-2,0,1,3,两次评分不一致的任务：[]
+synthetic/tiny,C5 saturated,INV-3,0,1,3,"判定随顺序改变 (task,先nothing,先solved)：[]"
+synthetic/tiny,C5 saturated,INV-4,,0,0,预言机不经过内部执行路径，本探针不适用
+synthetic/tiny,C5 saturated,INV-5,0,1,3,结束步改变了数据库或留下多余动作的任务：[]
+synthetic/tiny,C5 saturated,CTL-1,1,1,3,"①未做事被判通过：[2]；②只说未做被判通过：[0, 1]"
+synthetic/tiny,C5 saturated,CTL-2,0,1,3,参考解被判不通过的任务：[]
+synthetic/tiny,C5 saturated,CTL-3,0,1,2,该接受而未接受的等价写法：[]
+synthetic/tiny,C6 db_blind,INV-1,0,1,3,打分改变了状态的任务：[]
+synthetic/tiny,C6 db_blind,INV-2,0,1,3,两次评分不一致的任务：[]
+synthetic/tiny,C6 db_blind,INV-3,0,1,3,"判定随顺序改变 (task,先nothing,先solved)：[]"
+synthetic/tiny,C6 db_blind,INV-4,,0,0,预言机不经过内部执行路径，本探针不适用
+synthetic/tiny,C6 db_blind,INV-5,0,1,3,结束步改变了数据库或留下多余动作的任务：[]
+synthetic/tiny,C6 db_blind,CTL-1,1,1,3,"①未做事被判通过：[2]；②只说未做被判通过：[0, 1]"
+synthetic/tiny,C6 db_blind,CTL-2,0,1,3,参考解被判不通过的任务：[]
+synthetic/tiny,C6 db_blind,CTL-3,0,1,2,该接受而未接受的等价写法：[]
+synthetic/tiny,C7 strict_format,INV-1,0,1,3,打分改变了状态的任务：[]
+synthetic/tiny,C7 strict_format,INV-2,0,1,3,两次评分不一致的任务：[]
+synthetic/tiny,C7 strict_format,INV-3,0,1,3,"判定随顺序改变 (task,先nothing,先solved)：[]"
+synthetic/tiny,C7 strict_format,INV-4,0,1,3,异常路径下未还原状态的任务：[]
+synthetic/tiny,C7 strict_format,INV-5,0,1,3,结束步改变了数据库或留下多余动作的任务：[]
+synthetic/tiny,C7 strict_format,CTL-1,0,1,3,①未做事被判通过：[]；②只说未做被判通过：[]
+synthetic/tiny,C7 strict_format,CTL-2,0,1,3,参考解被判不通过的任务：[]
+synthetic/tiny,C7 strict_format,CTL-3,1,1,2,"该接受而未接受的等价写法：[0, 1]"

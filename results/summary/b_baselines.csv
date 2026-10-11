@@ -1,0 +1,16 @@
+target,method,detected,total,note
+synthetic/tiny,原框架随带测试,,20,框架不随带预言机测试
+synthetic/tiny,仅重复评分一致 (INV-2),6,20,
+synthetic/tiny,仅状态不变量 (INV-1..5),11,20,
+synthetic/tiny,仅已知答案对照 (CTL-1..3),10,20,
+synthetic/tiny,完整套件 (8 项),19,20,
+tau-bench/airline,原框架随带测试,,20,框架不随带预言机测试
+tau-bench/airline,仅重复评分一致 (INV-2),7,20,
+tau-bench/airline,仅状态不变量 (INV-1..5),12,20,
+tau-bench/airline,仅已知答案对照 (CTL-1..3),10,20,
+tau-bench/airline,完整套件 (8 项),19,20,
+tau-bench/retail,原框架随带测试,,17,框架不随带预言机测试
+tau-bench/retail,仅重复评分一致 (INV-2),6,17,
+tau-bench/retail,仅状态不变量 (INV-1..5),11,17,
+tau-bench/retail,仅已知答案对照 (CTL-1..3),8,17,
+tau-bench/retail,完整套件 (8 项),16,17,

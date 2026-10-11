@@ -1,0 +1,2310 @@
+{
+  "source_tag": "e2_main24",
+  "sampling": {
+    "early_frac": 0.5,
+    "late_frac": 0.25,
+    "sample_seed": 20261008
+  },
+  "n_early": 80,
+  "n_late": 40,
+  "n_total": 120,
+  "pool": {
+    "n_available": 4318,
+    "n_early_pool": 2159,
+    "n_late_pool": 1079,
+    "utc_span": [
+      "2026-10-07T07:22:13+00:00",
+      "2026-10-08T00:39:25+00:00"
+    ],
+    "early_pool_utc": [
+      "2026-10-07T07:22:13+00:00",
+      "2026-10-07T11:08:38+00:00"
+    ],
+    "late_pool_utc": [
+      "2026-10-07T13:03:14+00:00",
+      "2026-10-08T00:39:25+00:00"
+    ]
+  },
+  "cells": [
+    {
+      "cell_id": "t105_qwen3.8-flash_u-deepseek-v4.1-flash_zh_s1",
+      "spec": {
+        "task_id": 105,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 240137,
+      "origin_started_utc": "2026-10-07T10:34:48+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t105_qwen3.8-flash_u-qwen3.8-flash_en_s2",
+      "spec": {
+        "task_id": 105,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 0.0,
+      "origin_tokens": 91768,
+      "origin_started_utc": "2026-10-07T10:32:30+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t105_qwen3.8-max_u-deepseek-v4.1-flash_en_s2",
+      "spec": {
+        "task_id": 105,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 218805,
+      "origin_started_utc": "2026-10-07T08:58:43+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t105_qwen3.8-max_u-qwen3.8-max_zh_s2",
+      "spec": {
+        "task_id": 105,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-max",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 328530,
+      "origin_started_utc": "2026-10-07T08:54:33+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t108_qwen3.8-max_u-qwen3.8-max_zh_s1",
+      "spec": {
+        "task_id": 108,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-max",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 141237,
+      "origin_started_utc": "2026-10-07T11:03:54+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t112_qwen3.8-flash_u-qwen3.7-plus_zh_s2",
+      "spec": {
+        "task_id": 112,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 150231,
+      "origin_started_utc": "2026-10-07T10:36:58+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t112_qwen3.8-flash_u-qwen3.8-flash_zh_s0",
+      "spec": {
+        "task_id": 112,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 171447,
+      "origin_started_utc": "2026-10-07T10:37:34+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t112_qwen3.8-max_u-qwen3.8-flash_zh_s2",
+      "spec": {
+        "task_id": 112,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 199040,
+      "origin_started_utc": "2026-10-07T09:03:42+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t14_qwen3.8-flash_u-glm-5.3_en_s2",
+      "spec": {
+        "task_id": 14,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 36849,
+      "origin_started_utc": "2026-10-07T10:27:02+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t14_qwen3.8-flash_u-qwen3.7-plus_zh_s2",
+      "spec": {
+        "task_id": 14,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 97480,
+      "origin_started_utc": "2026-10-07T10:24:19+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t14_qwen3.8-max_u-deepseek-v4.1-flash_en_s2",
+      "spec": {
+        "task_id": 14,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 70390,
+      "origin_started_utc": "2026-10-07T10:20:50+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t14_qwen3.8-max_u-qwen3.8-max_en_s2",
+      "spec": {
+        "task_id": 14,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-max",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 71603,
+      "origin_started_utc": "2026-10-07T10:17:14+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t15_qwen3.8-flash_u-glm-5.3_en_s2",
+      "spec": {
+        "task_id": 15,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 91001,
+      "origin_started_utc": "2026-10-07T09:19:33+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t15_qwen3.8-max_u-deepseek-v4-pro_en_s2",
+      "spec": {
+        "task_id": 15,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 61769,
+      "origin_started_utc": "2026-10-07T07:35:47+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t15_qwen3.8-max_u-glm-5.3_zh_s1",
+      "spec": {
+        "task_id": 15,
+        "agent_model": "qwen3.8-max",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 68541,
+      "origin_started_utc": "2026-10-07T07:37:04+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t15_qwen3.8-max_u-qwen3.7-plus_zh_s1",
+      "spec": {
+        "task_id": 15,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 86047,
+      "origin_started_utc": "2026-10-07T07:35:12+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t15_qwen3.8-max_u-qwen3.8-flash_en_s1",
+      "spec": {
+        "task_id": 15,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 67988,
+      "origin_started_utc": "2026-10-07T07:35:12+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t15_qwen3.8-max_u-qwen3.8-max_en_s2",
+      "spec": {
+        "task_id": 15,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-max",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 90230,
+      "origin_started_utc": "2026-10-07T07:34:33+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t17_qwen3.8-max_u-deepseek-v4-pro_en_s2",
+      "spec": {
+        "task_id": 17,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 42936,
+      "origin_started_utc": "2026-10-07T07:38:16+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t17_qwen3.8-max_u-deepseek-v4-pro_zh_s2",
+      "spec": {
+        "task_id": 17,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 37158,
+      "origin_started_utc": "2026-10-07T07:38:14+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t19_qwen3.8-flash_u-glm-5.3_zh_s2",
+      "spec": {
+        "task_id": 19,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 0.0,
+      "origin_tokens": 132531,
+      "origin_started_utc": "2026-10-07T09:25:48+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t19_qwen3.8-max_u-deepseek-v4-pro_zh_s0",
+      "spec": {
+        "task_id": 19,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 127212,
+      "origin_started_utc": "2026-10-07T07:45:23+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t19_qwen3.8-max_u-glm-5.3_zh_s2",
+      "spec": {
+        "task_id": 19,
+        "agent_model": "qwen3.8-max",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 162444,
+      "origin_started_utc": "2026-10-07T07:47:25+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t23_qwen3.8-flash_u-deepseek-v4-pro_en_s1",
+      "spec": {
+        "task_id": 23,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 242705,
+      "origin_started_utc": "2026-10-07T09:28:57+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t23_qwen3.8-flash_u-deepseek-v4.1-flash_en_s0",
+      "spec": {
+        "task_id": 23,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 178342,
+      "origin_started_utc": "2026-10-07T09:29:28+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t23_qwen3.8-flash_u-glm-5.3_en_s0",
+      "spec": {
+        "task_id": 23,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 177282,
+      "origin_started_utc": "2026-10-07T09:30:32+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t23_qwen3.8-flash_u-qwen3.8-flash_zh_s1",
+      "spec": {
+        "task_id": 23,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 261186,
+      "origin_started_utc": "2026-10-07T09:28:21+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t23_qwen3.8-max_u-deepseek-v4-pro_en_s2",
+      "spec": {
+        "task_id": 23,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 287514,
+      "origin_started_utc": "2026-10-07T07:50:57+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t23_qwen3.8-max_u-qwen3.8-flash_en_s0",
+      "spec": {
+        "task_id": 23,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 237349,
+      "origin_started_utc": "2026-10-07T07:49:20+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t24_qwen3.8-max_u-glm-5.3_zh_s2",
+      "spec": {
+        "task_id": 24,
+        "agent_model": "qwen3.8-max",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 56308,
+      "origin_started_utc": "2026-10-07T07:54:54+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t26_qwen3.8-flash_u-deepseek-v4-pro_zh_s2",
+      "spec": {
+        "task_id": 26,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 87370,
+      "origin_started_utc": "2026-10-07T09:35:45+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t26_qwen3.8-flash_u-deepseek-v4.1-flash_zh_s1",
+      "spec": {
+        "task_id": 26,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 63330,
+      "origin_started_utc": "2026-10-07T09:36:06+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t26_qwen3.8-flash_u-qwen3.8-flash_en_s2",
+      "spec": {
+        "task_id": 26,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 72136,
+      "origin_started_utc": "2026-10-07T09:34:57+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t27_qwen3.8-max_u-deepseek-v4-pro_en_s0",
+      "spec": {
+        "task_id": 27,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 97784,
+      "origin_started_utc": "2026-10-07T07:59:40+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t27_qwen3.8-max_u-qwen3.8-flash_zh_s1",
+      "spec": {
+        "task_id": 27,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 79179,
+      "origin_started_utc": "2026-10-07T07:59:10+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t28_qwen3.8-flash_u-glm-5.3_en_s0",
+      "spec": {
+        "task_id": 28,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 104621,
+      "origin_started_utc": "2026-10-07T09:43:54+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t28_qwen3.8-max_u-glm-5.3_zh_s0",
+      "spec": {
+        "task_id": 28,
+        "agent_model": "qwen3.8-max",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 205765,
+      "origin_started_utc": "2026-10-07T08:06:43+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t28_qwen3.8-max_u-qwen3.8-flash_en_s1",
+      "spec": {
+        "task_id": 28,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 203076,
+      "origin_started_utc": "2026-10-07T08:03:36+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t40_qwen3.8-flash_u-glm-5.3_en_s0",
+      "spec": {
+        "task_id": 40,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 0.0,
+      "origin_tokens": 45229,
+      "origin_started_utc": "2026-10-07T09:46:52+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t40_qwen3.8-flash_u-qwen3.7-plus_en_s2",
+      "spec": {
+        "task_id": 40,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 49798,
+      "origin_started_utc": "2026-10-07T09:44:51+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t40_qwen3.8-flash_u-qwen3.7-plus_zh_s0",
+      "spec": {
+        "task_id": 40,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 138523,
+      "origin_started_utc": "2026-10-07T09:45:17+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t41_qwen3.8-flash_u-qwen3.8-flash_zh_s2",
+      "spec": {
+        "task_id": 41,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 129103,
+      "origin_started_utc": "2026-10-07T09:49:06+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t43_qwen3.8-flash_u-deepseek-v4-pro_zh_s2",
+      "spec": {
+        "task_id": 43,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 69734,
+      "origin_started_utc": "2026-10-07T09:53:48+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t43_qwen3.8-flash_u-deepseek-v4.1-flash_en_s2",
+      "spec": {
+        "task_id": 43,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 90497,
+      "origin_started_utc": "2026-10-07T09:54:23+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t43_qwen3.8-flash_u-deepseek-v4.1-flash_zh_s0",
+      "spec": {
+        "task_id": 43,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 0.0,
+      "origin_tokens": 171665,
+      "origin_started_utc": "2026-10-07T09:55:07+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t43_qwen3.8-max_u-qwen3.7-plus_en_s2",
+      "spec": {
+        "task_id": 43,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 77486,
+      "origin_started_utc": "2026-10-07T08:13:59+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t59_qwen3.8-flash_u-deepseek-v4-pro_zh_s0",
+      "spec": {
+        "task_id": 59,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 91517,
+      "origin_started_utc": "2026-10-07T09:57:33+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t59_qwen3.8-max_u-qwen3.8-max_en_s0",
+      "spec": {
+        "task_id": 59,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-max",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 75906,
+      "origin_started_utc": "2026-10-07T08:16:31+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t5_deepseek-v4.1-flash_u-deepseek-v4-pro_en_s1",
+      "spec": {
+        "task_id": 5,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 94715,
+      "origin_started_utc": "2026-10-07T10:59:56+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t5_deepseek-v4.1-flash_u-glm-5.3_zh_s1",
+      "spec": {
+        "task_id": 5,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 110681,
+      "origin_started_utc": "2026-10-07T11:01:26+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t5_deepseek-v4.1-flash_u-qwen3.7-plus_en_s0",
+      "spec": {
+        "task_id": 5,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 66904,
+      "origin_started_utc": "2026-10-07T10:58:38+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t5_deepseek-v4.1-flash_u-qwen3.8-flash_zh_s2",
+      "spec": {
+        "task_id": 5,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 77357,
+      "origin_started_utc": "2026-10-07T10:59:40+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t5_qwen3.7-plus_u-qwen3.7-plus_en_s0",
+      "spec": {
+        "task_id": 5,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 128736,
+      "origin_started_utc": "2026-10-07T10:53:29+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t5_qwen3.7-plus_u-qwen3.8-max_zh_s2",
+      "spec": {
+        "task_id": 5,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-max",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 116407,
+      "origin_started_utc": "2026-10-07T10:53:20+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t5_qwen3.8-flash_u-qwen3.8-flash_zh_s1",
+      "spec": {
+        "task_id": 5,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 147075,
+      "origin_started_utc": "2026-10-07T09:10:08+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t5_qwen3.8-max_u-qwen3.8-max_zh_s2",
+      "spec": {
+        "task_id": 5,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-max",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 124956,
+      "origin_started_utc": "2026-10-07T07:22:19+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t61_qwen3.8-flash_u-deepseek-v4.1-flash_en_s0",
+      "spec": {
+        "task_id": 61,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 108881,
+      "origin_started_utc": "2026-10-07T10:36:11+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t61_qwen3.8-max_u-deepseek-v4-pro_en_s0",
+      "spec": {
+        "task_id": 61,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 78044,
+      "origin_started_utc": "2026-10-07T10:30:05+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t61_qwen3.8-max_u-glm-5.3_zh_s2",
+      "spec": {
+        "task_id": 61,
+        "agent_model": "qwen3.8-max",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 55471,
+      "origin_started_utc": "2026-10-07T10:32:32+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t72_qwen3.8-max_u-glm-5.3_en_s1",
+      "spec": {
+        "task_id": 72,
+        "agent_model": "qwen3.8-max",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 136015,
+      "origin_started_utc": "2026-10-07T08:25:28+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t72_qwen3.8-max_u-qwen3.8-flash_zh_s0",
+      "spec": {
+        "task_id": 72,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 156202,
+      "origin_started_utc": "2026-10-07T08:23:01+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t73_qwen3.8-flash_u-qwen3.8-flash_zh_s0",
+      "spec": {
+        "task_id": 73,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 64737,
+      "origin_started_utc": "2026-10-07T10:05:52+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t73_qwen3.8-max_u-deepseek-v4-pro_en_s0",
+      "spec": {
+        "task_id": 73,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 53058,
+      "origin_started_utc": "2026-10-07T08:27:05+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t74_qwen3.8-flash_u-deepseek-v4.1-flash_en_s1",
+      "spec": {
+        "task_id": 74,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 184452,
+      "origin_started_utc": "2026-10-07T10:11:07+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t74_qwen3.8-max_u-deepseek-v4.1-flash_en_s1",
+      "spec": {
+        "task_id": 74,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 147687,
+      "origin_started_utc": "2026-10-07T08:31:58+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t74_qwen3.8-max_u-glm-5.3_en_s1",
+      "spec": {
+        "task_id": 74,
+        "agent_model": "qwen3.8-max",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 160083,
+      "origin_started_utc": "2026-10-07T08:33:14+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t74_qwen3.8-max_u-qwen3.8-max_zh_s0",
+      "spec": {
+        "task_id": 74,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-max",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 126605,
+      "origin_started_utc": "2026-10-07T08:28:49+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t77_qwen3.8-flash_u-deepseek-v4.1-flash_en_s1",
+      "spec": {
+        "task_id": 77,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 61326,
+      "origin_started_utc": "2026-10-07T10:45:10+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t77_qwen3.8-flash_u-glm-5.3_en_s1",
+      "spec": {
+        "task_id": 77,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 51279,
+      "origin_started_utc": "2026-10-07T10:46:00+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t78_qwen3.8-flash_u-deepseek-v4.1-flash_en_s2",
+      "spec": {
+        "task_id": 78,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 193025,
+      "origin_started_utc": "2026-10-07T11:00:27+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t83_qwen3.8-flash_u-deepseek-v4.1-flash_en_s2",
+      "spec": {
+        "task_id": 83,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 88124,
+      "origin_started_utc": "2026-10-07T10:14:37+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t90_qwen3.8-flash_u-glm-5.3_zh_s0",
+      "spec": {
+        "task_id": 90,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 126522,
+      "origin_started_utc": "2026-10-07T10:19:05+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t90_qwen3.8-max_u-qwen3.8-flash_zh_s2",
+      "spec": {
+        "task_id": 90,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 98934,
+      "origin_started_utc": "2026-10-07T08:38:01+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t90_qwen3.8-max_u-qwen3.8-max_zh_s1",
+      "spec": {
+        "task_id": 90,
+        "agent_model": "qwen3.8-max",
+        "user_model": "qwen3.8-max",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 63766,
+      "origin_started_utc": "2026-10-07T08:37:06+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t91_qwen3.8-flash_u-qwen3.7-plus_zh_s0",
+      "spec": {
+        "task_id": 91,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 185338,
+      "origin_started_utc": "2026-10-07T10:20:41+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t91_qwen3.8-max_u-deepseek-v4-pro_zh_s0",
+      "spec": {
+        "task_id": 91,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 140953,
+      "origin_started_utc": "2026-10-07T08:43:33+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t91_qwen3.8-max_u-deepseek-v4.1-flash_zh_s2",
+      "spec": {
+        "task_id": 91,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 147176,
+      "origin_started_utc": "2026-10-07T08:44:50+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t9_qwen3.8-flash_u-qwen3.7-plus_en_s0",
+      "spec": {
+        "task_id": 9,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 138579,
+      "origin_started_utc": "2026-10-07T09:13:09+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t9_qwen3.8-flash_u-qwen3.7-plus_zh_s1",
+      "spec": {
+        "task_id": 9,
+        "agent_model": "qwen3.8-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 116600,
+      "origin_started_utc": "2026-10-07T09:13:32+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t9_qwen3.8-max_u-deepseek-v4.1-flash_en_s1",
+      "spec": {
+        "task_id": 9,
+        "agent_model": "qwen3.8-max",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 95778,
+      "origin_started_utc": "2026-10-07T07:29:43+00:00",
+      "origin_phase": "early"
+    },
+    {
+      "cell_id": "t105_deepseek-v4.1-flash_u-qwen3.8-max_zh_s2",
+      "spec": {
+        "task_id": 105,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.8-max",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 216942,
+      "origin_started_utc": "2026-10-07T16:01:58+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t112_deepseek-v4.1-flash_u-glm-5.3_en_s0",
+      "spec": {
+        "task_id": 112,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 162832,
+      "origin_started_utc": "2026-10-07T16:20:13+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t112_deepseek-v4.1-flash_u-qwen3.8-flash_en_s0",
+      "spec": {
+        "task_id": 112,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 161934,
+      "origin_started_utc": "2026-10-07T16:18:21+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t112_qwen3.7-plus_u-qwen3.7-plus_zh_s1",
+      "spec": {
+        "task_id": 112,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 212588,
+      "origin_started_utc": "2026-10-07T16:14:19+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t112_qwen3.7-plus_u-qwen3.8-flash_zh_s0",
+      "spec": {
+        "task_id": 112,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 195590,
+      "origin_started_utc": "2026-10-07T16:15:02+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t112_qwen3.7-plus_u-qwen3.8-flash_zh_s2",
+      "spec": {
+        "task_id": 112,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 186671,
+      "origin_started_utc": "2026-10-07T16:15:08+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t113_deepseek-v4.1-flash_u-qwen3.8-max_en_s2",
+      "spec": {
+        "task_id": 113,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.8-max",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 0.0,
+      "origin_tokens": 261613,
+      "origin_started_utc": "2026-10-08T00:35:20+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t113_qwen3.7-plus_u-glm-5.3_zh_s2",
+      "spec": {
+        "task_id": 113,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 241109,
+      "origin_started_utc": "2026-10-08T00:36:10+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t72_deepseek-v4.1-flash_u-glm-5.3_en_s0",
+      "spec": {
+        "task_id": 72,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 141927,
+      "origin_started_utc": "2026-10-07T14:31:05+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t72_deepseek-v4.1-flash_u-qwen3.7-plus_en_s1",
+      "spec": {
+        "task_id": 72,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 124605,
+      "origin_started_utc": "2026-10-07T14:28:44+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t72_deepseek-v4.1-flash_u-qwen3.8-flash_zh_s1",
+      "spec": {
+        "task_id": 72,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 134369,
+      "origin_started_utc": "2026-10-07T14:29:27+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t72_qwen3.7-plus_u-glm-5.3_en_s1",
+      "spec": {
+        "task_id": 72,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 166678,
+      "origin_started_utc": "2026-10-07T14:27:13+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t72_qwen3.7-plus_u-glm-5.3_en_s2",
+      "spec": {
+        "task_id": 72,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 155131,
+      "origin_started_utc": "2026-10-07T14:28:03+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t73_deepseek-v4.1-flash_u-glm-5.3_en_s2",
+      "spec": {
+        "task_id": 73,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 51939,
+      "origin_started_utc": "2026-10-07T14:37:11+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t73_qwen3.7-plus_u-deepseek-v4.1-flash_zh_s0",
+      "spec": {
+        "task_id": 73,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 52490,
+      "origin_started_utc": "2026-10-07T14:33:43+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t74_deepseek-v4.1-flash_u-deepseek-v4.1-flash_en_s1",
+      "spec": {
+        "task_id": 74,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 147275,
+      "origin_started_utc": "2026-10-07T14:45:48+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t74_deepseek-v4.1-flash_u-deepseek-v4.1-flash_en_s2",
+      "spec": {
+        "task_id": 74,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 132593,
+      "origin_started_utc": "2026-10-07T14:46:08+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t74_qwen3.7-plus_u-qwen3.8-flash_en_s1",
+      "spec": {
+        "task_id": 74,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 175622,
+      "origin_started_utc": "2026-10-07T14:39:45+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t77_deepseek-v4.1-flash_u-qwen3.7-plus_zh_s1",
+      "spec": {
+        "task_id": 77,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.7-plus",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 56074,
+      "origin_started_utc": "2026-10-07T14:53:31+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t78_deepseek-v4.1-flash_u-glm-5.3_en_s1",
+      "spec": {
+        "task_id": 78,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 117818,
+      "origin_started_utc": "2026-10-07T15:00:14+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t78_deepseek-v4.1-flash_u-qwen3.8-flash_zh_s0",
+      "spec": {
+        "task_id": 78,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 149609,
+      "origin_started_utc": "2026-10-07T14:59:16+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t78_qwen3.7-plus_u-qwen3.8-flash_en_s0",
+      "spec": {
+        "task_id": 78,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 172900,
+      "origin_started_utc": "2026-10-07T14:56:40+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t78_qwen3.7-plus_u-qwen3.8-flash_en_s2",
+      "spec": {
+        "task_id": 78,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 158713,
+      "origin_started_utc": "2026-10-07T14:56:43+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t83_qwen3.7-plus_u-deepseek-v4.1-flash_zh_s0",
+      "spec": {
+        "task_id": 83,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 92381,
+      "origin_started_utc": "2026-10-07T15:10:47+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t83_qwen3.7-plus_u-glm-5.3_en_s0",
+      "spec": {
+        "task_id": 83,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "glm-5.3",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 109922,
+      "origin_started_utc": "2026-10-07T15:11:08+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t90_deepseek-v4.1-flash_u-deepseek-v4-pro_zh_s0",
+      "spec": {
+        "task_id": 90,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 77047,
+      "origin_started_utc": "2026-10-07T15:16:14+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t90_deepseek-v4.1-flash_u-deepseek-v4-pro_zh_s1",
+      "spec": {
+        "task_id": 90,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 72296,
+      "origin_started_utc": "2026-10-07T15:16:15+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t90_deepseek-v4.1-flash_u-glm-5.3_zh_s2",
+      "spec": {
+        "task_id": 90,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 73298,
+      "origin_started_utc": "2026-10-07T15:16:54+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t90_qwen3.7-plus_u-deepseek-v4.1-flash_zh_s0",
+      "spec": {
+        "task_id": 90,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 72173,
+      "origin_started_utc": "2026-10-07T15:14:43+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t90_qwen3.7-plus_u-qwen3.8-flash_en_s1",
+      "spec": {
+        "task_id": 90,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 74439,
+      "origin_started_utc": "2026-10-07T15:13:52+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t90_qwen3.7-plus_u-qwen3.8-max_zh_s1",
+      "spec": {
+        "task_id": 90,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-max",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 49193,
+      "origin_started_utc": "2026-10-07T15:13:15+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t91_deepseek-v4.1-flash_u-qwen3.8-flash_zh_s2",
+      "spec": {
+        "task_id": 91,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 105558,
+      "origin_started_utc": "2026-10-07T15:30:50+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t91_qwen3.7-plus_u-deepseek-v4.1-flash_en_s2",
+      "spec": {
+        "task_id": 91,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 2,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 0.0,
+      "origin_tokens": 369509,
+      "origin_started_utc": "2026-10-07T15:31:40+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t91_qwen3.7-plus_u-glm-5.3_zh_s1",
+      "spec": {
+        "task_id": 91,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 113335,
+      "origin_started_utc": "2026-10-07T15:21:27+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t92_deepseek-v4.1-flash_u-deepseek-v4-pro_en_s0",
+      "spec": {
+        "task_id": 92,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "deepseek-v4-pro",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 81564,
+      "origin_started_utc": "2026-10-07T15:36:41+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t92_deepseek-v4.1-flash_u-deepseek-v4.1-flash_zh_s1",
+      "spec": {
+        "task_id": 92,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 67208,
+      "origin_started_utc": "2026-10-07T15:37:14+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t92_deepseek-v4.1-flash_u-glm-5.3_zh_s1",
+      "spec": {
+        "task_id": 92,
+        "agent_model": "deepseek-v4.1-flash",
+        "user_model": "glm-5.3",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 66561,
+      "origin_started_utc": "2026-10-07T15:37:34+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t92_qwen3.7-plus_u-deepseek-v4.1-flash_en_s0",
+      "spec": {
+        "task_id": 92,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "deepseek-v4.1-flash",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 126047,
+      "origin_started_utc": "2026-10-07T15:35:07+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t92_qwen3.7-plus_u-qwen3.8-flash_zh_s0",
+      "spec": {
+        "task_id": 92,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-flash",
+        "user_lang": "zh",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 0,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 103993,
+      "origin_started_utc": "2026-10-07T15:33:50+00:00",
+      "origin_phase": "late"
+    },
+    {
+      "cell_id": "t92_qwen3.7-plus_u-qwen3.8-max_en_s1",
+      "spec": {
+        "task_id": 92,
+        "agent_model": "qwen3.7-plus",
+        "user_model": "qwen3.8-max",
+        "user_lang": "en",
+        "task_split": "test",
+        "channel": "token_plan",
+        "max_steps": 30,
+        "seed": 1,
+        "agent_thinking": null,
+        "agent_channel": null
+      },
+      "origin_reward": 1.0,
+      "origin_tokens": 141594,
+      "origin_started_utc": "2026-10-07T15:32:54+00:00",
+      "origin_phase": "late"
+    }
+  ]
+}

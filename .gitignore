@@ -1,0 +1,24 @@
+# 凭据 —— 本仓库在任何情况下都不含密钥
+.env
+*.key
+*.pem
+credentials.json
+config/.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# 复现产生的中间产物
+results/summary/.cache/
+artifact/**/results/.cache/
+*.log
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+*.swp

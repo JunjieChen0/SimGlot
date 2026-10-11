@@ -1,0 +1,140 @@
+{
+  "frozen_at_utc": "2026-10-07T07:20:07+00:00",
+  "frozen_by": "ClawsGO Science Agent",
+  "note": "W4 试点后、E2 主矩阵前冻结。含试点后新增的轨迹崩塌判据（analyze_runs.py）与对照旋钮（agent_thinking）。",
+  "tree_hash": "8e0649c8cfff4e33c06b8522427fb826f5cc9eacfc4d0aa7188ba20f56d0a17f",
+  "n_files": 25,
+  "excluded": [
+    "config/.env（密钥）",
+    "runs/、logs/（运行产物）",
+    "__pycache__"
+  ],
+  "files": [
+    {
+      "path": "harness/__init__.py",
+      "sha256": "c466d71b899d07ddf99fa257fd2accf2864c8c53df8990977ccdc2dad00b4119",
+      "bytes": 685
+    },
+    {
+      "path": "harness/agent.py",
+      "sha256": "8a2929891f08cae9406a650c039c8d851b1b5ab1e49960b01e8d6f7c8c4c7798",
+      "bytes": 3794
+    },
+    {
+      "path": "harness/client.py",
+      "sha256": "7557101b95e136ab8b090e53cf0c6b5f1351b444e8e12c55ff6f7f0d38b2ea10",
+      "bytes": 8950
+    },
+    {
+      "path": "harness/episode.py",
+      "sha256": "b2d92477eb24ffd4c43693927b4c9b5d5313b877836f837739c8368e67cdac65",
+      "bytes": 6522
+    },
+    {
+      "path": "harness/prompts.py",
+      "sha256": "d6c397f21eba038b4e3d14da78a241c16eeaaaded7cbb8b9dc423df4194c4dec",
+      "bytes": 4377
+    },
+    {
+      "path": "harness/run_batch.py",
+      "sha256": "2879b481631b3c533c53fd3018bcad1c103ef0467f5d51d1e68720dde101148b",
+      "bytes": 7108
+    },
+    {
+      "path": "harness/run_episode.py",
+      "sha256": "c4fbf4b3b3fd44ee4dd9e29cfa1f649cfab465fd70127f8bffc2a8b316f3d06c",
+      "bytes": 2537
+    },
+    {
+      "path": "harness/scoring.py",
+      "sha256": "40c8a0ef1c6ea9d8191e53014f1838cd7ab509c078b4d106637c5e050bfb9c7b",
+      "bytes": 7224
+    },
+    {
+      "path": "harness/user_sim.py",
+      "sha256": "0edd0ab870da2e7adbe196d5d3cb31e0ad16e057986f3f75979e909849b3457f",
+      "bytes": 4542
+    },
+    {
+      "path": "scripts/analyze_runs.py",
+      "sha256": "5b744b48f196fa48635c54db1c41d5c58407a244878f26eeb26f6e5b55031f6f",
+      "bytes": 10628
+    },
+    {
+      "path": "scripts/audit_tasks.py",
+      "sha256": "e73cdcd0036b08cd2d03512f3e4c104c8200df81e86615e837a8f4dcb247a02b",
+      "bytes": 7217
+    },
+    {
+      "path": "scripts/backtranslate_check.py",
+      "sha256": "5ead1be9d7ec02d8487a306efbd43b1019fc3bc389aaeb31dcec6029a899a6fe",
+      "bytes": 5942
+    },
+    {
+      "path": "scripts/build_zh_suite.py",
+      "sha256": "b7b6a4c41bb1eaf6fa592421aab8ed40bcca8bdee69be802065f27aa0cfeff95",
+      "bytes": 9517
+    },
+    {
+      "path": "scripts/check_env.py",
+      "sha256": "2a32fbead91cb8e7db000dfede675f26e366f8c3185eecb46e46c0742b0997f7",
+      "bytes": 6494
+    },
+    {
+      "path": "scripts/check_scorer.py",
+      "sha256": "f6ea69fd5d24a3844817c2f6008ba675754010b0ee09b5c4078b69f541841572",
+      "bytes": 13263
+    },
+    {
+      "path": "scripts/freeze.py",
+      "sha256": "ad2cb3d12ed58587a63cf9dba9411f6ecb494b0560481c47a1c190ef60e24dfb",
+      "bytes": 6521
+    },
+    {
+      "path": "scripts/measure_sim_budget.py",
+      "sha256": "a11f9f66ba497b8e73b58779067a78abb946cfbbb80d1d01463fb3cc80be377f",
+      "bytes": 4843
+    },
+    {
+      "path": "scripts/sample_tasks.py",
+      "sha256": "e5972a6f367ba5abfdd48f577d7bb6f10797506ece8e41eac5ff81252fbd91b8",
+      "bytes": 13789
+    },
+    {
+      "path": "data/task_sample.json",
+      "sha256": "400aac8035f92462388673a03fb4c5034b7b75847768775c292b673981036879",
+      "bytes": 25606
+    },
+    {
+      "path": "data/tasks_zh.json",
+      "sha256": "74f51dfa7c8d85e1df1d8c9b46275ae96c187b4578fa8fb0a651b9fa43640f52",
+      "bytes": 39179
+    },
+    {
+      "path": "data/task_health.json",
+      "sha256": "4df3cfad0ff7fb3cae65ce38621c1a85e2792ccb65c375a7dcf53b7fdf969273",
+      "bytes": 35497
+    },
+    {
+      "path": "data/output_aliases.json",
+      "sha256": "7c0d05f94160e19382ea91ab2d92cc6074eecf26e974883203ca27a2a42d4381",
+      "bytes": 3027
+    },
+    {
+      "path": "data/backtranslation.json",
+      "sha256": "59e725cfaaf02ee3cdf804e0b8cf26983369cb919146b4af8d8eb82c63f0f104",
+      "bytes": 57904
+    },
+    {
+      "path": "config/providers.yaml",
+      "sha256": "b3393f81a62a7bfe475d7bffa5ff80084efb7c347d049d83e418ae1214c60227",
+      "bytes": 4030
+    },
+    {
+      "path": "preregistration_v0.md",
+      "sha256": "efbd7ae8c524fc201c0421f2c298004b6e232406bc725ec3819580a7a770e544",
+      "bytes": 16530,
+      "note": "哈希对应正文（不含文末『冻结哈希』附录表格本身）"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "_comment": "SimGlot vFinal 冻结清单：每个角色**只有一个**对外修订版。由 checks/verify_freeze.py 生成。",
+  "generated": "2026-10-10",
+  "generator": "ClawsGO Science Agent",
+  "roles": [
+    {
+      "role": "v1.0-full",
+      "title": "SimGlot v1.0 完整留档包",
+      "file": "simglot-v1.0-final.tar.gz",
+      "bytes": 81481922,
+      "sha256": "2380993ab6f7fafd740427f07153d667fe32fc50f2de0c04d356fc7850eeba0f",
+      "scope": "主矩阵 4,320 格原始记录 + 49 页稿源与 PDF；论文的 v1.0 全部数字出自此包",
+      "paper": "v1.0 稿（paper/main.tex 及其 49 页 PDF）",
+      "retired": [
+        [
+          "215d656fecd00d675d10dfdf0676dc2e475c18d58ab4c16ffc82a600376e03f2",
+          81482739,
+          "2026-10-08 的第九轮（D21）构建；dist/superseded/README.txt 已标注「已被取代，不要投稿或分发」。第五轮复审手上核到的正是这一个哈希——**那不是我方对外发布版**。"
+        ]
+      ]
+    },
+    {
+      "role": "v1.0-anon",
+      "title": "SimGlot v1.0 匿名投稿包",
+      "file": "simglot-v1.0-anon-final.tar.gz",
+      "bytes": 80734508,
+      "sha256": "f0afa24478df6db74f8d688cba919d04bdba8f75c601636c7c6d4c5fa2736d2b",
+      "scope": "与完整包同内容的双盲版本，绑同一个最终 PDF",
+      "paper": "同上（双盲提交用）",
+      "retired": [
+        [
+          "13a6ffd20f4d8db8a593dff716e87bb5e7c2bd72882b6250ee6c025872929832",
+          80721503,
+          "2026-10-08 构建，已被取代"
+        ]
+      ]
+    },
+    {
+      "role": "S2",
+      "title": "SimGlot S2 自包含发布包",
+      "file": "simglot-S2-final.tar.gz",
+      "bytes": 70518492,
+      "sha256": "8e41d28ebfa19506a3da9232a98e830d8b9cfe69c794e46cbf2779ef557fd64e",
+      "scope": "E0 预言机审计套件 + E1 三组件消融（3,240 格）+ E2 跨域（1,200 格）+ E3 遮蔽盲评（212 条）；含 sqj/ 全树与 vendored τ-bench",
+      "paper": "EMSE 稿的 RQ1（E0）与 RQ3（E1/E2/E3）",
+      "retired": [
+        [
+          "24e8f4c0c60e46aa4bd14cc0b105df81a31d5b93f83c9a567ae68f90640447c3",
+          69174713,
+          "**本机查无此文件**。第五轮复审手上可访问的是这一个；它不是我方记录的这一版。本方**不**把它设为发布版——那会让既有独立审计的背书错配。若作者确认它才是对外发布的那一版，需按 FREEZE.md §4 重新出具冻结记录。"
+        ]
+      ]
+    },
+    {
+      "role": "enhancement",
+      "title": "SimGlot 增强轮包（增量）",
+      "file": "simglot-enhancement-final.tar.gz",
+      "bytes": 400028,
+      "sha256": "dffa09ef0b912e3ed20f9c068698bf6be94e94e00dc0b3f57627a2bf4b0f59e9",
+      "scope": "A（AppWorld 迁移，负结果）+ B（预留变体/消融/基线/开销）+ C（共时三臂功效与预算，未执行）+ D（E3 证据闭合）+ §7 发布工程",
+      "paper": "EMSE 稿的 RQ2 边界、RQ1 的跨实现泛化边界、复现包",
+      "retired": [
+        [
+          "b03b7c80eeaffdcfcea5a78cc642c6f938ca2f8dfd227d1cc9d95c5680ce10a0",
+          117105,
+          "第二轮修订版（已取代）"
+        ],
+        [
+          "ffcfaa09cf9c73209a5fcfe1396921e742de3c5e0d82d9d46b65dca518b1dbb5",
+          361825,
+          "第三轮修订版（已取代）"
+        ],
+        [
+          "2a82a8956e0a83bf2c92a927249f0d8dae638e2079f0b13de1aa02cf181f78c7",
+          385292,
+          "第四轮修订版（已取代）"
+        ],
+        [
+          "9e8ffd8fbd81c40c6291fdde290be3b86680d39bc0d9311aebced38f7110d604",
+          399979,
+          "第五轮修订版（已取代；R5 复审手上是这一个）"
+        ],
+        [
+          "628f47be",
+          86801,
+          "第一版增强包（仅记前缀）"
+        ]
+      ]
+    }
+  ]
+}

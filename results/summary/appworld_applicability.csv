@@ -1,0 +1,9 @@
+detector,applicable,na_kind,reason
+INV-1 状态保持,适用（重写为目标探针）,契约本质适用,`solved` episode 打分**前后**的业务状态签名是否相同
+INV-2 重复评分一致,适用（重写为目标探针）,契约本质适用,`solved_twice`：同一环境连评两次，判定与状态是否都相同
+INV-3 顺序无关,不适用（适配器限制）,当前适配器暂时不可观测,需同一任务两个环境；AppWorld 同进程重复建世界会 401，一进程一世界下无从构造
+INV-4 异常路径还原,不适用（契约差异）,契约本质不适用,原生 `evaluate()` 不经过环境动作路径，注入不进去
+INV-5 结束步状态稳定,部分适用,契约差异,AppWorld 的「结束」是 `supervisor.complete_task`；以 `solved` episode 的状态稳定性代替
+CTL-1 负对照,适用（重写为目标探针）,契约本质适用,`unsolved` 与 `solved_minus_last` 都必须**不通过**
+CTL-2 正对照,适用（重写为目标探针）,契约本质适用,`solved`（回放全部参考调用）必须**通过**
+CTL-3 格式容忍,不适用（契约差异）,契约本质不适用,任务定义没有 `outputs` 字段（答案在 supervisor 任务记录里），构造不出「声明过的等价写法」

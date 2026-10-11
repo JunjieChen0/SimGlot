@@ -1,0 +1,120 @@
+detector,target,variant,defect_class,held_out,role
+INV-1,synthetic/tiny,C1 state_mutation,state_mutation,0,redundant
+INV-1,synthetic/tiny,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-1,synthetic/tiny,G1b_partial_partition,state_mutation,1,redundant
+INV-1,synthetic/tiny,G2a_raise_mid_replay,exception_leak,1,redundant
+INV-1,synthetic/tiny,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-1,synthetic/tiny,G3b_list_alias,actions_not_restored,1,redundant
+INV-1,tau-bench/airline,C1 state_mutation,state_mutation,0,redundant
+INV-1,tau-bench/airline,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-1,tau-bench/airline,G1a_replay_in_place,state_mutation,1,redundant
+INV-1,tau-bench/airline,G1b_partial_partition,state_mutation,1,redundant
+INV-1,tau-bench/airline,G2a_raise_mid_replay,exception_leak,1,redundant
+INV-1,tau-bench/airline,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-1,tau-bench/airline,G3b_list_alias,actions_not_restored,1,redundant
+INV-1,tau-bench/retail,C1 state_mutation,state_mutation,0,redundant
+INV-1,tau-bench/retail,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-1,tau-bench/retail,G1b_partial_partition,state_mutation,1,redundant
+INV-1,tau-bench/retail,G2a_raise_mid_replay,exception_leak,1,redundant
+INV-1,tau-bench/retail,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-1,tau-bench/retail,G3b_list_alias,actions_not_restored,1,redundant
+INV-2,synthetic/tiny,C1 state_mutation,state_mutation,0,redundant
+INV-2,synthetic/tiny,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-2,synthetic/tiny,G1b_partial_partition,state_mutation,1,redundant
+INV-2,synthetic/tiny,G2a_raise_mid_replay,exception_leak,1,redundant
+INV-2,synthetic/tiny,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-2,synthetic/tiny,G3b_list_alias,actions_not_restored,1,redundant
+INV-2,tau-bench/airline,C1 state_mutation,state_mutation,0,redundant
+INV-2,tau-bench/airline,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-2,tau-bench/airline,G1a_replay_in_place,state_mutation,1,redundant
+INV-2,tau-bench/airline,G1b_partial_partition,state_mutation,1,redundant
+INV-2,tau-bench/airline,G2a_raise_mid_replay,exception_leak,1,redundant
+INV-2,tau-bench/airline,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-2,tau-bench/airline,G3b_list_alias,actions_not_restored,1,redundant
+INV-2,tau-bench/retail,C1 state_mutation,state_mutation,0,redundant
+INV-2,tau-bench/retail,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-2,tau-bench/retail,G1b_partial_partition,state_mutation,1,redundant
+INV-2,tau-bench/retail,G2a_raise_mid_replay,exception_leak,1,redundant
+INV-2,tau-bench/retail,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-2,tau-bench/retail,G3b_list_alias,actions_not_restored,1,redundant
+INV-3,synthetic/tiny,C4 order_dependent,order_dependent,0,unique
+INV-3,synthetic/tiny,G4a_keyless_cache,order_dependent,1,unique
+INV-3,synthetic/tiny,G4b_prev_verdict_reuse,order_dependent,1,unique
+INV-3,tau-bench/airline,C4 order_dependent,order_dependent,0,unique
+INV-3,tau-bench/airline,G4a_keyless_cache,order_dependent,1,unique
+INV-3,tau-bench/airline,G4b_prev_verdict_reuse,order_dependent,1,unique
+INV-3,tau-bench/retail,C4 order_dependent,order_dependent,0,unique
+INV-3,tau-bench/retail,G4a_keyless_cache,order_dependent,1,unique
+INV-3,tau-bench/retail,G4b_prev_verdict_reuse,order_dependent,1,unique
+INV-4,synthetic/tiny,C2 exception_leak,exception_leak,0,unique
+INV-4,synthetic/tiny,G2b_cleanup_only_expected,exception_leak,1,unique
+INV-4,tau-bench/airline,C2 exception_leak,exception_leak,0,unique
+INV-4,tau-bench/airline,G2b_cleanup_only_expected,exception_leak,1,unique
+INV-4,tau-bench/retail,C2 exception_leak,exception_leak,0,unique
+INV-4,tau-bench/retail,G2b_cleanup_only_expected,exception_leak,1,unique
+INV-4,synthetic/tiny,C1 state_mutation,state_mutation,0,redundant
+INV-4,synthetic/tiny,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-4,synthetic/tiny,G1b_partial_partition,state_mutation,1,redundant
+INV-4,synthetic/tiny,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-4,synthetic/tiny,G3b_list_alias,actions_not_restored,1,redundant
+INV-4,tau-bench/airline,C1 state_mutation,state_mutation,0,redundant
+INV-4,tau-bench/airline,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-4,tau-bench/airline,G1b_partial_partition,state_mutation,1,redundant
+INV-4,tau-bench/airline,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-4,tau-bench/airline,G3b_list_alias,actions_not_restored,1,redundant
+INV-4,tau-bench/retail,C1 state_mutation,state_mutation,0,redundant
+INV-4,tau-bench/retail,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-4,tau-bench/retail,G1b_partial_partition,state_mutation,1,redundant
+INV-4,tau-bench/retail,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-4,tau-bench/retail,G3b_list_alias,actions_not_restored,1,redundant
+INV-5,synthetic/tiny,C1 state_mutation,state_mutation,0,redundant
+INV-5,synthetic/tiny,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-5,synthetic/tiny,G1b_partial_partition,state_mutation,1,redundant
+INV-5,synthetic/tiny,G2a_raise_mid_replay,exception_leak,1,redundant
+INV-5,synthetic/tiny,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-5,synthetic/tiny,G3b_list_alias,actions_not_restored,1,redundant
+INV-5,tau-bench/airline,C1 state_mutation,state_mutation,0,redundant
+INV-5,tau-bench/airline,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-5,tau-bench/airline,G1a_replay_in_place,state_mutation,1,redundant
+INV-5,tau-bench/airline,G1b_partial_partition,state_mutation,1,redundant
+INV-5,tau-bench/airline,G2a_raise_mid_replay,exception_leak,1,redundant
+INV-5,tau-bench/airline,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-5,tau-bench/airline,G3b_list_alias,actions_not_restored,1,redundant
+INV-5,tau-bench/retail,C1 state_mutation,state_mutation,0,redundant
+INV-5,tau-bench/retail,C3 actions_not_restored,actions_not_restored,0,redundant
+INV-5,tau-bench/retail,G1b_partial_partition,state_mutation,1,redundant
+INV-5,tau-bench/retail,G2a_raise_mid_replay,exception_leak,1,redundant
+INV-5,tau-bench/retail,G3a_partial_truncate,actions_not_restored,1,redundant
+INV-5,tau-bench/retail,G3b_list_alias,actions_not_restored,1,redundant
+CTL-1,synthetic/tiny,C5 saturated,saturated,0,unique
+CTL-1,synthetic/tiny,C6 db_blind,db_blind,0,unique
+CTL-1,synthetic/tiny,G1a_replay_in_place,state_mutation,1,unique
+CTL-1,synthetic/tiny,G5a_dead_branch,saturated,1,unique
+CTL-1,synthetic/tiny,G6a_respond_only,db_blind,1,unique
+CTL-1,tau-bench/airline,C5 saturated,saturated,0,unique
+CTL-1,tau-bench/airline,C6 db_blind,db_blind,0,unique
+CTL-1,tau-bench/airline,G5a_dead_branch,saturated,1,unique
+CTL-1,tau-bench/airline,G6a_respond_only,db_blind,1,unique
+CTL-1,tau-bench/airline,G6b_partial_partitions,db_blind,1,unique
+CTL-1,tau-bench/retail,C5 saturated,saturated,0,unique
+CTL-1,tau-bench/retail,C6 db_blind,db_blind,0,unique
+CTL-1,tau-bench/retail,G1a_replay_in_place,state_mutation,1,unique
+CTL-1,tau-bench/retail,G5a_dead_branch,saturated,1,unique
+CTL-1,tau-bench/retail,G6a_respond_only,db_blind,1,unique
+CTL-1,synthetic/tiny,C1 state_mutation,state_mutation,0,redundant
+CTL-1,tau-bench/airline,C1 state_mutation,state_mutation,0,redundant
+CTL-1,tau-bench/airline,G1a_replay_in_place,state_mutation,1,redundant
+CTL-1,tau-bench/retail,C1 state_mutation,state_mutation,0,redundant
+CTL-1,tau-bench/retail,G1b_partial_partition,state_mutation,1,redundant
+CTL-2,synthetic/tiny,G2a_raise_mid_replay,exception_leak,1,redundant
+CTL-2,tau-bench/airline,G1a_replay_in_place,state_mutation,1,redundant
+CTL-2,tau-bench/airline,G2a_raise_mid_replay,exception_leak,1,redundant
+CTL-2,tau-bench/retail,G2a_raise_mid_replay,exception_leak,1,redundant
+CTL-3,synthetic/tiny,C7 strict_format,strict_format,0,unique
+CTL-3,synthetic/tiny,G7a_case_only,strict_format,1,unique
+CTL-3,synthetic/tiny,G7b_comma_only,strict_format,1,unique
+CTL-3,tau-bench/airline,C7 strict_format,strict_format,0,unique
+CTL-3,tau-bench/airline,G7a_case_only,strict_format,1,unique
+CTL-3,synthetic/tiny,G2a_raise_mid_replay,exception_leak,1,redundant
+CTL-3,tau-bench/airline,G2a_raise_mid_replay,exception_leak,1,redundant
+CTL-3,tau-bench/retail,G2a_raise_mid_replay,exception_leak,1,redundant

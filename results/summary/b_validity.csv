@@ -1,0 +1,64 @@
+target,variant,defect_class,held_out,valid,status,witness,probes_compared,detail
+tau-bench/retail,C1 state_mutation,state_mutation,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,C2 exception_leak,exception_leak,0,1,confirmed_differ,P6_exception,5,在探针 P6_exception 上与参考实现分区（task 0）
+tau-bench/retail,C3 actions_not_restored,actions_not_restored,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,C4 order_dependent,order_dependent,0,1,confirmed_differ,P7_order,6,在探针 P7_order 上与参考实现分区（task 0）
+tau-bench/retail,C5 saturated,saturated,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,C6 db_blind,db_blind,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,C7 strict_format,strict_format,0,0,unresolved,,21,在全部 21 个探针观测上**未观察到**差别 ⇒ **未定**（探针灵敏度不足，不等于等价；不计入主分母、计入保守分母）
+tau-bench/retail,G1a_replay_in_place,state_mutation,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,G1b_partial_partition,state_mutation,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,G2a_raise_mid_replay,exception_leak,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,G2b_cleanup_only_expected,exception_leak,1,1,confirmed_differ,P6_exception,5,在探针 P6_exception 上与参考实现分区（task 0）
+tau-bench/retail,G3a_partial_truncate,actions_not_restored,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,G3b_list_alias,actions_not_restored,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,G4a_keyless_cache,order_dependent,1,1,confirmed_differ,P7_order,6,在探针 P7_order 上与参考实现分区（task 0）
+tau-bench/retail,G4b_prev_verdict_reuse,order_dependent,1,1,confirmed_differ,P7_order,6,在探针 P7_order 上与参考实现分区（task 0）
+tau-bench/retail,G5a_dead_branch,saturated,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,G5b_exception_swallow,saturated,1,1,confirmed_differ,P6_exception,5,在探针 P6_exception 上与参考实现分区（task 0）
+tau-bench/retail,G6a_respond_only,db_blind,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/retail,G6b_partial_partitions,db_blind,1,0,unresolved,,21,在全部 21 个探针观测上**未观察到**差别 ⇒ **未定**（探针灵敏度不足，不等于等价；不计入主分母、计入保守分母）
+tau-bench/retail,G7a_case_only,strict_format,1,0,unresolved,,21,在全部 21 个探针观测上**未观察到**差别 ⇒ **未定**（探针灵敏度不足，不等于等价；不计入主分母、计入保守分母）
+tau-bench/retail,G7b_comma_only,strict_format,1,0,unresolved,,21,在全部 21 个探针观测上**未观察到**差别 ⇒ **未定**（探针灵敏度不足，不等于等价；不计入主分母、计入保守分母）
+tau-bench/airline,C1 state_mutation,state_mutation,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,C2 exception_leak,exception_leak,0,1,confirmed_differ,P6_exception,5,在探针 P6_exception 上与参考实现分区（task 0）
+tau-bench/airline,C3 actions_not_restored,actions_not_restored,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,C4 order_dependent,order_dependent,0,1,confirmed_differ,P7_order,6,在探针 P7_order 上与参考实现分区（task 0）
+tau-bench/airline,C5 saturated,saturated,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,C6 db_blind,db_blind,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,C7 strict_format,strict_format,0,1,confirmed_differ,P4_equivalent_spelling,18,在探针 P4_equivalent_spelling 上与参考实现分区（task 2）
+tau-bench/airline,G1a_replay_in_place,state_mutation,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,G1b_partial_partition,state_mutation,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,G2a_raise_mid_replay,exception_leak,1,1,confirmed_differ,P6_exception,5,在探针 P6_exception 上与参考实现分区（task 0）
+tau-bench/airline,G2b_cleanup_only_expected,exception_leak,1,1,confirmed_differ,P6_exception,5,在探针 P6_exception 上与参考实现分区（task 0）
+tau-bench/airline,G3a_partial_truncate,actions_not_restored,1,1,confirmed_differ,P6_exception,5,在探针 P6_exception 上与参考实现分区（task 0）
+tau-bench/airline,G3b_list_alias,actions_not_restored,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,G4a_keyless_cache,order_dependent,1,1,confirmed_differ,P7_order,6,在探针 P7_order 上与参考实现分区（task 0）
+tau-bench/airline,G4b_prev_verdict_reuse,order_dependent,1,1,confirmed_differ,P7_order,6,在探针 P7_order 上与参考实现分区（task 0）
+tau-bench/airline,G5a_dead_branch,saturated,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,G5b_exception_swallow,saturated,1,1,confirmed_differ,P6_exception,5,在探针 P6_exception 上与参考实现分区（task 0）
+tau-bench/airline,G6a_respond_only,db_blind,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,G6b_partial_partitions,db_blind,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+tau-bench/airline,G7a_case_only,strict_format,1,1,confirmed_differ,P4_equivalent_spelling,18,在探针 P4_equivalent_spelling 上与参考实现分区（task 2）
+tau-bench/airline,G7b_comma_only,strict_format,1,0,unresolved,,22,在全部 22 个探针观测上**未观察到**差别 ⇒ **未定**（探针灵敏度不足，不等于等价；不计入主分母、计入保守分母）
+synthetic/tiny,C1 state_mutation,state_mutation,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+synthetic/tiny,C2 exception_leak,exception_leak,0,1,confirmed_differ,P6_exception,6,在探针 P6_exception 上与参考实现分区（task 0）
+synthetic/tiny,C3 actions_not_restored,actions_not_restored,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+synthetic/tiny,C4 order_dependent,order_dependent,0,1,confirmed_differ,P7_order,7,在探针 P7_order 上与参考实现分区（task 0）
+synthetic/tiny,C5 saturated,saturated,0,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+synthetic/tiny,C6 db_blind,db_blind,0,1,confirmed_differ,P2_say_only,2,在探针 P2_say_only 上与参考实现分区（task 0）
+synthetic/tiny,C7 strict_format,strict_format,0,1,confirmed_differ,P4_equivalent_spelling,4,在探针 P4_equivalent_spelling 上与参考实现分区（task 0）
+synthetic/tiny,G1a_replay_in_place,state_mutation,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+synthetic/tiny,G1b_partial_partition,state_mutation,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+synthetic/tiny,G2a_raise_mid_replay,exception_leak,1,1,confirmed_differ,P6_exception,6,在探针 P6_exception 上与参考实现分区（task 0）
+synthetic/tiny,G2b_cleanup_only_expected,exception_leak,1,1,confirmed_differ,P6_exception,6,在探针 P6_exception 上与参考实现分区（task 0）
+synthetic/tiny,G3a_partial_truncate,actions_not_restored,1,1,confirmed_differ,P6_exception,6,在探针 P6_exception 上与参考实现分区（task 0）
+synthetic/tiny,G3b_list_alias,actions_not_restored,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+synthetic/tiny,G4a_keyless_cache,order_dependent,1,1,confirmed_differ,P7_order,7,在探针 P7_order 上与参考实现分区（task 0）
+synthetic/tiny,G4b_prev_verdict_reuse,order_dependent,1,1,confirmed_differ,P7_order,7,在探针 P7_order 上与参考实现分区（task 0）
+synthetic/tiny,G5a_dead_branch,saturated,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+synthetic/tiny,G5b_exception_swallow,saturated,1,1,confirmed_differ,P6_exception,6,在探针 P6_exception 上与参考实现分区（task 0）
+synthetic/tiny,G6a_respond_only,db_blind,1,1,confirmed_differ,P1_do_nothing,1,在探针 P1_do_nothing 上与参考实现分区（task 0）
+synthetic/tiny,G6b_partial_partitions,db_blind,1,0,unresolved,,23,在全部 23 个探针观测上**未观察到**差别 ⇒ **未定**（探针灵敏度不足，不等于等价；不计入主分母、计入保守分母）
+synthetic/tiny,G7a_case_only,strict_format,1,1,confirmed_differ,P4_equivalent_spelling,4,在探针 P4_equivalent_spelling 上与参考实现分区（task 0）
+synthetic/tiny,G7b_comma_only,strict_format,1,1,confirmed_differ,P4_equivalent_spelling,12,在探针 P4_equivalent_spelling 上与参考实现分区（task 1）
