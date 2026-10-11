@@ -1,5 +1,7 @@
 # SimGlot
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23290600.svg)](https://doi.org/10.5281/zenodo.23290600)
+
 **SimGlot is an empirical study of reliability failures in LLM agent evaluation systems.**
 
 It treats an agent benchmark's evaluation harness — its task suite, its input generator, and above
@@ -171,5 +173,14 @@ should expect those two differences and nothing else.
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). If you use the **data** rather than the code, cite the Zenodo DOI
-recorded there rather than this repository — the repository changes, the DOI does not.
+See [`CITATION.cff`](CITATION.cff).
+
+- **Archived version:** `v1.0.0` — <https://doi.org/10.5281/zenodo.23290600> (immutable; this is what
+  the paper cites)
+- **All versions:** <https://doi.org/10.5281/zenodo.23290599> (concept DOI)
+- **This repository:** <https://github.com/JunjieChen0/SimGlot>
+
+Cite the **version DOI**, not this repository or `main`: the repository moves, the DOI does not.
+
+> The four frozen archives behind the paper's numbers (232 MB) are deposited separately from the code
+> artifact. See [`docs/data_availability.md`](docs/data_availability.md).

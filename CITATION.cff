@@ -27,6 +27,13 @@ keywords:
   - replication package
 version: 1.0.0
 date-released: "2026-10-11"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23290600
+    description: "Version DOI for v1.0.0 — the archived code artifact (cite this)"
+  - type: doi
+    value: 10.5281/zenodo.23290599
+    description: "Concept DOI — resolves to the latest version"
 preferred-citation:
   type: article
   title: "When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and Configuration-Dependent Measurement in an LLM Agent Benchmark"
@@ -39,8 +46,4 @@ preferred-citation:
 # 待作者填写（不得代填）：
 #   · 上面 authors 的 orcid —— 若没有可留空
 #   · preferred-citation 的 doi 与 pages/volume（接收后补）
-#   · 一个 identifiers: 段落，指向 Zenodo 的数据 DOI，例如
-#       identifiers:
-#         - type: doi
-#           value: 10.5281/zenodo.XXXXXXX
-#           description: "Frozen archives and the replication package"
+#   · 四个冻结归档（232 MB）若单独存到 Zenodo，再把它的 DOI 加到 identifiers 里
