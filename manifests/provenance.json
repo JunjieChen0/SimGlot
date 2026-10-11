@@ -1462,15 +1462,15 @@
       "repo_path": "paper/manuscript.pdf",
       "source": "(generated from submission/)",
       "archive_role": "workspaces",
-      "bytes": 313110,
-      "sha256": "ac45a654138be4896a3e780a5f04654d58c7e319fd743411ed71d14fb0909d60"
+      "bytes": 310158,
+      "sha256": "da1737f4ed3518ae5e412c883cb0b1d7ed4cd9817996b09b90af2f406c84ff35"
     },
     {
       "repo_path": "paper/supplementary.pdf",
       "source": "(generated from submission/)",
       "archive_role": "workspaces",
       "bytes": 461617,
-      "sha256": "dd278981862a66d1300c67078cf22f9435e9f775642c5563f99ae5176fddc3eb"
+      "sha256": "7bf04b3a0ed1c6d73fb29ff5749851a418256fd0e88d6d5a9cf0340f3ca52ec5"
     }
   ]
 }

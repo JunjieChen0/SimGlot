@@ -33,7 +33,10 @@ identifiers:
     description: "Version DOI for v1.0.0 — the archived code artifact (cite this)"
   - type: doi
     value: 10.5281/zenodo.23290599
-    description: "Concept DOI — resolves to the latest version"
+    description: "Concept DOI (code) — resolves to the latest version"
+  - type: doi
+    value: 10.5281/zenodo.23290703
+    description: "Frozen evaluation dataset v1.0.0 — the four per-episode archives and their data terms"
 preferred-citation:
   type: article
   title: "When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and Configuration-Dependent Measurement in an LLM Agent Benchmark"
@@ -46,4 +49,4 @@ preferred-citation:
 # 待作者填写（不得代填）：
 #   · 上面 authors 的 orcid —— 若没有可留空
 #   · preferred-citation 的 doi 与 pages/volume（接收后补）
-#   · 四个冻结归档（232 MB）若单独存到 Zenodo，再把它的 DOI 加到 identifiers 里
+#   （四个冻结归档已存于 10.5281/zenodo.23290703，见上面的 identifiers）

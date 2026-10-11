@@ -171,16 +171,29 @@ should expect those two differences and nothing else.
   use of the episode records should be requested first, because they contain third-party model output.
 - **Third-party components** — [`docs/third_party.md`](docs/third_party.md).
 
+## Data archive
+
+The four frozen archives behind every number in the paper — 232 MB of per-episode records — are
+deposited separately from this code artifact, together with the data terms they are released under
+and a checksum file:
+
+> **<https://doi.org/10.5281/zenodo.23290703>** (Frozen Evaluation Dataset v1.0.0)
+
+They are not in this repository on purpose: 232 MB of already-compressed archives belong in a data
+archive with its own DOI, not in a git history. The two DOIs are related
+(`isSupplementTo`), and [`manifests/FINAL_RELEASE_MANIFEST.json`](manifests/FINAL_RELEASE_MANIFEST.json)
+maps each archive to the experiments and paper sections it backs.
+
 ## Citation
 
 See [`CITATION.cff`](CITATION.cff).
 
-- **Archived version:** `v1.0.0` — <https://doi.org/10.5281/zenodo.23290600> (immutable; this is what
-  the paper cites)
-- **All versions:** <https://doi.org/10.5281/zenodo.23290599> (concept DOI)
-- **This repository:** <https://github.com/JunjieChen0/SimGlot>
+| | |
+|---|---|
+| **Code artifact** | <https://doi.org/10.5281/zenodo.23290600> (v1.0.0) — cite this for the software |
+| **Data archive** | <https://doi.org/10.5281/zenodo.23290703> (v1.0.0) — cite this for the frozen records |
+| **Concept DOIs** | <https://doi.org/10.5281/zenodo.23290599> (code) · <https://doi.org/10.5281/zenodo.23290702> (data) |
+| **This repository** | <https://github.com/JunjieChen0/SimGlot> |
 
-Cite the **version DOI**, not this repository or `main`: the repository moves, the DOI does not.
-
-> The four frozen archives behind the paper's numbers (232 MB) are deposited separately from the code
-> artifact. See [`docs/data_availability.md`](docs/data_availability.md).
+Cite the **version DOIs**, not this repository or `main`: the repository moves, the DOIs do not.
+If you use only the code, cite the code DOI; if you use the data, cite the data DOI as well.
