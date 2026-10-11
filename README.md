@@ -85,7 +85,9 @@ SimGlot/
 │   ├── gates/                  the four gates: validity regression, order/cache counterexample,
 │   │                           scoring regression, source binding
 │   ├── experiments/            E1 / E2 / E3 / the scoring correction
-│   ├── analysis/               the analyses that produce the paper's tables and figures
+│   ├── analysis/               the analyses that produce the reported tables and the
+│   │                           figures drawn from data (the two schematics are drawn by
+│   │                           plotting code, not generated from the experiments)
 │   ├── harness/                the v1.0 evaluation harness (the half that scores separately)
 │   ├── configs/                task identifiers, model settings, pre-registrations, deviations
 │   └── scripts/                reproduce.sh · build_tables.py · verify_environment.py
@@ -139,6 +141,23 @@ records the working-tree path and the archive role it came from, so *"is this th
 the paper?"* has a checkable answer rather than a reassuring one. The code files here are
 **byte-identical** to their sources; nothing was patched to fit this layout — the layout is adapted
 around them instead, which is what `reproduce.sh` spends its first step doing.
+
+---
+
+## Manuscript versions
+
+Two things called "the paper" live in different places here, and they are deliberately **not**
+kept in step:
+
+| | |
+|---|---|
+| **`main` → [`paper/manuscript.pdf`](paper/manuscript.pdf)** | the version submitted to *Empirical Software Engineering*, kept current as the manuscript changes |
+| **release `v1.0.0`** | the frozen artifact snapshot archived on Zenodo; its `paper/` directory holds the manuscript as it stood at freeze time |
+
+The artifact is frozen; the manuscript is not. Updating `paper/` on `main` therefore does not
+touch the release, the tag, or either DOI, and it changes nothing under `artifact/`, `results/`
+or `manifests/`. Every number in the paper still comes from the same four archived revisions —
+what can move is the write-up, not the evidence.
 
 ---
 
