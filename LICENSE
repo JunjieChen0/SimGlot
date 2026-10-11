@@ -19,24 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-================================================================================
-SCOPE OF THIS LICENCE
-================================================================================
-
-The MIT terms above apply to the **software authored for this study**:
-
-  - the oracle-integrity suite (detectors, adapters, oracle variants, runner);
-  - the analysis, experiment and checking scripts;
-  - the packaging and provenance tooling.
-
-They do **not** apply to:
-
-  - **τ-bench**, vendored under `simglot/vendor/tau-bench/` inside the archives. It carries
-    its own MIT licence (Copyright (c) 2024 Sierra) and its own `LICENSE` file, which travels
-    with it. Where the two differ, τ-bench's own terms govern that subtree.
-  - **the data**, which is released under a separate statement in
-    [`DATA_TERMS.md`](DATA_TERMS.md) and is *not* covered by the MIT grant above.
-
-If you are reusing the code, keep the τ-bench licence and copyright headers intact alongside
-this one.

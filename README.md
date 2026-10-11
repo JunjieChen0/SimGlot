@@ -161,8 +161,9 @@ should expect those two differences and nothing else.
 
 ## Licence
 
-- **Code: MIT** — [`LICENSE`](LICENSE), which also states the scope of the grant (it does not extend
-  to the vendored benchmark or to the data).
+- **Code: MIT** — [`LICENSE`](LICENSE), kept as plain MIT so that automated licence detection reads
+  it correctly. The scope of the grant — what it does *not* cover — is in
+  [`docs/licensing.md`](docs/licensing.md).
 - **Data: not MIT** — [`docs/data_availability.md`](docs/data_availability.md). The frozen records may
   be used and redistributed for research with attribution; large-scale redistribution or commercial
   use of the episode records should be requested first, because they contain third-party model output.
