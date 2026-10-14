@@ -18,6 +18,26 @@ This repository is the artifact for the paper:
 
 ---
 
+## Preprint
+
+The manuscript is also available as an arXiv preprint:
+
+> **When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and
+> Configuration-Dependent Measurement in an LLM Agent Benchmark**
+> Junjie Chen, Nanjing University of Science and Technology.
+> arXiv:2610.16067 [cs.SE], 12 October 2026 · <https://arxiv.org/abs/2610.16067>
+
+```bibtex
+@article{chen2026agent,
+  title   = {When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and Configuration-Dependent Measurement in an LLM Agent Benchmark},
+  author  = {Chen, Junjie},
+  journal = {arXiv preprint arXiv:2610.16067},
+  year    = {2026}
+}
+```
+
+---
+
 ## What the paper found
 
 Running on **τ-bench** (retail and airline domains) plus a ground-truth-controlled synthetic domain:
