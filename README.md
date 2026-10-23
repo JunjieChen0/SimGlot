@@ -25,7 +25,12 @@ The manuscript is also available as an arXiv preprint:
 > **When Agent Evaluation Becomes Unreliable: An Empirical Study of Oracle Failures and
 > Configuration-Dependent Measurement in an LLM Agent Benchmark**
 > Junjie Chen, Nanjing University of Science and Technology.
-> arXiv:2610.16067 [cs.SE], 12 October 2026 · <https://arxiv.org/abs/2610.16067>
+> arXiv:2610.16067 [cs.SE], cross-listed cs.AI · <https://arxiv.org/abs/2610.16067>
+
+| Version | Date | Changes |
+|---|---|---|
+| v1 | 12 October 2026 | original submission |
+| v2 (current) | 21 October 2026 | expanded related work; clarified methodological and statistical limitations; added replay-corrected agent comparisons — the per-agent effect of the scoring correction (24–34 points) and the resulting change in which agent ranks strongest |
 
 ```bibtex
 @article{chen2026agent,
